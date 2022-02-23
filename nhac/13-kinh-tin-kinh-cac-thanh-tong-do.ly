@@ -41,11 +41,143 @@ nhacPhienKhucSop = \relative c'' {
   \time 2/4
   a2 ~ |
   
-  
+  a4 e8 (f) |
+  g g g g |
+  \time 3/4
+  c4 c8 [c] a (g) |
+  \time 2/4
+  f4. f8 |
+  d16 (f) d8 g g |
+  g4. f8 |
+  g4 r8 e |
+  \time 3/4
+  e4 d8 [g] g g |
+  \time 2/4
+  g4 g8 g |
+  f4 r8 f |
+  bf a g d' |
+  \time 3/4
+  d4. d8 g, [bf] |
+  bf4. bf8 d, [g] |
+  \time 2/4
+  f4 f8 [a16 (bf)] |
+  g8. a16 g8 f |
+  bf4 g8 c |
+  f,4 r8 a |
+  g4 g8 bf |
+  d d d4 |
+  c8. d16 bf8 c |
+  a2 ~ |
+  a8 a c bf16 (c) |
+  g4. f8 |
+  bf bf bf g |
+  c4 f,8 f16 (g) |
+  a2 ~ |
+  a4 a8 a |
+  bf8. bf16 bf8 bf |
+  g2 |
+  g8 g a f |
+  bf4. g8 |
+  c e,16 (f) g8 g |
+  \time 3/4
+  c,4. a'8 a16 (bf) a8 |
+  \time 2/4
+  g2 |
+  g8 g a g16 (f) |
+  d2 |
+  f8 f g d |
+  c8. c16 a'8 bf |
+  g2 |
+  f8 f d g16 (f) |
+  c2 |
+  g'4 (a8 g) |
+  f2 ~ |
+  f4 \bar "|."
 }
 
-nhacPhienKhucAlto = \relative c' {
+nhacPhienKhucAlto = \relative c'' {
+  \key f \major
+  \time 23/4
+  \partial 4 a8 a |
+  \time 2/4
+  \override Staff.TimeSignature.break-visibility = #all-invisible
+  bf8. (g16) c8 c |
+  f,4 r8 \bar "||"
+  e8 |
+  f g g d |
   
+  \time 3/4
+  c4 c8 [g'] f (g) |
+  
+  \time 2/4
+  a2 ~ |
+  a4 f8 f |
+  
+  \time 3/4
+  g8. g16 g8 f e d |
+  
+  \time 2/4
+  c4. d8 |
+  e d f f |
+  
+  \time 3/4
+  e4 e8 [e] g g |
+  
+  \time 2/4
+  f2 ~ |
+  
+  a4 e8 (f) |
+  g g g g |
+  \time 3/4
+  c4 c8 [c] a (g) |
+  \time 2/4
+  f4. f8 |
+  d16 (f) d8 g g |
+  g4. f8 |
+  g4 r8 e |
+  \time 3/4
+  e4 d8 [g] g g |
+  \time 2/4
+  g4 g8 g |
+  f4 r8 f |
+  bf a g d' |
+  \time 3/4
+  d4. d8 g, [bf] |
+  bf4. bf8 d, [g] |
+  \time 2/4
+  f4 f8 f |
+  e8. f16 e8 ef |
+  d4 e8 e |
+  f4 r8 f |
+  e4 e8 g |
+  bf bf bf4 |
+  a8. bf16 bf8 a |
+  f2 ~ |
+  f8 a c bf16 (c) |
+  g4. f8 |
+  bf bf bf g |
+  c4 f,8 f16 (g) |
+  a2 ~ |
+  a4 f8 f |
+  g8. g16 g8 g |
+  e2 |
+  g8 g a f |
+  bf4. g8 |
+  c e,16 (f) g8 g |
+  \time 3/4
+  c,4. f8 f16 (g) f8 |
+  \time 2/4
+  e2 |
+  g8 g a g16 (f) |
+  d2 |
+  f8 f g d |
+  c8. c16 f8 g |
+  e2 |
+  d8 d b! [b] |
+  c2 |
+  bf4 ~ bf |
+  a2 ~ |
+  a4
 }
 
 % Lời phiên khúc
@@ -67,7 +199,7 @@ loiPhienKhucSop = \lyrics {
   các thánh thông công.
   Tôi tin phép tha tội.
   Tôi tin xác loài người ngày sau sống lại.
-  Tin tin hằng sống vậy.
+  Tôi tin hằng sống vậy.
   A -- men.
 }
 
@@ -123,7 +255,7 @@ notBePhu =
   >>
   \layout {
     %\override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.85
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override LyricHyphen.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
