@@ -7,7 +7,7 @@
   title = \markup \fill-line {
     \center-column {
       \box \pad-markup #2 "Bộ Lễ CA LÊN ĐI 1"
-      \null \null \null
+      \null \null
     }
   }
   subtitle = \markup { \huge \bold "Kinh Thương Xót" }

@@ -3,24 +3,13 @@
 \include "english.ly"
 
 \header {
-  subsubtitle = \markup { \huge \bold "Kinh Thương Xót" }
-  subtitle = \markup {
-    \column {
-      \left-align {
-        \line {
-          \small \bold "Bộ lễ CA LÊN ĐI 2 được viết khi Kinh Thương Xót còn đọc 3 lần,"
-        }
-        \line {
-          \small \bold "nên khi Hội Thánh cho đọc 2 lần, nhiều nơi đã cắt bớt theo cách"
-        }
-        \line {
-          \small \bold "dưới đây. Nếu muốn cũng có thể sử dụng:"
-        }
-        \null \null
-      }
+  title = \markup \fill-line {
+    \center-column {
+      \box \pad-markup #2 "Bộ Lễ CA LÊN ĐI 3"
+      \null \null
     }
-    \null \null \null \null \null \null \null \null \null
   }
+  subtitle = \markup { \huge \bold "Kinh Thương Xót" }
   composer = "Lm. Kim Long"
   %arranger = " "
   tagline = ##f
@@ -28,89 +17,77 @@
 
 % Nhạc phiên khúc
 nhacPhienKhucSop = \relative c'' {
-  \partial 4 a4 |
-  c4. a8 |
-  bf4 a |
-  g2 |
-  c4. d8 |
-  c4 b! |
-  e4. f8 |
-  e4 d8 d |
-  e4 d |
-  c2 ~ |
-  c4 r |
-  a (e) |
-  c'4. b!8 |
+  \partial 8 a8 |
+  c4. b8 |
+  c (b) a (b) |
+  a4 r8 d |
+  e4. c8 |
+  d (c) b (c) |
+  b2 ~ |
+  b4 r |
+  a4 c8 b |
+  a4 ( \slashedGrace { g16 ( } e8) ) a |
+  c (b) a (b) |
   a2 |
-  c4 (b!) |
-  e4. d8 |
-  c4 r8 c |
-  d4 c |
-  b!2 |
-  e4. f8 |
-  e4 d |
-  d4. e8 |
-  d4 c ~ |
-  c bf4 |
-  c bf |
-  a c d4. c8 |
-  d4 f |
-  d a8 a |
-  bf4 a |
-  g d'8 d |
-  e4 g |
-  f2 ~ |
-  f4 \bar "|."
+  e'4 f8 e |
+  d4. d8 |
+  e (d) c (d) |
+  c2 ~ |
+  c4 r8 a |
+  c4. b8 |
+  c (b) a (b) |
+  a2 |
+  d4. d8 |
+  <e c>8 (<d b>) <c a> (<d b>) |
+  <c g>2 ~ |
+  <c g>4 \bar "|."
 }
 
-nhacPhienKhucAlto = \relative c' {
-  f4 |
-  a4. f8 |
-  g4 f |
-  c2 |
-  a'4. bf8 |
-  a4 g |
-  c4. d8 |
-  c4 b!8 b |
-  c4 g8 (f) |
-  e2 ~ |
-  e4 r |
-  a4 (e) |
-  c'4. b!8 |
+nhacPhienKhucAlto = \relative c'' {
+  a8 |
+  c4. b8 |
+  c (b) a (b) |
+  a4 r8 <a f> |
+  <gs e>4. <a f>8 |
+  <a d,>4 <a d,> |
+  <gs e>2 ~ |
+  <gs e>4 r |
+  a4 c8 b |
+  a4 ( \slashedGrace { g16 ( } e8) ) a |
+  c (b) a (b) |
   a2 |
-  a4 (e) |
-  c'4. b!8 |
-  a4 r8 a |
-  bf4 a |
-  e2 |
-  c'4. d8 |
-  c4 b! |
-  b!4. c8 |
-  b!4 a ~ |
-  a e |
-  a gs |
-  a c |
-  d4. c8 |
-  d4 f |
-  d f,8 f |
-  g4 f |
-  e f8 g |
-  c4 c8 (bf) |
-  a2 ~ |
-  a4
+  <g c,>4 <g c,>8 <g c,> |
+  <a f>4. <a f>8 |
+  <a e>4 <gs e> |
+  <a a,>2 ~ |
+  <a a,>4 r8 a |
+  c4. b8 |
+  c (b) a (b) |
+  a2 |
+  <a f>4. <a fs>8 |
+  g4. <f g,>8 |
+  <e c>2 ~ |
+  <e c>4
 }
 
 % Lời phiên khúc
 loiPhienKhucSop = \lyrics {
   Xin Chúa thương xót chúng con.
-  Xin Chúa thương
-  \markup { \italic "(nguyện)" }
-  xin Chúa thương, xin thương xót chúng con,
-  Xin Chúa Ki -- tô, Xin Chúa Ki -- tô thương xót chúng con.
-  Xin Chúa Ki -- tô, Xin Chúa Ki -- tô thương xót chúng con.
   Xin Chúa thương xót chúng con.
-  Xin thương xót chúng con.
-  Xin thương xót chúng con.
+  Xin Chúa Ki -- tô thương xót chúng con,
+  Xin Chúa Ki -- tô thương xót chúng con.
+  Xin Chúa thương xót chúng con,
+  Xin thương xót
+  <<
+    { chúng }
+    \new Lyrics {
+	    \set associatedVoice = "beBas"
+	    \override Lyrics.LyricText.font-shape = #'italic
+	    \once \override LyricText.self-alignment-X = #LEFT
+	    đoàn
+	  }
+  >>
+  con.
 }
 
 % Dàn trang
@@ -127,10 +104,11 @@ loiPhienKhucSop = \lyrics {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
+  page-count = #1
 }
 
 TongNhip = {
-  \key f \major \time 2/4
+  \key c \major \time 2/4
   \set Timing.beamExceptions = #'()
   \set Timing.baseMoment = #(ly:make-moment 1/4)
 }
@@ -166,7 +144,7 @@ notBePhu =
   >>
   \layout {
     \override Lyrics.LyricSpace.minimum-distance = #1.5
-    \override LyricHyphen.minimum-distance = #2
+    \override LyricHyphen.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   } 
