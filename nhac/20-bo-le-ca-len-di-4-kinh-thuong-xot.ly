@@ -6,7 +6,7 @@
   title = \markup \fill-line {
     \center-column {
       \box \pad-markup #2 "Bộ Lễ CA LÊN ĐI 4"
-      \null \null
+      \null \null \null
     }
   }
   subtitle = \markup { \huge \bold "Kinh Thương Xót" }
@@ -101,6 +101,7 @@ nhacDiepKhucBas = \relative c {
       d,4
     }
   >>
+  \oneVoice
   <b g>2 ~ <b g>4 r |
   r g |
   c2 |
@@ -125,6 +126,7 @@ loiDiepKhucSop = \lyricmode {
 
 loiDiepKhucAlto = \lyricmode {
   \repeat unfold 37 { _ }
+  \override Lyrics.LyricText.font-shape = #'italic
   xin thương xót chúng con,
   thương xót chúng con.
 }
@@ -165,7 +167,7 @@ loiDiepKhucBas = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  %page-count = #1
+  system-system-spacing = #'((basic-distance . 0.1) (padding . 4.5))
 }
 
 TongNhip = {
@@ -208,11 +210,11 @@ notBePhu =
         \new Voice = beBas {
           \TongNhip \nhacDiepKhucBas
         }
-        \new Lyrics = "hatLanMot" \lyricsto beBas \loiDiepKhucBas
+        \new Lyrics \lyricsto beBas \loiDiepKhucBas
     >>
   >>
   \layout {
-    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
