@@ -257,8 +257,55 @@ nhacDiepKhucBas = \relative c {
   g'2 ~ |
   g4 r
   R2
-  r4 c8 (b) |
-  
+  R2*3
+  r4 a8 (g) |
+  f4 f8 f |
+  e2 ~ |
+  e4 r |
+  R2*2
+  r4 f8 f |
+  g4 g |
+  c,2 ~ |
+  c4 c |
+  e d8 e |
+  g4 (a8) g |
+  a8. ([c16 a8]) g |
+  e4 d8 g |
+  e (d) c4 |
+  d2 ~ |
+  d4 r |
+  r r8 c |
+  f f fs4 |
+  g2 ~ |
+  g4 r |
+  R2.*2
+  R2
+  r4 a8 a |
+  f (e) d4 |
+  g r |
+  R2*4
+  r4 c ~ |
+  c8 g g c |
+  a (g) e4 |
+  f2 |
+  R2*2
+  r4 f8 f |
+  g,2 |
+  c2 ~ |
+  c4 r |
+  R2
+  r4 c8 (d) |
+  e e d8. c16 |
+  b4 e8 (g) |
+  a a g8. (f16) |
+  e4 a8 (c) |
+  d d b (c) |
+  c, c d4 ( |
+  g) r |
+  R2*4
+  f8 (e f g) |
+  c,2 ~ |
+  c4 r
 }
 
 % Lời điệp khúc
@@ -331,10 +378,9 @@ loiDiepKhucTenor = \lyricmode {
 loiDiepKhucBas = \lyricmode {
   Và bình an dưới thế cho người thiện tâm.
   Chúng con ca ngợi Chúa
-  Chúng con thờ lạy Chúa.
   Chúng con tôn vinh Chúa
   Vinh quang cao cả Chúa.
-  Lạy Chúa là Thiên Chúa, là Vua (i -- a) trên trời,
+  Lạy Chúa là Thiên Chúa, là "Vua (i - a)" trên trời,
   là Chúa Cha toàn năng.
   Chúa Giê -- su Ki -- tô
   Chúa xóa tội trần gian
@@ -359,6 +405,7 @@ loiDiepKhucBas = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
+  page-count = 7
 }
 
 TongNhip = {
@@ -421,7 +468,7 @@ TongNhip = {
     >>
   >>
   \layout {
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    %\override Lyrics.LyricSpace.minimum-distance = #0.6
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
