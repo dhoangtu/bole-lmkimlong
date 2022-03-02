@@ -187,7 +187,7 @@ nhacDiepKhucAlto = \relative c' {
   e4 r
 }
 
-nhacDiepKhucTenor = \relative c' {
+nhacDiepKhucTenor = \relative c {
   c8 c e g |
   \slashedGrace { a16 ( } c4.) a16 (g) |
   e4 d |
@@ -453,7 +453,7 @@ TongNhip = {
         \new Lyrics \lyricsto beAlto \loiDiepKhucAlto
     >>
     \new Staff <<
-        \clef treble
+        \clef "violin_8"
         \new Voice = beTenor {
           \TongNhip \nhacDiepKhucTenor
         }
