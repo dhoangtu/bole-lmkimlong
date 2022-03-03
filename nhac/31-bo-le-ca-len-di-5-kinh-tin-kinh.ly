@@ -278,7 +278,7 @@ nhacDiepKhucAlto = \relative c' {
   e4 r
 }
 
-nhacDiepKhucTenor = \relative c' {
+nhacDiepKhucTenor = \relative c {
   c8 (d) e d |
   g4. a8 |
   f d e (g) |
@@ -395,7 +395,86 @@ nhacDiepKhucBas = \relative c {
   a a f f |
   g2 ~ |
   g4 r |
-  r4 r8
+  r4 r8 e |
+  g f d16 ([g]) e ([d]) |
+  c4 c8 c |
+  \slashedGrace { c16 ( } d8) e e16 (g) e8 |
+  d4 r |
+  R2*2
+  r4 c8 c |
+  c4 e8 (f) |
+  d4 d8 f |
+  a f a (c) |
+  g4 g |
+  c4. b8 |
+  a4. f8 |
+  e2 ~ |
+  e4 r |
+  R2*9
+  r4 e8 e |
+  a2 |
+  e4 f8 f |
+  e2 |
+  f8 (e) d4 |
+  e2 ~ |
+  e4 r |
+  r e8 e |
+  a2 ~ |
+  a4 r |
+  R2
+  r4 r8 g |
+  c, ([d e f]) |
+  g4 r8 e |
+  d2 |
+  g4. d8 |
+  g4 g |
+  c,2 ~ |
+  c4 r |
+  R2*3
+  g'8 g a16 (c) c,8 |
+  e2 ~ |
+  e4 e8 (d) |
+  c2 ~ |
+  c4 f8. a16 |
+  g8 g g4 ~ |
+  g e8 g |
+  a4 g |
+  f8 f f4 |
+  e2 ~ |
+  e4 r |
+  R2*3
+  c8 d e f |
+  g2 ~ |
+  g4 e8 e |
+  f f f16 (e) d8 |
+  c4 c8 d |
+  e4 d8 d |
+  a' g e (g) |
+  c4 g8 g |
+  c4. c8 |
+  g (f) e4 |
+  f4. f8 |
+  g4 g |
+  c2 ~ |
+  c4 r |
+  R2*9
+  r4 g4 |
+  g e8 (g) |
+  c4. d8 |
+  e4 d16 (e d c) |
+  g4. g8 |
+  a d, e16 (g e d) |
+  c2 ~ |
+  c4 c8 c |
+  f4 f |
+  g g |
+  a8 a d,4 |
+  g2 ~ |
+  g4 r |
+  R2*4
+  f8 ([e f g]) |
+  c,2 ~ |
+  c4 r
 }
 
 % Lời điệp khúc
@@ -522,6 +601,8 @@ loiDiepKhucBas = \lyricmode {
 }
 
 % Dàn trang
+%A5
+
 \paper {
   #(set-paper-size "a5")
   top-margin = 10\mm
@@ -535,7 +616,28 @@ loiDiepKhucBas = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
+  page-count = 14
 }
+
+
+%A4
+%{
+\paper {
+  #(set-paper-size "a4")
+  top-margin = 15\mm
+  bottom-margin = 15\mm
+  left-margin = 15\mm
+  right-margin = 15\mm
+  indent = #0
+  #(define fonts
+	 (make-pango-font-tree "Deja Vu Serif Condensed"
+	 		       "Deja Vu Serif Condensed"
+			       "Deja Vu Serif Condensed"
+			       (/ 20 20)))
+  print-page-number = ##f
+  systems-per-page = 3
+}
+%}
 
 TongNhip = {
   \key c \major \time 2/4
