@@ -319,7 +319,7 @@ TongNhip = {
           \new Lyrics \lyricsto beAlto \loiDiepKhucAlto
       >>
       \new Staff <<
-          \clef bass
+          \clef "violin_8"
           \new Voice = beTenor {
             \TongNhip \nhacDiepKhucTenor
           }
