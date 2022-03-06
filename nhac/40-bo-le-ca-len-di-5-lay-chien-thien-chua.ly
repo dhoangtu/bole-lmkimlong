@@ -79,29 +79,94 @@ nhacDiepKhucSop = \relative c'' {
   \numericTimeSignature
   \time 3/4
   a8 [g]
+  <<
+    {
+      a8 [a]
+    }
+    {
+      f8 f      
+    }
+  >>
+  <<
+    {
+      \voiceOne
+      a (c) |
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      f,4 |      
+    }
+  >>
   \oneVoice
   <<
     {
-      a8 [a] a (c) |
       g2. |
       a8 a c4 (a) |
       g2. ~ |
       g4
     }
     {
-      f8 f f4 |
       d2. |
       f8 f e4 (f) |
       e2. ~ |
       e4
     }
   >>
-  \oneVoice
   r4 r
 }
 
 nhacDiepKhucBas = \relative c' {
+  r4 |
+  R2*6
+  r4 a8 (c) |
+  d4 d8 (c16 d) |
+  e4 e8 e |
+  c (b) a4 |
+  <<
+    {
+      b4 a8 a |
+      c4 b |
+    }
+    {
+      g4 f8 f |
+      e4 e |
+    }
+  >>
+  a2 ~ |
+  a4 r4
+  R2
+  r4 c,8 (d) |
+  e2 |
+  d8 (e) g4 ~ |
+  g g8 (e16 g) |
+  a4 c8 c |
+  a (g) a (c) |
+  d2 |
+  R2
+  a8 a f (d) |
+  g2 |
+  f8 f d (b)
   
+  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
+  \numericTimeSignature
+  \time 3/4
+  c4.
+  <<
+    {
+      c'8 c4 |
+      b2. |
+      a8 d c4 (b) |
+      c2. ~ c4
+    }
+    {
+      a,8 f'4 |
+      g2. |
+      d8 d g,2 |
+      c2. ~ |
+      c4
+    }
+  >>
+  r4 r \bar "|."
 }
 
 % Lời điệp khúc
@@ -174,7 +239,7 @@ loiDiepKhucBas = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  systems-per-page = 3
+  page-count = 1
 }
 %}
 
@@ -211,7 +276,7 @@ TongNhip = {
     >>
   >>
   \layout {
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
