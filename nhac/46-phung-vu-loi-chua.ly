@@ -59,9 +59,9 @@ nhacMauBon = \relative c' {
 
 % Lời
 loiMauMot = \lyricmode {
-  \override Lyrics.LyricText.font-series = #'bold
+  \set stanza = "CT:"
   Đó là lời Chúa.
-  \revert Lyrics.LyricText.font-series
+  \set stanza = " GD:"
   Tạ ơn Chúa.
 }
 
@@ -186,7 +186,7 @@ notBePhu =
   }
 }
 
-\markup { \vspace #0.5 }
+\markup { \vspace #0.3 }
 
 \score {
   <<

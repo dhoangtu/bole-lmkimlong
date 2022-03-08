@@ -141,7 +141,9 @@ notBePhu =
   }
 }
 
-\markup { \bold "Chủ tế chào giáo dân" }
+\markup {
+  \bold "Chủ tế chào giáo dân"
+}
 
 \score {
   <<

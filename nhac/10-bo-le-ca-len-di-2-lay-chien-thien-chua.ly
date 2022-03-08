@@ -61,7 +61,7 @@ nhacPhienKhucAlto = \relative c' {
   e2 |
   f4 g8 a |
   bf2 |
-  c4 c8 (bf) |
+  c4 c8 ^(bf) |
   a2 ~ |
   a4
 }
@@ -90,6 +90,7 @@ loiPhienKhucSop = \lyrics {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
+  system-system-spacing = #'((basic-distance . 0.1) (padding . 2.5))
 }
 
 TongNhip = {
@@ -129,7 +130,7 @@ notBePhu =
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.9
+    \override Lyrics.LyricSpace.minimum-distance = #2
     \override LyricHyphen.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

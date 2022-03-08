@@ -63,7 +63,7 @@ nhacPhienKhucAlto = \relative c'' {
   d (c) bf4 |
   a4 a8 a |
   bf4. a8 |
-  g (f) c (bf) |
+  g (f) c ^(bf) |
   a2 ~ |
   a4
 }
@@ -94,6 +94,7 @@ loiPhienKhucSop = \lyrics {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
+  system-system-spacing = #'((basic-distance . 0.1) (padding . 2.5))
 }
 
 TongNhip = {
