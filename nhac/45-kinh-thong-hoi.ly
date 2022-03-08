@@ -67,7 +67,85 @@ nhacMauHai = \relative c' {
 }
 
 nhacMauBa = \relative c' {
-  e8 a b4 c8
+  e8 ([a]) b4 c8 b a b c b d d d
+  c b e \bar "|"
+  e4 r8 b \bar "|"
+  c4. b8 \bar "|"
+  c ([b]) a ([g]) \bar "|"
+  a4 r8 \bar "||" \break
+  
+  <<
+    {
+      b8 \bar "|"
+      c4. b8 \bar "|"
+      c ^([b]) a ^([g]) \bar "|"
+      a2 ~ \bar "|"
+      a4
+    }
+    {
+      e8 |
+      a4. gs8 |
+      a _(e) f _(d) |
+      c2 ~ |
+      c4
+    }
+  >>
+  \bar "||" \break
+  
+  g'8 ([a]) c b b4 c8 c c b a d ([c]) b b
+  e2 \bar "|"
+  e4 f8 e \bar "|"
+  d4. d8 \bar "|"
+  e ([d]) c ([d]) \bar "|"
+  c4 r \bar "||" \break
+  
+  <<
+    {
+      e4 f8 e |
+      d4. d8 |
+      e ([d]) c ([d]) |
+      c2 ~ |
+      c4
+    }
+    {
+      c4 d8 c |
+      b4. b8 |
+      c (b) a (b) |
+      a2 ~ |
+      a4
+    }
+  >>
+  \bar "||" \break
+  
+  e8 ([a]) b c a d e e f ([e]) d4 c8 b
+  a b c \bar "|"
+  b4 r8 b \bar "|"
+  c4. b8 \bar "|"
+  c ([b]) a ([b]) \bar "|"
+  a4 r8 \bar "||" \break
+  
+  <<
+    {
+      b8 \bar "|"
+      c4. b8 \bar "|"
+      c ([b]) a ([b]) \bar "|"
+      a2 ~ \bar "|"
+      a4
+    }
+    {
+      e8 \bar "|"
+      a4. gs8 \bar "|"
+      a (e) f (d) \bar "|"
+      c2 ~ \bar "|"
+      c4
+    }
+  >>
+  \bar "||" \break
+  
+  a'8 a b g a4 g8 a g ([f]) e4 e8 g
+  a b a c b d ([c]) b a4 \bar "||"
+  
+  e8 ([g a b]) a4
 }
 
 % Lời
@@ -103,7 +181,7 @@ loiMauBa = \lyricmode {
   \set stanza = "CT:"
   Xin Thiên Chúa toàn năng thương xót tha tội
   và dẫn đưa chúng ta tới sự sống muôn đời.
-  \set stanza = "GD:"
+  \set stanza = "  GD:"
   A -- men.
 }
 
