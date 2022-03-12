@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Kinh Nguyện Thánh Thể 2" }
+  subtitle = \markup { \huge \bold "Kinh Nguyện Thánh Thể III" }
   composer = "Lm. Kim Long"
   %arranger = " "
   tagline = ##f
@@ -22,8 +22,7 @@ nhacMauMot = \relative c'' {
   
   g8 g g b b4 b8 c ([b]) a b4 g8 g b b4 c8 ([b]) a b4 b8
   b c b a g ([a]) b4 c8 a c b4 d8 b c g ([a]) b4
-  g8 g g b c a4 d8 b c c a b ([a]) g4 b8 g b b c
-  b4 g8 g g g b ([c]) a4 d8 b c a a a g b b ([c]) a4 \bar "||"
+  g8 \bar "||"
 }
 
 nhacMauHai = \relative c'' {
@@ -75,72 +74,91 @@ nhacMauSau = \relative c'' {
 
 % Lời
 loiMauMot = \lyricmode {
-  Lạy Chúa, Chúa thật là Đấng Thánh, là nguồn mọi sự thánh thiện
-  Vì thế chúng con nài xin Chúa dùng ơn Thánh Thần Chúa
-  thánh hóa những của lễ này để trở nên cho chúng con
-  Mình và Máu Đức Giê -- su Ki -- tô, Chúa chúng con.
-  Khi tự nguyện nộp mình chịu khổ hình
-  Người cầm lấy bánh, tạ ơn, bẻ ra và trao cho các môn đệ mà nói:
-  Tất cả các con hãy nhận lấy mà ăn
-  Vì này là Mình Thầy sẽ bị nộp vì các con.
-  Cùng một thể thức ấy, sau bữa ăn tối,
-  Người cầm lấy chén cũng tạ ơn, trao cho các môn đệ mà nói:
-  Tất cả các con hãy nhận lấy mà uống
-  Vì này là chén Máu Thầy, Máu Giao ước mới và vĩnh cửu
-  sẽ đổ ra cho các con và nhiều người được tha tội.
-  Các con hãy làm việc này mà nhớ đến Thầy.
+  Lạy Chúa, Chúa thật là Đấng Thánh,
+  và muôn vật Chúa tạo thành đều phải ca tụng Chúa,
+  vì nhờ Đức Giê -- su Ki -- tô con Chúa, Chúa chúng con,
+  do quyền năng tác động của Chúa Thánh Thần,
+  Chúa ban sự sống và thánh hóa mọi loài
+  và không ngừng qui tụ một dân riêng
+  để từ đông sang tây họ dâng lên Chúa
+  một hiến lễ tinh tuyền.
+  Vì vậy, lạy Chúa, chúng con tha thiết nài xin Chúa
+  nhờ cũng một Chúa Thánh Thần,
+  đoái thương thánh hóa của lễ chúng con dâng tiến Chúa đây
+  để trở nên Mình và Máu Đức Giê -- su Ki -- tô Con Chúa,
+  Chúa chúng con.
+  Thừa lệnh Người, chúng con cử hành mầu nhiệm này.
 }
 
 loiMauHai = \lyricmode {
-  Đây là mầu nhiệm Đức Tin
+  Trong đêm bị trao nộp, chính Người cầm lấy bánh, tạ ơn Chúa,
+  dâng lời chúc tụng, bẻ ra và trao cho các môn đệ mà nói:
+  Tất cả các con hãy nhận lấy mà ăn,
+  Vì này là Mình Thầy sẽ bị nộp vì các con.
 }
 
 loiMauBa = \lyricmode {
-  Lạy Chúa, chúng con loan truyền Chúa chịu chết
-  và tuyên xưng Chúa sống lại cho tới khi Chúa đến.
+  Cùng một thể thức ấy, sau bữa ăn tối,
+  Người cầm lấy chén, tạ ơn Chúa, dâng lời chúc tụng
+  và trao cho các môn đệ mà nói:
+  Tất cả các con hãy nhận lấy mà uống,
+  vì này là chén Máu Thầy,
+  Máu giao ước mới và vĩnh cửu
+  sẽ đổ ra cho các con và nhiều người được tha tội.
+  Các con hãy làm việc này mà nhớ đến Thầy.
+  Đây là mầu nhiệm đức tin.
 }
 
 loiMauBon = \lyricmode {
-  Lạy Chúa, mỗi lần ăn bánh và uống chén này
-  Chúng con loan truyền Chúa chịu chết
-  cho tới khi Chúa đến.
+  Vì vậy lạy Chúa, khi kính nhớ cuộc khổ hình sinh ơn cứu độ,
+  sự sống lại và lên trời vinh hiển của con Chúa,
+  đồng thời mong đợi Người lại đến,
+  chúng con dâng lên Chúa hy lễ hằng sống và thánh thiện này
+  để tạ ơn Chúa
+  Chúng con nài xin Chúa đoái nhìn hiến tế của Hội Thánh
+  dâng lên Chúa và khi Chúa nhận đây chính là của lễ
+  mà Chúa hiến tế để nguôi lòng Chúa
+  xin cho chúng con được bổ dưỡng bởi Mình và Máu Con Chúa
+  thì được tràn đầy Thánh Thần của Người
+  thì trở nên một thân thể và một tinh thần trong Đức Ki -- tô.
 }
 
 loiMauNam = \lyricmode {
-  Lạy Chúa Cứu Thế, Chúa đã dùng thánh giá
-  và sự phục sinh của Chúa để giải thoát chúng con,
-  xin cứu độ chúng con.
+  Nguyện xin Chúa Thánh Thần làm cho chúng con trở nên
+  của lễ muôn đời dâng tiến Chúa
+  để chúng con được hưởng gia nghiệp với các người Chúa đã chọn
+  nhất là với Đức Trinh Nữ Ma -- ri -- a rất thánh
+  Mẹ Thiên Chúa, thánh Giu -- se bạn trăm năm Đức Trinh Nữ,
+  các thánh Tông Đồ và Tử Đạo hiển vinh
+  (cùng với thánh "..." "...)"
+  cùng toàn thể các thánh, vì chúng con tin tưởng các ngài
+  luôn chuyển cầu cùng Chúa cho chúng con.
+  Lạy Chúa, chúng con nguyện xin của lễ hòa giải này
+  đem lại bình an và ơn cứu độ cho cả thế giới
+  Xin cho Hội Thánh Chúa trên đường lữ thứ trần gian
+  được vững mạnh trong đức tin và đức mến
+  cùng với tôi tớ Chúa là Đức Giáo Hoàng "..." "..." "..."
+  Đức Giám Mục "..." "..." "..." chúng con
+  cùng toàn thể hàng giám mục,
+  giáo sĩ khắp nơi và tất cả dân riêng Chúa.
+  Xin Cha thương chấp nhận lời cầu của gia đình
+  mà Cha đã muốn tụ họp trước tôn nhan Cha đây.
 }
 
 loiMauSau = \lyricmode {
-  Vì vậy, lạy Chúa, khi kính nhớ Con Chúa chịu chết và sống lại,
-  Chúng con dâng lên Chúa Bánh trường sinh và chén cứu độ
-  để tạ ơn Chúa, vì Chúa đã thương cho chúng con
-  được xứng đáng hầu cận trước Tôn Nhan và phụng sự Chúa.
-  Chúng con tha thiết nài xin Chúa cho chúng con
-  khi thông phần Mình và Máu Đức Ki -- tô được quy tụ nên một
-  nhờ Chúa Thánh Thần.
-  Lạy Chúa, xin nhớ đến Hội Thánh Chúa lan rộng khắp hoàn cầu,
-  để kiện toàn Hội Thánh trong đức mến
-  cùng với Đức Giáo Hoàng "..." "..." "..."
-  Đức Giám mục "..." "..." "..." chúng con cùng toàn thể hàng giáo sĩ.
-  Xin nhớ đến tôi tớ Chúa là "..." "..."
-  (và "..." "...)" Chúa đã gọi ra khỏi đời này về với Chúa.
-  Xin cho kẻ đã chết như Con Chúa thì cũng được sống lại với Người.
-  Xin Chúa cũng nhớ anh chị em chúng con
-  đang an nghỉ trong niềm hy vọng sống lại, và mọi người,
+  Xin Cha thương đến anh chị em chúng con đã ly trần
+  và mọi người sống đẹp lòng Cha mà nay đã lìa cõi thế,
   đặc biệt các bậc tổ tiên ông bà cha mẹ
-  và thân bằng quyến thuộc chúng con đã ly trần
-  trong tình thương của Chúa.
-  Xin cho hết thảy được vào hưởng ánh sáng tôn nhan Chúa.
-  Chúng con nài xin Chúa thương xót tất cả chúng con,
-  cho chúng con được hưởng sự sống đời đời
-  cùng với Đức Trinh nữ Ma -- ri -- a, Mẹ Thiên Chúa,
-  thánh Giu -- se bạn trăm năm Đức Trinh Nữ,
-  các thánh Tông Đồ và toàn thể các thánh
-  đã sống đẹp lòng Chúa qua mọi thời đại,
-  và cùng với các ngài, chúng con được ca ngợi
-  và tôn vinh Chúa nhờ Đức Giê -- su Ki -- tô, Con Chúa.
+  và thân bằng quyến thuộc chúng con,
+  xin thương nhận tất cả vào nước Cha,
+  nơi chúng con hy vọng sẽ tới để cùng nhau
+  tận hưởng vinh quang Cha muôn đời,
+  khi Cha lau sạch nước mắt chúng con,
+  vì khi thấy tận tường Cha là Thiên Chúa chúng con
+  thì muôn đời chúng con sẽ trở nên giống Cha
+  và sẽ ca ngợi Cha khôn cùng nhờ Đức Giê -- su Ki -- tô
+  Chúa chúng con.
+  Nhờ Người Cha rộng ban mọi ơn lành cho thế gian.
 }
 
 % Dàn trang
@@ -157,7 +175,6 @@ loiMauSau = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 5
 }
 
 TongNhip = {
@@ -196,7 +213,7 @@ notBePhu =
     >>
   >>
   \layout {
-    %indent = 25
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -209,9 +226,6 @@ notBePhu =
   <<
     \new Staff \with {
       \remove "Time_signature_engraver"
-      instrumentName = \markup {
-        \bold "Chủ tế"
-      }
     }
     <<
         \clef treble
@@ -222,7 +236,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 25
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -237,9 +251,6 @@ notBePhu =
   <<
     \new Staff \with {
       \remove "Time_signature_engraver"
-      instrumentName = \markup {
-        \bold "Cộng đoàn"
-      }
     }
     <<
         \clef treble
@@ -250,7 +261,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 25
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -260,13 +271,17 @@ notBePhu =
   }
 }
 
+\markup {
+  \column {
+    \line { \bold "Cộng đoàn có thể Tung hô như KNTT II" }
+    \line { \bold "hoặc theo cung điệu trang 47" }
+  }
+}
+
 \score {
   <<
     \new Staff \with {
       \remove "Time_signature_engraver"
-      instrumentName = \markup {
-        \bold "Hoặc"
-      }
     }
     <<
         \clef treble
@@ -277,7 +292,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 25
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -291,9 +306,6 @@ notBePhu =
   <<
     \new Staff \with {
       \remove "Time_signature_engraver"
-      instrumentName = \markup {
-        \bold "Hoặc"
-      }
     }
     <<
         \clef treble
@@ -304,7 +316,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 25
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -313,10 +325,6 @@ notBePhu =
     \set Score.barAlways = ##t
     ragged-last = ##f
   }
-}
-
-\markup {
-  \bold "Có thể dùng những cung điệu nơi trang 47"
 }
 
 \score {
@@ -333,7 +341,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 25
+    indent = 10
     ragged-right = ##f
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
