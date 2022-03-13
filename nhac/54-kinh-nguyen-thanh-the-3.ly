@@ -11,65 +11,78 @@
 
 % Nhạc
 nhacMauMot = \relative c'' {
-  g8 ([a]) b4 b8 g g c c4 a8 a a a b ([a]) g4 \bar "||"
-  g8 ([a]) b4 b8 a g a b4 a8 b c ([b]) a b4 b8 b c
-  a b ([a]) g4 g8 g b b c b4 a8 a c c b b b b
-  c b ([c]) a4 \bar "||"
+  g8 \hide ([a]) b4 b8 a a c c4 a8 b g a e e4 e8 g a
+  g a4 g8 g c b b b b b c4 c8 c \hide ([b]) a4 a8
+  g a b e e b \hide ([c]) b a4 c8 b a b g a
+  a e e4 e8 g e a g g a a4 b8 \hide ([c]) a
+  b b b4 b8 d d d \hide ([e]) b d d \hide ([c]) b a4 \bar "||"
   
-  a8 g g g g g a ([b]) g4 g8 g b
-  b4 a8 b4 a8 ([c]) b4 a8 b b c b a g ([a]) b4 c8 a c
-  b4 d8 b c ([b]) g a4 g8 g g g g4 b8 g g g b ([c]) a4 \bar "||"
-  
-  g8 g g b b4 b8 c ([b]) a b4 g8 g b b4 c8 ([b]) a b4 b8
-  b c b a g ([a]) b4 c8 a c b4 d8 b c g ([a]) b4
-  g8 \bar "||"
+  e8 e e \hide ([g]) a4 c8 b b c \hide ([b]) a c d4 a8 c b c
+  b a4 a8 g a a e c'4 c8 b b c c \hide ([b]) a4
+  g8 g a e e c' c b b b b b c4 c8 b \hide ([c])
+  a4 g8 g \hide ([a]) e4 c'8 b c g4 g8 g a4 \bar "||"
 }
 
 nhacMauHai = \relative c'' {
-  a4 g8 g g b ([c]) a4 \bar "||"
+  a8 a g a e4 c'8 a a b b4 a8 b c4
+  d8 b c a4 a8 \hide ([c]) b4 a8 b b c b a g \hide ([a]) b4
+  c8 a c b4 d8 b c \hide ([b]) g a4 g8 g
+  g g g4 b8 g g g b \hide ([c]) a4 \bar "||"
 }
 
+
 nhacMauBa = \relative c'' {
-  g8 ([a]) b4 b8 a a g c ([b]) a b4
-  g8 c c d d a4 b8 c g4 a8 a4 \bar "||"
+  g8 g g b b4 b8 c \hide ([b])
+  a b4 g8 g b b4 a8 b c4 c8 b c a4 a8 b
+  b c b a g \hide ([a]) b4 c8 a c b4 d8 b c a b4
+  g8 g g b c a4 d8 b c c a b \hide ([a]) g4 b8 g
+  b b c b4 g8 g g g a \hide ([c]) a4 c8 b c a a a
+  g b b \hide ([c]) a4 \bar "||"
+  a4 g8 g g b \hide ([c]) a4 \bar "||"
 }
 
 nhacMauBon = \relative c'' {
-  g8 ([a]) b4 c8 b c d a b b g4
-  a8 g g e4 c'8 a b4 b8 c g4 a8 a4 \bar "||"
+  g8 g g \hide ([a]) b4 a8 b b a b g b b b \hide ([c]) a4
+  g8 b a a c \hide ([b]) a c b b c d4 b8 b c a4 a8 a
+  b4 c8 b b b c4 b8 c a d b c a a g g a
+  b4 a8 g e g a a g b b a a b \hide ([c]) a a
+  b4 a8 b c a b c a a c b d d d c b
+  g \hide ([a]) b4 b8 b c a4 g8 a b g e e a \hide ([b]) g a4
+  g8 g g g c a b g4 g8 g b a
+  b c \hide ([b]) g g a e b' c b \hide ([a]) a4 \bar "||"
 }
+
 
 nhacMauNam = \relative c'' {
-  g8 ([a]) b b b4 c8 c a d d4 b8 b b
-  d c ([d]) e4 a,8 a c c b4 b8 c g4 b8 a4 \bar "||"
+  g8 a c c a a b
+  c b4 a8 c b d \hide ([c]) b a b c c4 a8 c b g
+  g a e b' b g c c a4 b8 a c c b c
+  a a a c c b c d4 d8 b b g a a c \hide ([b])
+  a b4 b8 b a g g b e, g a4 g8 c c b
+  b4 e,8 e g a a4 g8 c b b a b g4 a8 g
+  e e c' b c \hide ([b]) a4 \bar "||"
+  
+  e8 \hide ([g]) a4 c8 b g a g a
+  e e e4 a8 g g a g b c a c b \hide ([c]) d d4
+  b8 b a c c4 b8 a b c \hide ([b]) g a4 g8 a e a
+  b8 a g b b4 e,8 a g a a4 g8 c c a b
+  b b4 c8 b e, \hide ([g]) a a a b a4 g8 g g g a e4
+  c'8 c c b4 g8 b e, \hide ([g]) g g a4 \bar "|"
+  
+  b8 b b c a a a g a e e g a a g g c b a a a4 \bar "||"
 }
 
+
 nhacMauSau = \relative c'' {
-  g8 g g ([a]) b4 b8 c c a b a8 c b d a4
-  c8 b a a b4 c8 a b b d d a b ([c]) g a b4
-  g8 c c b b c ([b]) a4 g8 a a e e b' ([c]) b b4
-  b8 b b ([c]) d4 d8 b b c a b c b c ([b]) a4
-  a8 a e e e c' c b b4 a8 b g a e e b' c a4
-  g8 ([a]) b4 b8 c c a b b4 a8 e b' ([c]) a a4 c8 b a a
-  d ([c]) b c c4 a8 c c c a b b b b4 c8 e,
-  g a a b a4 g8 g b ([c]) g a a4 \bar "||" \break
-  
-  b8 c c a b b4 a8 d d4 b8 c c c c a b g
-  e e e g ([a]) a4 a8 a g c c ([b]) a a
-  b4 a8 c b d g, b ([c]) a4 \bar "||" \break
-  
-  b8 c c c b g b c a4 b8 b c b
-  g a e b' ([c]) a4 g8 g g4 e8 e c' a a b4
-  b8 a b g4 g8 a e c' a c b4
-  c8 b g a e a g ([a]) b4 b8 b c g ([a])
-  e8 e e c' c ([b]) g g a4 \bar "||" \break
-  
-  a8 g e g a b c c a c b4 b8 c a
-  g8 g g a e e4 e8 c' c b b ([c]) a a a4 a8 b
-  c4 c8 b b4 g8 b b c ([b]) a b4 b8 b g e4 e8 e
-  e ([g]) a a4 c8 c b b d ([c]) b a a a4 g8 g c c
-  a4 c8 b a b g g a b c4
-  e,8 a ([b]) a a g g4 g8 a4 \bar "|."
+  a8 a a c (b) a g a b a g a (g) e4
+  e8 e e b' g g a g b c a b b4 e,8 e
+  c'8 a a b4 b8 a b g4 g8 a e c' a
+  c b4 b8 b g c b (c) g b a4 a8 b a a
+  g c c4 a8 a b g g a a a a e4 a8 a
+  a g c c c b4 a8 b c a a c b c d
+  d c4 g8 a e4 c'8 b c a b c b4 b8 d c
+  b c b a4 e8 c' b b c b c b a4 g8 g
+  a g a g a e b' c a4 \bar "||"
 }
 
 % Lời
@@ -175,6 +188,8 @@ loiMauSau = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
+  %page-count = 6
+  %systems-per-page = 9
 }
 
 TongNhip = {
@@ -213,8 +228,8 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 10
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 20
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.defaultBarType = ""
@@ -236,8 +251,8 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 10
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 20
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #0.5
@@ -261,8 +276,8 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 10
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 20
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #0.5
@@ -292,8 +307,8 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 10
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 20
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #0.5
@@ -316,8 +331,8 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 10
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 20
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #0.5
@@ -341,9 +356,9 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 10
+    indent = 20
     ragged-right = ##f
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #0.5
