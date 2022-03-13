@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "NGHI THỨC ĐẦU LỄ" }
+  subtitle = \markup { \huge \bold "Nghi Thức Đầu Lễ" }
   composer = "Lm. Kim Long"
   %arranger = " "
   tagline = ##f

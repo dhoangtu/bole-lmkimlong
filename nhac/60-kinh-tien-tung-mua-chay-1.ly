@@ -20,7 +20,7 @@ nhacPhienKhucSop = \relative c'' {
   
   a8 b a b g g g \hide ([a]) b4 a8 b c c4 a8 c b
   d d c \hide ([b]) a g b b \hide ([c]) a4 a8 c c c a c a
-  a a a g a4 b \bar "|" g8 \hide (a) b a b c b
+  a a a g a4 b \bar "|" g8 \hide ([a]) b a b c b
   a a a \hide ([b]) c b a c a a a b \hide ([a]) g4
   g8 g b \hide ([c]) a b c d4 d8 b b a c a
   b c a b b c \hide ([b]) g4 (a) \bar "||"
@@ -56,7 +56,7 @@ loiPhienKhucSop = \lyrics {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 1
+  %page-count = 1
 }
 
 TongNhip = {
@@ -79,7 +79,8 @@ TongNhip = {
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
+    \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override Score.SpacingSpanner.packed-spacing = ##f
