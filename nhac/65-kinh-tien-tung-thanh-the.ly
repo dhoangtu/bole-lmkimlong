@@ -45,7 +45,7 @@ loiPhienKhucSop = \lyrics {
   thì chúng con thấy như được dự tiệc trên trời.
   Bởi đó mọi loài trên trời dưới đất hát bài ca mới thờ lạy Chúa,
   và cùng với toàn thể đạo binh các Thiên Thần,
-  chúng con không ngừng tung hô Chúa rằng.
+  chúng con không ngừng tung hô Chúa rằng:
 }
 
 % Dàn trang

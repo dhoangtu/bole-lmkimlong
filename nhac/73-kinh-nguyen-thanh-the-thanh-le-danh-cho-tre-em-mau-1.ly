@@ -18,8 +18,10 @@ nhacMauMot = \relative c'' {
   g8 a e \hide ([g]) a4 \bar "||" \break
   b8 \hide ([c]) b c g4 b \bar "||"
   b8 \hide ([c]) b a b g \hide ([a]) b4 \bar "||" \break
-  a8 \hide ([b a]) g a b a a c c \hide ([b]) a4 \bar "||"
-  e8 e g \hide ([a]) a4 \bar "||"
+  a8 \hide ([b a]) g a b a a c c \hide ([b]) a4 \bar "||" \break
+  e8 e
+  \once \override NoteColumn.X-offset = 2 <>
+  g \hide ([a]) a4 \bar "||"
 }
 
 nhacMauHai = \relative c'' {
@@ -122,32 +124,151 @@ nhacMauNam = \relative c'' {
 }
 
 nhacMauSau = \relative c'' {
-  \key g \major \time 2/4
-  g4 d8 [d] \bar "|"
-  e (g4) b8 \bar "|"
+  \key g \major
+  \time 2/4
+  g4 d8 [d] |
+  e (g4) b8 |
   a4 \bar "||" \break
   <<
     {
+      d8 b |
+      b4. c8 |
+      c g c (b) |
+      a2 |
+      r8 g b b |
+      fs4 r8 a |
+      fs e d d |
     }
     {
+      b'8 g |
+      g4. g8 |
+      a e a (g) |
+      fs2 |
+      r8 e g e |
+      d4 r8 cs |
+      d c b b |
+    }
+  >>
+  \oneVoice
+  <<
+    {
+      \voiceOne
+      a' _(b)
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      c,4
+    }
+  >>
+  \oneVoice
+  <<
+    {
+      a'8 a |
+      g2 ~ |
+      g4 \bar "||"
+    }
+    {
+      d8 d |
+      b2 ~ |
+      b4
     }
   >>
 }
 
-nhacMauBay = \relative c'' {
-  
+nhacMauBay = \relative c' {
+  \key g \major
+  \time 2/4
+  \partial 4 d4 |
+  <<
+    {
+      b'2 ~ |
+      b8 b a a |
+      g4 c8 a |
+      b4. fs8 |
+      g g a a |
+      d,4 b'8 c |
+      a4. d8 |
+      d2 ~ |
+      d4 \bar "||"
+    }
+    {
+      g,2 ~ |
+      g8 g fs fs |
+      e4 a8 fs |
+      g4. d8 |
+      e e cs cs |
+      d4 d8 a' |
+      g4. g8 |
+      fs2 ~ |
+      fs4
+    }
+  >>
 }
 
-nhacMauTam = \relative c'' {
-  
+nhacMauTam = \relative c' {
+  \key g \major
+  \time 2/4
+  \partial 4 d4 |
+  <<
+    {
+      b'2 ~ |
+      b8 b g a |
+      b8. fs16 a8 a |
+      d,2 ~ |
+      d8 g fs fs |
+      e4 b'8 g |
+      c4 b8 c |
+      a4. d8 |
+      d2 ~ |
+      d4 \bar "||"
+    }
+    {
+      g,2 ~ |
+      g8 g e fs |
+      g8. d16 cs8 cs |
+      d2 ~ |
+      d8 b d d |
+      c4 d8 e |
+      a4 g8 a |
+      g4. g8 |
+      fs2 ~ |
+      fs4
+    }
+  >>
 }
 
-nhacMauChin = \relative c'' {
-  
-}
-
-nhacMauMuoi = \relative c'' {
-  
+nhacMauChin = \relative c' {
+  \key g \major
+  \time 2/4
+  \partial 4 d4 |
+  <<
+    {
+      b'4. b8 |
+      b2 |
+      b8 b g c |
+      c4. a8 |
+      a a b c |
+      d4 a8 a |
+      d4. c8 |
+      b4 a8 b |
+      fs4. a8 |
+      g2 ~ |
+      g4 \bar "||"
+    }
+    {
+      g4. g8 |
+      g2 |
+      g8 g e g |
+      a4. e8 |
+      d d g g |
+      fs4 fs8 f! |
+      e4. a8 |
+      g4 fs8 e |
+      d4. c8 |
+      b2 ~ |
+      b4
+    }
+  >>
 }
 
 % Lời
@@ -219,25 +340,22 @@ loiMauNam = \lyricmode {
 loiMauSau = \lyricmode {
   \set stanza = "LM:"
   Đây là mầu chiệm đức tin.
-}
-
-loiMauBay = \lyricmode {
   \set stanza = "GD:"
   Đức Ki -- tô đã chết vì chúng con và đã sống lại,
   chúng con đợi chờ Người đến trong vinh quang.
 }
 
-loiMauTam = \lyricmode {
+loiMauBay = \lyricmode {
   Lạy Chúa, chúng con loan truyền Chúa chịu chết
   và tuyên xưng Chúa sống lại cho tới khi Chúa đến.
 }
 
-loiMauChin = \lyricmode {
+loiMauTam = \lyricmode {
   Lạy Chúa mỗi lần ăn bánh và uống chén này,
   chúng con loan truyền Chúa chịu chết cho tới khi Chúa đến.
 }
 
-loiMauMuoi = \lyricmode {
+loiMauChin = \lyricmode {
   Lạy Chúa Cứu Thế, Chúa đã dùng Thánh giá và sự phục sinh của Chúa
   để giải thoát chúng con, xin cứu độ chúng con.
 }
@@ -290,12 +408,12 @@ notBePhu =
   \layout {
     indent = 15
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.4
+    \override Lyrics.LyricSpace.minimum-distance = #0.6
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
-    ragged-last = ##f
+    ragged-last = ##t
   }
 }
 
@@ -396,6 +514,8 @@ notBePhu =
 \score {
   <<
     \new Staff \with {
+      \consists "Merge_rests_engraver"
+      printPartCombineTexts = ##f
       instrumentName = \markup {
          
         \column {
@@ -417,15 +537,19 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
     ragged-last = ##f
   }
 }
 
+\markup {
+  \vspace #2
+  \bold "Hoặc dùng 1 trong 3 công thức đã có sẵn:"
+}
+
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "1" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauBay
@@ -439,15 +563,14 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
     ragged-last = ##f
   }
 }
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "2" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauTam
@@ -458,18 +581,17 @@ notBePhu =
   \layout {
     indent = 15
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
-    ragged-last = ##f
+    ragged-last = ##t
   }
 }
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "3" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauChin
@@ -480,33 +602,9 @@ notBePhu =
   \layout {
     indent = 15
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
-    ragged-last = ##f
-  }
-}
-
-\score {
-  <<
-    \new Staff <<
-        \clef treble
-        \new Voice = beSop {
-          \nhacMauMuoi
-        }
-      \new Lyrics \lyricsto beSop \loiMauMuoi
-    >>
-  >>
-  \layout {
-    indent = 15
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
-    \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
-    ragged-last = ##f
+    ragged-last = ##t
   }
 }
