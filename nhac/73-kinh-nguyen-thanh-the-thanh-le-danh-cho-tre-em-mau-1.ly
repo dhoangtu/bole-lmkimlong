@@ -12,76 +12,234 @@
 }
 
 % Nhạc
-nhacLamDau = \relative c'' {
-  \autoBeamOff
-  c8 c c4
-  a8 b4 g8
-  b \hide ([c]) a4 \bar "||"
-  
-  \partial 8 g8 |
-  g4 (a) \bar "||"
-}
-
 nhacMauMot = \relative c'' {
-  a8 c c b \hide ([c]) d c c c c4
-  d8 d c4 a8 c b \hide ([c]) d c4
-  a8 b b a a \hide ([b]) c \hide ([b])
-  a g4 g8 g8 a e \hide ([g]) a g a4 \bar "||"
-  
-  g8 a e \hide ([g]) a4 \bar "||"
+  \key c \major \time 2/4
+  a8 \hide ([b]) g g a e \hide ([g]) a4 \bar "||"
+  g8 a e \hide ([g]) a4 \bar "||" \break
+  b8 \hide ([c]) b c g4 b \bar "||"
+  b8 \hide ([c]) b a b g \hide ([a]) b4 \bar "||" \break
+  a8 \hide ([b a]) g a b a a c c \hide ([b]) a4 \bar "||"
+  e8 e g \hide ([a]) a4 \bar "||"
 }
 
 nhacMauHai = \relative c'' {
-  g8 a a g \hide ([a])
-  e e a g a \hide ([b]) c4
-  c8 d c4 a8 a c b b b b4
-  g8 g a e \hide ([g]) a4 \bar "||"
+  \key c \major \time 2/4
+  g8 \hide ([a]) b4 a8 b c a4 c8 c b a c b a g4 b8 a
+  a g \hide ([a]) c a b4 c8 b a d g, a a g4 b8 a b
+  g c a d4 \bar "|" b8 a a g \hide ([a]) b4 g8 b a b c c a
+  a4 a8 a a c4 d8 b c a a a g b a4 \bar "|" b8 a a g \hide ([a])
+  b4 a8 c c b \hide ([a]) g4 g8 g g b4 a8 a c d b c c a4 \bar "|"
+  b8 a a g \hide ([a]) b4 g8 c c a b a a g a b4 a8 a a
+  d4 b8 d c d g, c c b b c \hide ([b]) a4 \bar "|" c8 a d b c g4
+  g8 c b b c \hide ([b]) a4 a8 a b c b a \hide ([b]) g g g4 \bar "||" \break
+  
+  \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
+  \key g \major
+  d4 \bar "|" b'4. b8 fs16 \hide ([g]) b8 \bar "|"
+  a4. g8 \bar "|"
+  c4 a \bar "|"
+  d2 \bar "||"
 }
 
 nhacMauBa = \relative c'' {
-  a8 \hide ([b]) g g a e \hide ([g]) a4 \bar "||"
-  g8 a e \hide ([g]) a4 \bar "||"
+  \key g \major \time 2/4
+  <<
+    {
+      d4. d8 \bar "|"
+      d4 r8 d a [b] \bar "|"
+      c4 b8 [g] \bar "|"
+      a2 ~ \bar "|"
+      a4 \bar "||"
+    }
+    {
+      b4. b8
+      b4 r8 g fs g
+      a4 g8 e
+      d2 ~
+      d4
+    }
+  >>
 }
 
-nhacMauBon = \relative c'' {
-  g8 a g \hide ([a]) b4 g8 g a e \hide ([g]) a4 \bar "||"
+nhacMauBon = \relative c' {
+  \key g \major \time 2/4
+  e8 \hide ([g]) a4 g8 fs g a b e, e4 e8 g fs fs b g b \hide ([c]) a4 \bar "|"
+  a8 a b a a a b e, \hide ([g]) a c c c b4 \bar "|" g8 b b b g
+  b a4 g8 g e e fs g4 fs8 fs fs g fs e g \hide ([a]) b4 b8 b
+  g g b b g e \hide ([g]) \bar "|" a4 d, \bar "|"
+  b'4. b8 g \hide ([b]) \bar "|" a4. d8 \bar "|"
+  c4 a8 a \bar "|"
+  g4 d \bar "|" \break
+  
+  d4 \bar "|"
+  <<
+    {
+      b'4. a8 b c \bar "|"
+      d2 b8 b \bar "|"
+      c4. a8 d g, \bar "|"
+      g2 ~ \bar "|"
+      g4 \bar "||"
+    }
+    {
+      g4. fs8 g a
+      b2 g8 f!
+      e4. e8 c c
+      b2 ~
+      b4
+    }
+  >>
+}
+
+nhacMauNam = \relative c'' {
+  \key g \major \time 2/4
+  g8 b c b a4 a8 g g c c b a g a4 b8 b b
+  b c a a a d d d4 \bar "|"
+  a8 a4 c8 b a b \hide ([a]) g g a4 g8
+  c a a a d4 \bar "|" d8 d d b c1 a8 c c a b1 c8
+  b4 \bar "|" c8 c d4 d8 d b b \hide ([c]) b b b4 a8 c c b \hide ([a]) g4
+  g8 g g \hide ([a]) b b4 c8 b a a g a4 g8 c c a a
+  d b \hide ([a]) \bar "|" g4 r8 c \bar "|" b4 g8 g \bar "|"
+  a4. d,8 \bar "|" d8 a' a a \bar "|" g4 \bar "||" \break
+  
+  g8 ([a16 g]) d4. b'8 \bar "|"
+  g [c] a [
+  <<
+    {
+      a] \bar "|"
+      d2 b8 [b] \bar "|"
+      c4. a8 d [g,] \bar "|"
+      g2 ~ \bar "|"
+      g4 \bar "||"
+    }
+    {
+      g8
+      fs2 g8 f!
+      e4. e8 c c
+      b2 ~
+      b4
+    }
+  >>
+}
+
+nhacMauSau = \relative c'' {
+  \key g \major \time 2/4
+  g4 d8 [d] \bar "|"
+  e (g4) b8 \bar "|"
+  a4 \bar "||" \break
+  <<
+    {
+    }
+    {
+    }
+  >>
+}
+
+nhacMauBay = \relative c'' {
+  
+}
+
+nhacMauTam = \relative c'' {
+  
+}
+
+nhacMauChin = \relative c'' {
+  
+}
+
+nhacMauMuoi = \relative c'' {
+  
 }
 
 % Lời
-loiLamDau = \lyricmode {
-  \set stanza = "CT:"
-  Nhân danh Cha và Con và Thánh Thần.
-  \set stanza = " GD:"
-  A -- men.
-}
-
 loiMauMot = \lyricmode {
-  \set stanza = "CT:"
-  Nguyện xin ân sủng Đức Giê -- su Ki -- tô,
-  Chúa chúng ta
-  tình yêu của Chúa Cha
-  và ơn thông hiệp của Chúa Thánh Thần
-  ở cùng tất cả anh chị em.
-  \set stanza = " GD:"
+  \set stanza = "X:"
+  Chúa ở cùng anh chị em.
+  \set stanza = "Đ:"
   Và ở cùng cha.
+  \set stanza = "X:"
+  Hãy nâng tâm hồn lên.
+  \set stanza = "Đ:"
+  Chúng con đang hướng về Chúa.
+  \set stanza = "X:"
+  Hãy tạ ơn Chúa là Thiên Chúa chúng ta.
+  \set stanza = "Đ:"
+  Thật là chính đáng.
 }
 
 loiMauHai = \lyricmode {
-  \set stanza = "CT:"
-  Nguyện xin ân sủng và bình an của Thiên Chúa,
-  Cha chúng ta và của Chúa Giê -- su Ki -- tô
-  ở cùng anh chị em.
+  \set stanza = "LM:"
+  Lạy Chúa là Cha tốt lành, Đấng đã quy tụ chúng con nên một,
+  chúng con đang ở trước mặt Chúa, để ca tụng Chúa
+  và tuyên xưng rằng: Chúng con hết lòng thán phục Chúa,
+  chúng con ca ngợi Chúa vì vẻ đẹp trên khắp cõi địa cầu,
+  và vì niềm vui Chúa tuôn đổ tràn đầy tâm hồn chúng con.
+  Chúng con ca ngợi Chúa vì ánh sáng ban ngày,
+  và vì Lời Chúa dùng để soi sáng tâm trí chúng con.
+  Chúng con ca ngợi Chúa, vì trái đất và con người cư ngụ trên đó,
+  và vì sự sống mà chúng con biết là Chúa đã ban cho chúng con.
+  Chúa là Đấng thật tốt lành, là Đâng yêu thương chúng con
+  và làm cho chúng con những điều kỳ diệu.
+  Vì thế tất cả chúng con đều hát mừng Chúa:
 }
 
 loiMauBa = \lyricmode {
-  \set stanza = "CT:"
-  Chúa ở cùng anh chị em.
-  \set stanza = " GD:"
-  Và ở cùng cha.
+  \set stanza = "GD:"
+  Thánh! Thánh! Thánh!
+  Chúa là Thiên Chúa các đạo binh.
 }
 
 loiMauBon = \lyricmode {
-  Bình an của Chúa ở cùng anh chị em.
+  \set stanza = "CT:"
+  Lạy Cha, Cha hằng quan tâm đến loài người,
+  và không ngừng trợ giúp họ khắp nơi,
+  nên Cha đã sai Con Yêu Dấu của Cha đến với chúng con,
+  Người đã đến cứu độ chúng con, đã chữa lành người đau yếu,
+  ban ơn tha thứ cho kẻ tội lỗi,
+  đã đón nhận và chúc phúc cho trẻ em.
+  Vì thế với lòng biết ơn, chúng con tung hô rằng:
+  \set stanza = "GD:"
+  Trời đất đầy vinh quang Chúa. Hoan hô Chúa trên các tầng trời.
+}
+
+loiMauNam = \lyricmode {
+  \set stanza = "CT:"
+  Lạy Cha rất nhân từ, không phải chỉ có chúng con ca tụng Chúa,
+  nhưng dân Cha trên khắp địa cầu đều tôn vinh Cha.
+  Vì vậy chúng con tha thiết nguyện cầu Cha cùng với toàn thể Hội Thánh,
+  với Đức Giáo hoàng "( ... )" và Đức Giám mục "( ... )" chúng con.
+  Trên thiên quốc Đức Thánh Trinh Nữ Ma -- ri -- a và các thánh Tông Đồ
+  cùng toàn thể các Thánh cũng không ngừng ca tụng Cha,
+  cùng với các ngài và các Thiên Thần, chúng con thờ lạy Cha
+  mà đồng thanh tung hô rằng:
+  \set stanza = "GD:"
+  Chúc tụng Đấng ngự đến nhân danh Chúa,
+  Hoan hô Chúa trên các tầng trời.
+}
+
+loiMauSau = \lyricmode {
+  \set stanza = "LM:"
+  Đây là mầu chiệm đức tin.
+}
+
+loiMauBay = \lyricmode {
+  \set stanza = "GD:"
+  Đức Ki -- tô đã chết vì chúng con và đã sống lại,
+  chúng con đợi chờ Người đến trong vinh quang.
+}
+
+loiMauTam = \lyricmode {
+  Lạy Chúa, chúng con loan truyền Chúa chịu chết
+  và tuyên xưng Chúa sống lại cho tới khi Chúa đến.
+}
+
+loiMauChin = \lyricmode {
+  Lạy Chúa mỗi lần ăn bánh và uống chén này,
+  chúng con loan truyền Chúa chịu chết cho tới khi Chúa đến.
+}
+
+loiMauMuoi = \lyricmode {
+  Lạy Chúa Cứu Thế, Chúa đã dùng Thánh giá và sự phục sinh của Chúa
+  để giải thoát chúng con, xin cứu độ chúng con.
 }
 
 % Dàn trang
@@ -101,9 +259,6 @@ loiMauBon = \lyricmode {
 }
 
 TongNhip = {
-  \key c \major \time 2/4
-  \set Timing.beamExceptions = #'()
-  \set Timing.baseMoment = #(ly:make-moment 1/4)
 }
 
 % Đổi kích thước nốt cho bè phụ
@@ -122,38 +277,12 @@ notBePhu =
    music)
 
 \score {
-  \new ChoirStaff <<
-    \new Staff
-      <<
-      \new Voice = beSop {
-        \TongNhip \nhacLamDau
-      }
-    >>
-    \new Lyrics \lyricsto beSop \loiLamDau
-  >>
-  \layout {
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
-    \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #1
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
-    ragged-last = ##f
-  }
-}
-
-\markup {
-  \bold "Chủ tế chào giáo dân"
-}
-
-\score {
   <<
     \new Staff \with {
-      instrumentName = \markup { \bold "Mẫu 1" }} <<
+      instrumentName = \markup { \bold "Mở đầu" }} <<
         \clef treble
         \new Voice = beSop {
-          \TongNhip \nhacMauMot
+          \nhacMauMot
         }
       \new Lyrics \lyricsto beSop \loiMauMot
     >>
@@ -161,10 +290,9 @@ notBePhu =
   \layout {
     indent = 15
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #0.4
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #1.5
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
     ragged-last = ##f
@@ -173,11 +301,10 @@ notBePhu =
 
 \score {
   <<
-    \new Staff \with {
-      instrumentName = \markup { \bold "Mẫu 2" }} <<
+    \new Staff <<
         \clef treble
         \new Voice = beSop {
-          \TongNhip \nhacMauHai
+          \nhacMauHai
         }
       \new Lyrics \lyricsto beSop \loiMauHai
     >>
@@ -197,11 +324,10 @@ notBePhu =
 
 \score {
   <<
-    \new Staff \with {
-      instrumentName = \markup { \bold "Mẫu 3" }} <<
+    \new Staff <<
         \clef treble
         \new Voice = beSop {
-          \TongNhip \nhacMauBa
+          \nhacMauBa
         }
       \new Lyrics \lyricsto beSop \loiMauBa
     >>
@@ -220,24 +346,161 @@ notBePhu =
 
 \score {
   <<
-    \new Staff \with {
-      instrumentName = \markup {
-         
-        \column {
-          \line { \bold "Khi Chủ tế" }
-          \line { \bold "là giám mục" }
-        }
-      }
-    } <<
+    \new Staff <<
         \clef treble
         \new Voice = beSop {
-          \TongNhip \nhacMauBon
+          \nhacMauBon
         }
       \new Lyrics \lyricsto beSop \loiMauBon
     >>
   >>
   \layout {
-    indent = 28
+    indent = 15
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \set Score.defaultBarType = ""
+    \set Score.barAlways = ##t
+    ragged-last = ##f
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauNam
+        }
+      \new Lyrics \lyricsto beSop \loiMauNam
+    >>
+  >>
+  \layout {
+    indent = 15
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \set Score.defaultBarType = ""
+    \set Score.barAlways = ##t
+    ragged-last = ##f
+  }
+}
+
+\markup {
+  \vspace #2
+  \bold "Linh mục tiếp tục phần Truyền Phép"
+}
+
+\score {
+  <<
+    \new Staff \with {
+      instrumentName = \markup {
+         
+        \column {
+          \line { \bold "Tung hô" }
+          \line { \bold "sau Truyền Phép" }
+        }
+      }
+    } <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauSau
+        }
+      \new Lyrics \lyricsto beSop \loiMauSau
+    >>
+  >>
+  \layout {
+    indent = 40
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \set Score.defaultBarType = ""
+    \set Score.barAlways = ##t
+    ragged-last = ##f
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauBay
+        }
+      \new Lyrics \lyricsto beSop \loiMauBay
+    >>
+  >>
+  \layout {
+    indent = 15
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \set Score.defaultBarType = ""
+    \set Score.barAlways = ##t
+    ragged-last = ##f
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauTam
+        }
+      \new Lyrics \lyricsto beSop \loiMauTam
+    >>
+  >>
+  \layout {
+    indent = 15
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \set Score.defaultBarType = ""
+    \set Score.barAlways = ##t
+    ragged-last = ##f
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauChin
+        }
+      \new Lyrics \lyricsto beSop \loiMauChin
+    >>
+  >>
+  \layout {
+    indent = 15
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \set Score.defaultBarType = ""
+    \set Score.barAlways = ##t
+    ragged-last = ##f
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauMuoi
+        }
+      \new Lyrics \lyricsto beSop \loiMauMuoi
+    >>
+  >>
+  \layout {
+    indent = 15
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
