@@ -45,31 +45,246 @@ nhacMauMot = \relative c'' {
       g4 \bar "||"
     }
     {
+      g4 g8 [g]
+      a4. g8
+      fs g fs e
+      d4. c8
+      b2 ~
+      b4
     }
   >>
+  \break
   \oneVoice
   
+  b'8 [b] \bar "|"
+  b [c] a [d] \bar "|"
+  d4. b8 \bar "|"
+  c [b] b [b] \bar "|"
+  b4 b8 [c] \bar "|"
+  a4. fs16 ([g]) \bar "|"
+  e8 [g] a [b] \bar "|"
+  a4 d8 [fs,] \bar "|"
+  g4 \bar "||" \break
   
+  d4 \bar "|"
+  <<
+    {
+      b'4 b8 [b] \bar "|"
+      c4. a8 \bar "|"
+      d [b] a [fs] \bar "|"
+      fs4. a8 \bar "|"
+      g2 ~ \bar "|"
+      g4 \bar "||"
+    }
+    {
+      g4 g8 [g]
+      a4. g8
+      fs g fs e
+      d4. c8
+      b2 ~
+      b4
+    }
+  >>
+  \break
+  \oneVoice
+  
+  b'8 [b] \bar "|"
+  b [c] a [d] \bar "|"
+  d4. c8 a [c] \bar "|"
+  b [b] c [b] \bar "|"
+  a2 \bar "|"
+  fs8 [fs] b [b] \bar "|"
+  e,4. e8 \bar "|"
+  d ([e]) g [b] \bar "|"
+  g4. fs16 [(g) a8] b \bar "|"
+  \slashedGrace { e,16 ([g]  } e4.) e16 ([g]) \bar "|"
+  d8 [g] fs [a] \bar "|"
+  b4 \bar "||" \break
+  
+  d,4 \bar "|"
+  <<
+    {
+      b'4 b8 [b] \bar "|"
+      c4. a8 \bar "|"
+      d [b] a [fs] \bar "|"
+      fs4. a8 \bar "|"
+      g2 ~ \bar "|"
+      g4 \bar "||"
+    }
+    {
+      g4 g8 [g]
+      a4. g8
+      fs g fs e
+      d4. c8
+      b2 ~
+      b4
+    }
+  >>
+  \break
+  \oneVoice
+  
+  r8 d \bar "|"
+  g8 [g] fs [a] \bar "|"
+  g4 g8 [g] \bar "|"
+  b [c] b [b] \bar "|"
+  d4. b8 \bar "|"
+  a [c] c [b16 (a)] \bar "|"
+  e4 d8 [b'] \bar "|"
+  b [a16 (g)] e8 [g] \bar "|"
+  a4. d8 \bar "|"
+  b4 g8 [a] \bar "|"
+  a4. fs8 g [a] \bar "|"
+  d2 \bar "||" \break
+  
+  <<
+    {
+      d4. d8 \bar "|"
+      d4 r8 d a [b] \bar "|"
+      c4 b8 [g] \bar "|"
+      a2 ~ \bar "|"
+      a4 d, \bar "|"
+      b'4. a8 b [c] \bar "|"
+      d2 b8 [b] \bar "|"
+      c4. a8 d [g,] \bar "|"
+      g2 ~ \bar "|"
+      g4 g8 ([a16 g]) \bar "|"
+      d4. b'8 \bar "|"
+      g [c] a [a] \bar "|"
+      d2 b8 [b] \bar "|"
+      c4. a8 d [g,] \bar "|"
+      g2 ~ \bar "|"
+      g4 \bar "||"
+    }
+    {
+      b4. b8
+      b4 r8 g fs g
+      a4 g8 e
+      d2 ~
+      d4 \skip 4
+      g4. fs8 g a
+      b2 g8 f!
+      e4. e8 c c
+      b2 ~
+      b4 \skip 4
+      \skip 4. \skip 8
+      \skip 8 \skip 8 \skip 8 g'8
+      fs2 g8 f!
+      e4. e8 c c
+      b2 ~
+      b4
+    }
+  >>
 }
 
 nhacMauHai = \relative c'' {
-  
+  \key g \major
+  \time 2/4
+  \partial 4. b8 a g |
+  c4 a8 a |
+  b4 \bar "||"
+  g8 (a16 g) d4. b'8 |
+  g c c
+  <<
+    {
+      a |
+      \time 3/4
+      d2 b8 b |
+      c4. a8 d [g,] |
+      \time 2/4
+      g2 ~ |
+      g4 \bar "||"
+    }
+    {
+      g8 |
+      fs2 g8 fs |
+      e4. e8 c c |
+      b2 ~ |
+      b4
+    }
+  >>
 }
 
 nhacMauBa = \relative c'' {
-  
+  \key g \major
+  \time 2/4
+  \partial 8 b8 |
+  a4. fs8 |
+  g a a d, |
+  g4 r8 \bar "||"
 }
 
-nhacMauBon = \relative c' {
-  
+nhacMauBon = \relative c'' {
+  \key g \major
+  \time 2/4
+  \partial 8 g8 |
+  g2 |
+  fs8
+  <<
+    {
+      g a b |
+      c4. c8 |
+      a2 ~ |
+      a4 \bar "||"
+    }
+    {
+      e8 d g |
+      a4. g8 |
+      fs2 ~ |
+      fs4
+    }
+  >>
 }
 
 nhacMauNam = \relative c'' {
-  
+  \key g \major
+  \time 2/4
+  \partial 8
+  <<
+    {
+      d8 |
+      c4 c8 a |
+      b4 r8 c |
+      b4 d8 g, |
+      a4 r8 b |
+      a4 fs8 g |
+      g2 ~ |
+      g4 \bar "||"
+    }
+    {
+      b8 |
+      a4 a8 fs |
+      g4 r8 a |
+      g4 fs8 e |
+      d4 r8 g |
+      c4 d8 c |
+      b2 ~ |
+      b4
+    }
+  >>
 }
 
-nhacMauSau = \relative c'' {
-  
+nhacMauSau = \relative c' {
+  \key g \major
+  \time 3/4
+  \partial 4 d4 |
+  <<
+    {
+      b'4. d8 g, [g] |
+      g4. g8 fs [g] |
+      \slashedGrace { e16 ^(g } e4.) d8 d g |
+      fs4 g8 (c) a [a] |
+      d2. ~ |
+      d4 \bar "||"
+    }
+    {
+      g,4. fs8 e d |
+      e4. e8 d d |
+      c4. b8 b e |
+      d4 e8 (a) <g e> <g e> |
+      <fs d>2. ~ |
+      <fs d>4
+    }
+  >>
 }
 
 % Lời
@@ -89,7 +304,7 @@ loiMauMot = \lyricmode {
   Lạy Chúa, vinh danh Chúa là Đâng yêu thương loài người chúng con.
   \set stanza = "LM:"
   Cha yêu thương chúng con đến nỗi quy tụ chúng con
-  trong Đức Ki -- tô, và nhờ Chúa Thánh Thần, Cha làm co chúng con
+  trong Đức Ki -- tô, và nhờ Chúa Thánh Thần, Cha làm cho chúng con
   trở nên nghĩa tử của một gia đình duy nhất.
   \set stanza = "GD:"
   Lạy Chúa, vinh danh Chúa là Đấng yêu thương loài người chúng con.
@@ -164,7 +379,7 @@ notBePhu =
    music)
 
 \markup {
-  \vspace #2
+  \null
   \bold "Mở đầu: như mẫu 1"
 }
 
@@ -191,6 +406,11 @@ notBePhu =
   }
 }
 
+\markup {
+  \null
+  \bold "Linh mục đọc tiếp và kết: như con cái"
+}
+
 \score {
   <<
     \new Staff <<
@@ -208,9 +428,17 @@ notBePhu =
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #1.5
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
     ragged-last = ##f
+  }
+}
+
+\markup {
+  \column {
+    \null
+    \line { \bold "Linh mục đọc tiếp phần Truyền Phép." }
+    \line { \bold "Tung hô sau Truyền Phép: như Mẫu 1" }
+    \null
+    \line { \bold "Linh mục đọc tiếp, và kết với kết: Chúng con được ..." }
   }
 }
 
@@ -230,10 +458,13 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
     ragged-last = ##f
   }
+}
+
+\markup {
+  \null
+  \bold "Giáo dân tung hô:"
 }
 
 \score {
@@ -252,10 +483,13 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
     ragged-last = ##f
   }
+}
+
+\markup {
+  \null
+  \bold "Hoặc:"
 }
 
 \score {
@@ -274,25 +508,21 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \set Score.defaultBarType = ""
-    \set Score.barAlways = ##t
     ragged-last = ##f
+  }
+}
+
+\markup {
+  \column {
+    \null
+    \line { \bold "Linh mục đọc tiếp 3 lời nguyện," }
+    \line { \bold "sau mỗi lời, Giáo dân tung hô:" }
   }
 }
 
 \score {
   <<
-    \new Staff \with {
-      \consists "Merge_rests_engraver"
-      printPartCombineTexts = ##f
-      instrumentName = \markup {
-         
-        \column {
-          \line { \bold "Tung hô" }
-          \line { \bold "sau Truyền Phép" }
-        }
-      }
-    } <<
+    \new Staff <<
         \clef treble
         \new Voice = beSop {
           \nhacMauSau
@@ -301,7 +531,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 40
+    indent = 15
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
