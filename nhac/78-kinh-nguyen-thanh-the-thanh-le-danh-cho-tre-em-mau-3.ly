@@ -88,9 +88,7 @@ loiMauHai = \lyricmode {
 
 \markup {
   \column {
-    \null
     \line { \bold "Mở đầu như Mẫu 1" }
-    \null
     \line { \bold "Hoặc:" }
   }
 }
@@ -119,13 +117,12 @@ loiMauHai = \lyricmode {
 
 \markup {
   \column {
-    \null
     \line { \bold "Thánh! Thánh! Thánh!" }
     \line { "có thể sử dụng như ở Mẫu 2" }
-    \null
+    \vspace #2
     \line { \bold "Tung hô sau Truyền Phép" }
     \line { "có thể dùng 1 trong 4 cách ở Mẫu 1" }
-    \null
+    \vspace #2
     \line { \bold "Linh mục tiếp tục đọc các lời nguyện," }
     \line { \bold "sau mỗi lời, Giáo Dân tung hô:" }
   }

@@ -361,7 +361,6 @@ loiMauSau = \lyricmode {
 }
 
 \markup {
-  \null
   \bold "Mở đầu: như mẫu 1"
 }
 
@@ -384,12 +383,12 @@ loiMauSau = \lyricmode {
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
-    ragged-last = ##t
+    ragged-last = ##f
   }
 }
 
 \markup {
-  \null
+  \vspace #2
   \bold "Linh mục đọc tiếp và kết: như con cái"
 }
 
@@ -416,10 +415,10 @@ loiMauSau = \lyricmode {
 
 \markup {
   \column {
-    \null
+    \vspace #2
     \line { \bold "Linh mục đọc tiếp phần Truyền Phép." }
     \line { \bold "Tung hô sau Truyền Phép: như Mẫu 1" }
-    \null
+    \vspace #2
     \line { \bold "Linh mục đọc tiếp, và kết với kết: Chúng con được ..." }
   }
 }
@@ -445,7 +444,7 @@ loiMauSau = \lyricmode {
 }
 
 \markup {
-  \null
+  \vspace #2
   \bold "Giáo dân tung hô:"
 }
 
@@ -469,8 +468,9 @@ loiMauSau = \lyricmode {
   }
 }
 
+\pageBreak
+
 \markup {
-  \null
   \bold "Hoặc:"
 }
 
@@ -496,7 +496,7 @@ loiMauSau = \lyricmode {
 
 \markup {
   \column {
-    \null
+    \vspace #2
     \line { \bold "Linh mục đọc tiếp 3 lời nguyện," }
     \line { \bold "sau mỗi lời, Giáo dân tung hô:" }
   }
