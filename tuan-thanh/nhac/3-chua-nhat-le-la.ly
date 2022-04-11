@@ -9,7 +9,9 @@
   tagline = ##f
 }
 
-%
+% mã nguồn cho những chức năng chưa hỗ trợ trong phiên bản lilypond hiện tại
+% cung cấp bởi cộng đồng lilypond khi gửi email đến lilypond-user@gnu.org
+% in số phiên khúc trên mỗi dòng
 #(define (add-grob-definition grob-name grob-entry)
      (set! all-grob-descriptions
            (cons ((@@ (lily) completize-grob-entry)
@@ -20,7 +22,7 @@
     'StanzaNumberSpanner
     `((direction . ,LEFT)
       (font-series . bold)
-      (padding . 1)
+      (padding . 1.0)
       (side-axis . ,X)
       (stencil . ,ly:text-interface::print)
       (X-offset . ,ly:side-position-interface::x-aligned-side)
@@ -92,17 +94,16 @@
 }
 
 stanzaReminderOff =
-\temporary \override StanzaNumberSpanner.after-line-breaking =
-   #(lambda (grob)
-      ;; Can be replaced with (not (first-broken-spanner? grob)) in 2.23.
-      (if (let ((siblings (ly:spanner-broken-into (ly:grob-original grob))))
-            (and (pair? siblings)
-                 (not (eq? grob (car siblings)))))
-          (ly:grob-suicide! grob)))
+  \temporary \override StanzaNumberSpanner.after-line-breaking =
+     #(lambda (grob)
+        ;; Can be replaced with (not (first-broken-spanner? grob)) in 2.23.
+        (if (let ((siblings (ly:spanner-broken-into (ly:grob-original grob))))
+              (and (pair? siblings)
+                   (not (eq? grob (car siblings)))))
+            (ly:grob-suicide! grob)))
 
-stanzaReminderOn =
-\undo \stanzaReminderOff
-%
+stanzaReminderOn = \undo \stanzaReminderOff
+% kết thúc mã nguồn
 
 % Nhạc
 nhacMauMot = \relative c'' {
@@ -893,24 +894,6 @@ loiMauChin = \lyricmode {
   print-page-number = ##f
   page-count = 9
 }
-
-TongNhip = {
-}
-
-% Đổi kích thước nốt cho bè phụ
-notBePhu =
-#(define-music-function (font-size music) (number? ly:music?)
-   (for-some-music
-     (lambda (m)
-       (if (music-is-of-type? m 'rhythmic-event)
-           (begin
-             (set! (ly:music-property m 'tweaks)
-                   (cons `(font-size . ,font-size)
-                         (ly:music-property m 'tweaks)))
-             #t)
-           #f))
-     music)
-   music)
 
 \markup {
   \vspace #2
