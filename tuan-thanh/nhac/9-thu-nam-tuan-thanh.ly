@@ -225,49 +225,174 @@ nhacMauBa = \relative c'' {
   \key f \major
   \time 2/4
   \partial 4 a4 |
-  
+  a4. (g16 f) |
+  d8 a' a c |
+  a8. g16 a8 c |
+  d2 |
+  a8 d b! (a) |
+  fs8 (g) a b! |
+  a4. g16 (f) |
+  d2 |
+  c8 e f f |
+  d2 ~ |
+  d4 \bar "|."
 }
 
 nhacMauBon = \relative c' {
   \key f \major
   \time 2/4
+  \once \override Score.RehearsalMark.font-size = #0.1
+  \mark \markup { \musicglyph #"scripts.segno" }
   \partial 4 f8 (g) |
   a2 |
+  r8 a d, d16 (f) |
+  g4 g8 g |
+  g2 |
+  a8 (bf) g g |
+  a4. d,8 |
+  g a a16 (c) b!8 |
+  a4. f8 |
+  g g f (e) |
+  c c e (f) |
+  d2 ~ |
+  d4 \bar "|."
+  a'8 a |
+  a16 (bf) a8 g g |
+  g4. f8 |
+  g g16 (f) d8 (c) |
+  d4 \bar "||"
+  \once \override Score.RehearsalMark #'break-visibility = #end-of-line-visible
+  \once \override Score.RehearsalMark.font-size = #0.1
+  \mark \markup { \musicglyph #"scripts.segno" }
+  \break
   
+  d8 d |
+  d4. f8 |
+  e4 g8 g |
+  \slashedGrace { f16 (g } a2) |
+  g8 g f (e) |
+  c4 (d ~ |
+  d) \bar "||"
+  \once \override Score.RehearsalMark.font-size = #0.1
+  \mark \markup { \musicglyph #"scripts.segno" }
 }
 
 nhacMauNam = \relative c' {
   \key f \major
   \time 2/4
-  d8 d c |
-  
+  \partial 4. d8 d c |
+  f8. f16 f8 e |
+  d4 bf'8 a |
+  a4. f16 (g) |
+  g4 g8 a |
+  f4. e8 |
+  a2 |
+  r8 a g a |
+  f2 ~ |
+  f8 e g f |
+  a4 e8 e |
+  e8. f16 c8 c |
+  d2 ~ |
+  d4 d8 d |
+  g g bf4 |
+  a4 f16 (g) a8 |
+  g8. a16 e8 f |
+  d2 \bar "|."
 }
 
 nhacMauSau = \relative c' {
   \key f \major
   \time 2/4
   \partial 4 f8 d \bar "||"
-  
+  \once \override Score.RehearsalMark.font-size = #0.1
+  \mark \markup { \musicglyph #"scripts.segno" }
+  d4. c8 |
+  d d f (g) |
+  a4. bf8 |
+  g2 |
+  f8 g f e |
+  d4 <a' f>8 <d bf> |
+  <c a>4 <c g e>8 <c g e> |
+  <d f, d>2 ~ <d f, d>4 \bar "|." \break
+  a16 (bf) a8 |
+  g4. a8 |
+  a a g (f) |
+  e4 f8 d \bar "||"
+  \once \override Score.RehearsalMark.font-size = #0.1
+  \mark \markup { \musicglyph #"scripts.segno" }
 }
 
 nhacMauBay = \relative c' {
   \key bf \major
   \time 2/4
   \partial 4 d8 (f) |
-  
+  g4.
+  <<
+    {
+      bf8 |
+      bf bf a4 |
+      g bf8 (c) |
+      d4 ef8 c |
+      d2 ~ |
+      d4 \bar "|."
+    }
+    {
+      g,8 |
+      g g fs4 |
+      \skip 4 g8 (a) |
+      bf4 g8 g |
+      fs2 ~ |
+      fs4
+    }
+  >>
+  r8 d |
+  g g bf a |
+  a4. c8 |
+  bf d c bf |
+  g2 |
+  fs8 a b! a16 (g) |
+  e!4. e8 |
+  g a fs (e!) |
+  d4 \bar "||"
 }
 
 nhacMauTam = \relative c'' {
   \key f \major
   \time 2/4
   \partial 4 a4 |
+  a2 |
+  g8 (f) d d |
+  d4. c8 |
+  f e e g |
+  f2 |
+  f8 e a a |
+  d,2 |
+  bf'8 a16 (g) bf8 c |
+  c4 r8 bf |
+  g4. g8 |
+  a4. a8 |
+  g a d, d |
+  d4 c8 c16 (d) |
+  a'4. a16 (g) |
+  f4 r8 \bar "|."
   
+  f8 |
+  g g e g |
+  a4 g8 g |
+  c c a (g) |
+  d2 ~ |
+  d8 c g' e |
+  f4 \bar "||"
 }
 
 nhacMauChin = \relative c'' {
   \key c \major
   \time 2/4
-  a8 g bf (a) g f
+  a8 g bf \hide ([a]) g f g a4 f8 a
+  g f g \hide ([f]) e d4 \bar "|" d8 e f \hide ([e]) d f g a4 \bar "|"
+  f8 e c e f e d4 \bar "|" a'8 b!? c c b \hide ([a]) g \bar "|"
+  a4 a8 bf a g f \hide ([e f]) e d4 \bar "||"
+  d8 \hide ([c e f]) d4 \bar "||"
 }
 
 % Lời
@@ -342,31 +467,178 @@ loiMauHai = \lyricmode {
 }
 
 loiMauBa = \lyricmode {
-  
+  Chúa nói: Thầy ban cho các con một điều răn mới
+  là các con hãy thương mến nhau
+  như Thầy đã thương mến các con.
 }
 
 loiMauBon = \lyricmode {
+  Lạy Chúa, Chúa mà rửa chân cho con sao?
+  Chúa Giê -- su đáp:
+  Nếu Thầy không rửa chân con, thì con không được
+  dự phần với Thầy.
+  Chúa đến chỗ Si -- mon Phê -- rô và ông thưa Người rằng:
   
+  Việc Thầy làm bây giờ con không hiểu, nhưng sau sẽ hiểu.
 }
 
 loiMauNam = \lyricmode {
-  
+  Sau khi dùng bữa với các môn đệ,
+  Chúa Giê -- su rửa chân cho các ông và nói:
+  Các con có hiểu việc Ta là Chúa và là Thầy mới vừa làm không?
+  Thầy làm gương cho các con, để các con cũng làm như vậy.
 }
 
 loiMauSau = \lyricmode {
-  
+  Nơi điều này mà mọi người nhận biết các con là môn đệ của Thầy:
+  là các con yêu thương nhau.
+  Chúa Giê -- su nói với các môn đệ;
+  Nơi điều
 }
 
 loiMauBay = \lyricmode {
-  
+  Ở đâu có đức ái chân thật, ở đấy có Thiên Chúa.
+  <<
+    {
+      \set stanza = "1."
+      Tình yêu thương Chúa Ki -- tô quy tụ chúng ta nên một,
+      nào ta hãy reo mừng và hoan hỷ trong Người.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \stanzaReminderOff
+      Hãy luôn tôn kính tin yêu nơi một Chúa muôn muôn đời,
+      và ta hãy tâm thành mà thương mến nhau hoài.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Vậy khi ta đến nơi đây quy tụ với nhau nên một,
+      thì luôn nhớ canh phòng đừng chia rẽ tinh thần.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \stanzaReminderOff
+      \override Lyrics.LyricText.font-shape = #'italic
+      Dẹp bao tranh chấp đôi co, bao là ghét ghen tỵ hiềm.
+      Nguyện xin Chúa Ki -- tô ngự giữa chúng ta hoài.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Nguyện xin cho chúng ta đây mau cùng thánh nhân trên trời
+      được chiêm ngắm muôn đời thần nhan hiển vinh Người.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \stanzaReminderOff
+      Được luôn chiêm ngắm Thiên Nhan, ôi hồng phúc bao tinh tuyền,
+      niềm vui sướng khôn cùng ngàn muôn kiếp.
+      A -- men.
+    }
+  >>
 }
 
 loiMauTam = \lyricmode {
-  
+  Chúa nói: Đây là Mình Thầy bị trao nộp vì các con.
+  Đây là chén Máu Thầy, Máu của Giao Ước mới,
+  Mỗi khi ăn uống các con hãy làm việc này
+  mà tưởng nhớ đến Thầy.
+  <<
+    {
+      \set stanza = "1."
+      Tôi biết lấy gì dâng Chúa
+      để đền đáp những ân lộc Ngài đã tặng ban.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Nâng chén cứu độ dâng tiến,
+      miệng cầu khấn thánh danh Ngài, hòa tiếng ngợi ca.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Tôi vẫn hết lòng tuân giữ lời thề hứa trước dân Ngài,
+      và tín thành luôn.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "4."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Dâng hiến lễ tạ ơn Chúa,
+      miệng thầm nhắc thánh danh Ngài mà khấn nguyện liên.
+    }
+  >>
 }
 
 loiMauChin = \lyricmode {
-  
+  <<
+    {
+      \set stanza = "1."
+      Lưỡi tôi hãy dâng lời ca hát Mình Máu vinh hiển rất nhiệm mầu
+      mà Vua thống trị muôn dân nước
+      Sinh bởi Mẹ trinh khiết cao sang
+      đà nên giá cứu độ trần gian,
+      khi Máu thiêng tuôn đổ chan hòa.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Sinh hạ để ban tặng ta đó,
+      bởi Nữ Trinh thật rất tinh tuyền.
+      Người đã sống thật nơi dương thế,
+      rắc gieo Lời Thiên Chúa nơi nơi.
+      Bằng nghi lễ biết bao kỳ diệu,
+      chung kết bao năm ở gian trần.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Đêm từ giã, trong tiệc sau hết,
+      cùng với anh em lúc chung bàn,
+      và khi đã thực thi chu tất
+      thức ăn được nghi ghi xưa,
+      Người trao hiến chính thân mình đây
+      nên của ăn cho các Tông Đồ.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "4."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Ngôi Lời đã mang phận nhân thế,
+      quyền phép thay vừa phán một lời
+      làm cho bánh thành Mình Con Chúa,
+      khiến rượu thành Máu Đức Ki -- tô.
+      Dù không thấy giác quan nhận ra,
+      đem đức tin kiên định tâm thành.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "5."
+      Đây nhiệm tích vô cùng cao quý,
+      nào chúng ta phục bái tôn thờ,
+      Và dấu tích ngàn xưa lưu ký,
+      phải kính nhường nghi lễ mới đây.
+      Ta hãy lấy đức tin bù lại,
+      nếu giác quan không cảm thấy gì.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "6."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Dâng về Chúa Cha và Con Chúa,
+      lời tán dương mừng chúc vang hòa
+      cùng vinh phúc quyền ăng, danh giá,
+      tựa khói trầm bay tỏa ngát hương,
+      cùng tiến Chúa Thánh Linh từ hậu
+      khúc tán dương cảm tạ suốt đời.
+      A -- men.
+    }
+  >>
 }
 
 % Dàn trang
@@ -468,7 +740,7 @@ notBePhu =
   >>
   \layout {
     indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #0.6
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -496,6 +768,7 @@ notBePhu =
   \layout {
     indent = 15
     \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override LyricHyphen.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -600,7 +873,19 @@ notBePhu =
 
 \markup {
   \vspace #2
-  \bold "Khi kiệu Thánh Thể"
+  \column {
+      \left-align {
+        \line {
+          \bold "Khi kiệu Thánh Thể"
+        }
+        \line {
+          \normal-text \italic "Hát lại 4 câu trên khi cuộc rước còn tiếp diễn."
+        }
+        \line {
+          \normal-text \italic "Khi linh mục đã đặt Mình Thánh lên bàn thờ, hát câu 5 & 6:"
+        }
+      }
+  }
 }
 
 \score {
