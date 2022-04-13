@@ -11,18 +11,87 @@
 }
 
 % Nhạc
-nhacMauMot = \relative c'' {
+nhacMauMot = \relative c' {
   \key c \major
   \time 2/4
-  \partial 8
-  c
+  \partial 4 c8 e16 (f) |
+  d4.
+  <<
+    {
+      e8 |
+      f c g' g |
+      e2 ~ |
+      e8 e e a |
+      a4. b8 |
+      c4 g8 f |
+      e2 ~ |
+      e8 e c g' |
+      g4. g8 |
+      e a g g |
+      c2 ~ |
+      c4 \bar "|."
+    }
+    {
+      c,8 |
+      d a b b |
+      c2 ~ |
+      c8 c c e |
+      f4. g8 |
+      e4 e8 d |
+      c2 ~ |
+      c8 c a b |
+      c4. d8 |
+      c f e d |
+      e2 ~ |
+      e4
+    }
+  >>
+  
 }
 
 nhacMauHai = \relative c'' {
   \key c \major
   \time 2/4
-  \partial 8
-  c
+  \partial 4 g8 e |
+  e4. f8 |
+  d d c (d) |
+  g2 ~ |
+  g8
+  <<
+    {
+      e8 a a |
+      g4 c8 b16 (c) |
+      d4 b8 b |
+      c4. f,8 |
+      e4 d |
+      g4. a8 |
+      f4 f8 g |
+      d4.
+    }
+    {
+      c8 f f |
+      e4 e8 d16 (e) |
+      g4 d8 d |
+      e4. e8 |
+      c4 c |
+      b4. c8 |
+      d4 d8 c |
+      b4.
+    }
+  >>
+  <<
+    {
+      \voiceOne
+      d16 (g) |
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      b,8
+    }
+  >>
+  \oneVoice
+  c2 ~ |
+  c4 \bar "|."
 }
 
 % Lời
@@ -67,11 +136,15 @@ loiMauHai = \lyricmode {
   >>
   \layout {
     indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
   }
+}
+
+\markup {
+  \vspace#2
 }
 
 \score {
@@ -87,7 +160,7 @@ loiMauHai = \lyricmode {
   >>
   \layout {
     indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
