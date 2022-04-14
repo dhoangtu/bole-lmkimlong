@@ -122,40 +122,168 @@ nhacMauHai = \relative c'' {
   \mark \markup { \musicglyph #"scripts.segno" }
 }
 
-nhacMauBa = \relative c' {
-  
+nhacMauBa = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 8 g8 |
+  a c c a |
+  g4. g8|
+  c,4 e8 (f) |
+  d2 ~ |
+  d8 d c e |
+  f8. e16 d8 a' |
+  g g e (f) |
+  a4 g8
+  <<
+    {
+      g8 |
+      c4 a8 a |
+      d8. d16
+    }
+    {
+      f,8 |
+      e4 c8 c |
+      f8. f16
+    }
+  >>
+  <<
+    {
+      \voiceOne
+      d'16 (e) d8 |
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      g,8 g
+    }
+  >>
+  \oneVoice
+  <c e,>2 ~ |
+  <c e,>4 \bar "|."
 }
 
-nhacMauBon = \relative c' {
-  
+nhacMauBon = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 4 g8 e |
+  e f d e |
+  c2 |
+  c8 c e d |
+  f4. e8 |
+  g4 c8 b |
+  b e a, a |
+  a8. a16 a8 c16 (d) |
+  g,4. f8 |
+  e g4 g8 |
+  a4 a16 (c) a8 |
+  g4 f8 a |
+  d,8. d16 d8 e |
+  f4. e8 |
+  a d, d d16 (g) |
+  c,2 ~ |
+  c8 \bar "|."
 }
 
 nhacMauNam = \relative c' {
-  
+  \key c \major
+  \time 2/4
+  \partial 4. d8 e c |
+  f4 e8 d |
+  g2 |
+  r8 e g g |
+  f4 d8 e16 (d) |
+  c2 ~ |
+  c4 \bar "||"
 }
 
-nhacMauSau = \relative c' {
-  
+nhacMauSau = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 4. g8 c, e |
+  f4. f8 |
+  d e c c |
+  a'4 e8 g |
+  f d16 (g) b,8 d |
+  c2 ~ |
+  c4 \bar "||"
 }
 
-nhacMauBay = \relative c' {
-  
+nhacMauBay = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 4. c8 e, (g) |
+  a8. d,16 d8 e |
+  f4 d8 a' |
+  g4. e8 |
+  f b,4 d8 |
+  c2 ~ |
+  c4 \bar "||"
 }
 
-nhacMauTam = \relative c' {
-  
+nhacMauTam = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 4. g8 f (e) |
+  d4. d8 |
+  a' c a (g) |
+  g4 f16 (g) a8 |
+  d,4. a'16 (b) |
+  g8 c4 b8 |
+  c2 ~ |
+  c4 \bar "||"
 }
 
 nhacMauChin = \relative c' {
-  
+  \key c \major
+  \time 2/4
+  \partial 4. c8 d4 |
+  e2 |
+  e8 e a16 (c) a8 |
+  g2 ~ |
+  g8 g g e |
+  a16 (b) a8 g (a) |
+  c2 ~ |
+  c4 \bar "||"
 }
 
-nhacMauMuoi = \relative c' {
-  
+nhacMauMuoi = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 4. c4 c8 |
+  e, a g a |
+  a2 ~ |
+  a8 f g d |
+  d4. a'8 |
+  g f d c |
+  c2 ~ |
+  c4 \bar "||"
 }
 
 nhacMauMuoiMot = \relative c'' {
-  
+  \key c \major
+  \time 2/4
+  \partial 4 g4 |
+  e f8 d |
+  e c a' a |
+  a4. b8 |
+  c d e d16 (c) |
+  g4 r8 e |
+  a a c, (d) |
+  e2 ~ |
+  e8 g
+  <<
+    {
+      e'8 d |
+      d8. d16 e8 d |
+      c2 ~ |
+      c4 \bar "|."
+    }
+    {
+      c8 c |
+      b8. a16 g8 f |
+      e2 ~ |
+      e4
+    }
+  >>
 }
 
 nhacMauMuoiHai = \relative c'' {
@@ -227,12 +355,12 @@ loiMauSau = \lyricmode {
 
 loiMauBay = \lyricmode {
   Chúa để mắt nhìn người công chính
-  và lắng nghe tiếng họ khấn xin.
+  và lắng tai nghe tiếng họ khấn xin.
 }
 
 loiMauTam = \lyricmode {
   Chúa nhậm lời người công chính kêu xin,
-  giải thoát họ khỏi mọi cơn nguy khôn.
+  giải thoát họ khỏi mọi cơn nguy khốn.
 }
 
 loiMauChin = \lyricmode {
@@ -247,7 +375,7 @@ loiMauMuoi = \lyricmode {
 
 loiMauMuoiMot = \lyricmode {
   Trước tiên các con hãy tìm kiếm Nước Chúa và sự công chính của Ngài,
-  Còn tất cả những điều khác Ngài sẽ ban thêm cho các con sau.
+  Còn tất những điều khác Ngài sẽ ban thêm cho các con sau.
 }
 
 loiMauMuoiHai = \lyricmode {
@@ -401,7 +529,6 @@ loiMauMuoiHai = \lyricmode {
   \layout {
     indent = 15
     \override Staff.TimeSignature.transparent = ##t
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override LyricHyphen.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -424,7 +551,6 @@ loiMauMuoiHai = \lyricmode {
   \layout {
     indent = 15
     \override Staff.TimeSignature.transparent = ##t
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -445,7 +571,6 @@ loiMauMuoiHai = \lyricmode {
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
