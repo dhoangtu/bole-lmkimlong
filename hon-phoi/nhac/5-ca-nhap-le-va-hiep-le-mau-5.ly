@@ -9,6 +9,23 @@
   tagline = ##f
 }
 
+% mã nguồn cho những chức năng chưa hỗ trợ trong phiên bản lilypond hiện tại
+% cung cấp bởi cộng đồng lilypond khi gửi email đến lilypond-user@gnu.org
+% Đổi kích thước nốt cho bè phụ
+notBePhu =
+#(define-music-function (font-size music) (number? ly:music?)
+   (for-some-music
+     (lambda (m)
+       (if (music-is-of-type? m 'rhythmic-event)
+           (begin
+             (set! (ly:music-property m 'tweaks)
+                   (cons `(font-size . ,font-size)
+                         (ly:music-property m 'tweaks)))
+             #t)
+           #f))
+     music)
+   music)
+% kết thúc mã nguồn
 
 % Nhạc
 nhacMauMot = \relative c' {
@@ -63,8 +80,46 @@ nhacMauMot = \relative c' {
   c4 \bar "|."
 }
 
-nhacMauHai = \relative c' {
+nhacMauHai = \relative c'' {
+  \key f \major
+  \time 2/4
+  \once \override Score.RehearsalMark.font-size = #0.1
+  \mark \markup { \musicglyph #"scripts.segno" }
+  c4. f,8 |
+  a c g g |
+  a4
+  <<
+    {
+      \voiceOne
+      d,8 d |
+      d (c) f e |
+      f2 ~ |
+      f4
+    }
+    \new Voice = "splitpart" \notBePhu -2 {
+      \voiceTwo
+      f8 f |
+      f (a) a g
+      a2 ~ |
+      a4
+    }
+  >>
+  \oneVoice
+  r8 \bar "|."
   
+  f8 |
+  e4. f8 |
+  d d c d16 (f) |
+  g4 a8 f |
+  f4 f8 a |
+  e e d d |
+  c4. c8 |
+  a' (bf) g bf |
+  c4 bf8 c |
+  g16 (a) bf8 a g |
+  f2 \bar "||"
+  \once \override Score.RehearsalMark.font-size = #0.1
+  \mark \markup { \musicglyph #"scripts.segno" }
 }
 
 nhacMauBa = \relative c' {
@@ -219,10 +274,6 @@ loiMauMuoiHai = \lyricmode {
 
 \markup {
   \vspace #2
-}
-
-\markup {
-  \vspace #2
   \column {
     \left-align {
       \line {
@@ -253,6 +304,10 @@ loiMauMuoiHai = \lyricmode {
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
   }
+}
+
+\markup {
+  \vspace #2
 }
 
 \score {
