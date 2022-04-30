@@ -67,6 +67,7 @@ nhacMauBa = \relative c'' {
   \set Timing.beamExceptions = #'()
   \set Timing.baseMoment = #(ly:make-moment 1/4)
   \set Timing.beatStructure = #'(1 1 1)
+  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \partial 4
   <<
     {
