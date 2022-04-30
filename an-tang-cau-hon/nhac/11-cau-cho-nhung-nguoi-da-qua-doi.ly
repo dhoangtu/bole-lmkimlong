@@ -13,51 +13,207 @@
 
 % Nhạc
 nhacMauMot = \relative c'' {
-  
+  \key bf \major
+  \time 2/4
+  \partial 4 g4 |
+  d'4. c8 |
+  c d c (bf) |
+  a2 |
+  a8 a16 (c) bf8 a |
+  g2 |
+  r8 d d d |
+  d bf' a a |
+  g4. bf16 (c) |
+  d2 ~ |
+  d4 \bar "|."
 }
 
 nhacMauHai = \relative c'' {
-  
+  \key bf \major
+  \time 2/4
+  \partial 4 a4 |
+  bf4. bf8 |
+  a g f g |
+  d4 bf'8 a |
+  g4 g16 (a) f8 |
+  g4 g8 c |
+  bf4. a8 |
+  d2 ~ |
+  d4 \bar "||"
 }
 
 nhacMauBa = \relative c'' {
-  
+  \key c \major
+  \time 2/4
+  \partial 4 g4 |
+  a4. c8 |
+  a a c (a) |
+  g4 a |
+  a4. a8 |
+  g g e e16 (f) |
+  d4 d16 (f) a8 |
+  g4. c8 |
+  b c a (c) |
+  g2 |
+  d8 g f g |
+  a4 e8 d |
+  g4. b,8 |
+  c2 ~ |
+  c4 \bar "|."
 }
 
-nhacMauBon = \relative c'' {
-  
+nhacMauBon = \relative c' {
+  \key c \major
+  \time 2/4
+  \partial 4. e8 d d |
+  c4 f8 f |
+  d4. d8 |
+  a' g g g |
+  g4 c8 c |
+  a4 r8 a |
+  d d b16 (c) d8 |
+  e e, f a |
+  g4. g8 |
+  c g a fs |
+  g4. d8 |
+  c2 ~ |
+  c4 \bar "|."
 }
 
 nhacMauNam = \relative c'' {
-  
+  \key c \major
+  \time 2/4
+  \partial 8 g8 |
+  e f d e |
+  e4 c8 c |
+  f4. d8 |
+  g2 |
+  g8 c b b16 (c) |
+  d4. b8 |
+  b16 (c) e8 e, b' |
+  g4. f8 |
+  a e e f |
+  d4 d8 g |
+  c,2 ~ |
+  c4 \bar "|."
 }
 
-nhacMauSau = \relative c'' {
-  
+nhacMauSau = \relative c' {
+  \key c \major
+  \time 2/4
+  \partial 4 c4 |
+  g'4. e8 |
+  e f d4 ~ |
+  d8 a' g e16 (g) |
+  a4 b8 c |
+  g4. d8 |
+  d f f e |
+  e4 d8 f |
+  e4. d8 |
+  c2 ~ |
+  c4 \bar "|."
 }
 
-nhacMauBay = \relative c'' {
-  
+nhacMauBay = \relative c' {
+  \key c \major
+  \time 2/4
+  \partial 4 c4 |
+  g'4. e8 |
+  f e d d |
+  a'4 r8 g |
+  fs4. g8 |
+  a8. g16 f8 d |
+  \slashedGrace { d16 ( } e2) |
+  r8 a g16 (a) c8 |
+  b4. d8 |
+  e d d e16 (d) |
+  c2 ~ |
+  c4 \bar "|."
 }
 
 nhacMauTam = \relative c'' {
-  
+  \key c \major
+  \time 2/4
+  \partial 4 g4 |
+  g r8 e |
+  c c f f |
+  d4 a'8 a |
+  a4. c8 |
+  a a a c |
+  g2 |
+  d'8. e16 e8 e |
+  e4 d8 b |
+  d4 (c _~ |
+  c) \bar "|."
 }
 
-nhacMauChin = \relative c'' {
-  
+nhacMauChin = \relative c' {
+  \key f \major
+  \time 2/4
+  \partial 8 f8 |
+  c4 c8 a' |
+  a4 bf16 (a) f8 |
+  g4 r8 g16 (a) |
+  f8 bf g c |
+  c2 ~ |
+  c8 bf d d |
+  g,2 ~ |
+  g8 g d c |
+  a'4 bf8 g |
+  f2 ~ |
+  f4 \bar "|."
 }
 
 nhacMauMuoi = \relative c' {
-  
+  \key f \major
+  \time 2/4
+  \partial 4 f8 g |
+  d (f) a16 (bf) a8 |
+  g8. g16 g8 a |
+  a2 |
+  f8 a16 (bf) g8 c |
+  d4 d8 b! |
+  c4 r8 a |
+  d4. c8 |
+  d c bf g |
+  \slashedGrace { g16 ( } a4.) c,8 |
+  g'8. a16 g8 e |
+  f2 ~ |
+  f4 \bar "|."
 }
 
-nhacMauMuoiMot = \relative c'' {
-  
+nhacMauMuoiMot = \relative c' {
+  \key f \major
+  \time 2/4
+  \partial 4 e8 (g) |
+  a2 |
+  a8 g c c |
+  bf4. d8 |
+  g, g e (g) |
+  a4 c,8 c |
+  c4. e16 (f) |
+  e8 d d d |
+  a'4. fs8 |
+  a g f d |
+  c2 ~ |
+  c4 \bar "|."
 }
 
 nhacMauMuoiHai = \relative c' {
-  
+  \key f \major
+  \time 2/4
+  e8 e c f |
+  d4 e16 (d) c8 |
+  f2 |
+  e4. g8 |
+  a4 r8 g |
+  fs g a c |
+  g4 d8 f |
+  d4 r8 d |
+  c e g (a) |
+  g8. g16 a8 g |
+  c2 ~ |
+  c4 \bar "|."
 }
 
 % Lời
@@ -127,7 +283,7 @@ loiMauMuoi = \lyricmode {
 loiMauMuoiMot = \lyricmode {
   Lạy Chúa, xin nhìn xem gương mặt Đấng Ki -- tô của Chúa
   Vì một ngày ở trong tiền đình nhà Chúa
-  thì quý hơn cả ngày ngày.
+  thì quý hơn cả ngàn ngày.
 }
 
 loiMauMuoiHai = \lyricmode {
@@ -407,7 +563,7 @@ loiMauMuoiHai = \lyricmode {
 \markup {
   \vspace #2
   \line {
-    \bold "Mẫu6"
+    \bold "Mẫu 6"
   }
 }
 
