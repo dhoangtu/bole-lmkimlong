@@ -443,72 +443,173 @@ nhacMauBaMuoiMot = \relative c' {
   c8 \bar "||"
 }
 
-nhacMauBaMuoiHai = \relative c' {
-
+nhacMauBaMuoiHai = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 4 g8 c,16 c |
+  d4. d8 |
+  c16 (d) e8 e e |
+  g4. d8 |
+  g b, b (d) |
+  c2 ~ |
+  c8 \bar "||"
 }
 
-nhacMauBaMuoiBa = \relative c' {
-
+nhacMauBaMuoiBa = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 4 g8 c, |
+  c4 e16 (f) e8 |
+  d4 d8 g |
+  g g b, b16 (d) |
+  c2 ~ |
+  c8 \bar "||"
 }
 
 nhacMauBaMuoiBon = \relative c' {
-
+  \key c \major
+  \time 2/4
+  \partial 4 e4 |
+  e4. a8 |
+  g f g g16 (e) |
+  d4 d8 d |
+  e4 e16 (f) d8 |
+  g4. g8 |
+  g2 ~ |
+  g8 \bar "||"
 }
 
 nhacMauBaMuoiLam = \relative c' {
-
+  \key c \major
+  \time 2/4
+  \partial 4 e8 (f) |
+  d4 d8 f |
+  f f f g |
+  d4 e16 (f) d8 |
+  g4. b,8 |
+  c2 ~ |
+  c8 \bar "||"
 }
 
 nhacMauBaMuoiSau = \relative c' {
-
+  \key c \major
+  \time 2/4
+  \partial 4 e8 (f) |
+  d8 c g'4 ~ |
+  g8 g g g |
+  e4 e8 d |
+  d f g d |
+  c2 ~ |
+  c8 \bar "||"
 }
 
-nhacMauBaMuoiBay = \relative c' {
-
+nhacMauBaMuoiBay = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 4 g4 |
+  <<
+    {
+      c2 ~ |
+      c8 e, f g |
+      g4 e8 d |
+      g4. e8 |
+      a4
+    }
+    {
+      e2 ~ |
+      e8 c d d |
+      e4 b8 c |
+      b4. c8 |
+      f4
+    }
+  >>
+  <<
+    {
+      \voiceOne
+      g8 (a)
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      e4
+    }
+  >>
+  \oneVoice
+  <c' e,>2 ~ |
+  <c e,>4 \bar "|."
 }
 
 nhacMauBaMuoiTam = \relative c' {
-
+  \key c \major
+  \time 2/4
+  \partial 4 e8 f |
+  f8. d16 c8 d |
+  e4 e8 f |
+  f d f a |
+  g4 \bar "||"
 }
 
 nhacMauBaMuoiChin = \relative c' {
-
+  \key c \major
+  \time 2/4
+  \partial 4 e8 g |
+  g8. g16 e8 g |
+  a4 a8 d, |
+  d4. d8 |
+  f4 a16 (c) a8 |
+  g4 \bar "||"
 }
 
 nhacMauBonMuoi = \relative c' {
-
+  \key c \major
+  \time 2/4
+  \partial 4 e8 d |
+  e8. e16 e8 c |
+  \slashedGrace { e16 ( } f2) ~ |
+  f8 d a' a |
+  a8. f16 d8 g |
+  g4 \bar "||"
 }
 
 nhacMauBonMuoiMot = \relative c' {
-
+  \key c \major
+  \time 2/4
+  \partial 4 e8 e16 (f) |
+  d8. g16 g8 a |
+  a2 ~ |
+  a8 e f d |
+  g4. b,8 |
+  c4 \bar "||"
 }
 
 nhacMauBonMuoiHai = \relative c' {
-
+  \key c \major
+  \time 2/4
+  \partial 4 e8 e |
+  f8. d16 g8 g |
+  a4 g8 f |
+  d8. d16 g8 b, |
+  c4 \bar "||"
 }
 
 nhacMauBonMuoiBa = \relative c' {
-
+  \key c \major
+  \time 2/4
+  \partial 4 c4 |
+  g'8. e16 e8 e |
+  f4. f8 |
+  d g e16 (d) b8 |
+  c4 \bar "||"
 }
 
-nhacMauBonMuoiBon = \relative c' {
-
-}
-
-nhacMauBonMuoiLam = \relative c' {
-
-}
-
-nhacMauBonMuoisau = \relative c' {
-
-}
-
-nhacMauBonMuoiBay = \relative c' {
-
-}
-
-nhacMauBonMuoiTam = \relative c' {
-
+nhacMauBonMuoiBon = \relative c'' {
+  \key c \major
+  \time 2/4
+  \partial 4 g8 g |
+  g8. f16 a8 d, |
+  d2 ~ |
+  d8 d16 (f) e8 d |
+  c4. e8 |
+  g4 \bar "||"
 }
 
 % Lời
@@ -690,51 +791,42 @@ loiMauBaMuoiSau = \lyricmode {
 }
 
 loiMauBaMuoiBay = \lyricmode {
-  
+  Lạy Chúa, phần của riêng con trong miền đất dành cho kẻ sống
 }
 
 loiMauBaMuoiTam = \lyricmode {
-  
+  Tôi cất tiếng kêu gào lên Chúa,
+  tôi cất tiếng cầu khẩn Chúa thương
 }
 
 loiMauBaMuoiChin = \lyricmode {
-  
+  Lời than vãn thân trình lên Chúa,
+  nỗi ngặt nghèo bày tỏ trước Tôn Nhan.
 }
 
 loiMauBonMuoi = \lyricmode {
-  
+  Khi hồn con tiêu hao mòn mỏi,
+  Ngài đã thấu suốt nẻo đường con đi.
 }
 
 loiMauBonMuoiMot = \lyricmode {
-  
+  Trên quãng đường con đang tiến bước,
+  người ta gài bẫy rình chờ.
 }
 
 loiMauBonMuoiHai = \lyricmode {
-  
+  Xin đưa mắt nhìn qua bên hữu,
+  không kẻ nào nhìn biết gì con.
 }
 
 loiMauBonMuoiBa = \lyricmode {
-  
+  Lạy Chúa, con kêu lên Chúa,
+  Chúa là chốn con ẩn thân.
 }
 
 loiMauBonMuoiBon = \lyricmode {
-  
-}
-
-loiMauBonMuoiLam = \lyricmode {
-  
-}
-
-loiMauBonMuoiSau = \lyricmode {
-  
-}
-
-loiMauBonMuoiBay = \lyricmode {
-  
-}
-
-loiMauBonMuoiTam = \lyricmode {
-  
+  Đưa con ra khỏi chốn ngục tù,
+  để con xưng tụng danh Chúa.
 }
 
 % Dàn trang
@@ -1707,107 +1799,6 @@ loiMauBonMuoiTam = \lyricmode {
           \nhacMauBonMuoiBon
         }
       \new Lyrics \lyricsto beSop \loiMauBonMuoiBon
-    >>
-  >>
-  \layout {
-    indent = 17
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
-    \override Score.SpacingSpanner.uniform-stretching = ##t
-    ragged-last = ##f
-  }
-}
-
-\markup {
-  \vspace #2
-  \column {
-    \left-align {
-      \line {
-        \bold "Di quan ra phần mộ"
-      }
-      \line {
-        \italic "Trong lúc di quan có thể hát:"
-      }
-      \line {
-        \bold "Thánh vịnh 117"
-      }
-    }
-  }
-}
-
-\score {
-  <<
-    \new Staff \with {
-      instrumentName = \markup { \bold "3" }}<<
-        \clef treble
-        \new Voice = beSop {
-          \nhacMauBonMuoiLam
-        }
-      \new Lyrics \lyricsto beSop \loiMauBonMuoiLam
-    >>
-  >>
-  \layout {
-    indent = 17
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
-    \override Score.SpacingSpanner.uniform-stretching = ##t
-    ragged-last = ##f
-  }
-}
-
-\score {
-  <<
-    \new Staff \with {
-      instrumentName = \markup { \bold "3" }}<<
-        \clef treble
-        \new Voice = beSop {
-          \nhacMauBonMuoiSau
-        }
-      \new Lyrics \lyricsto beSop \loiMauBonMuoiSau
-    >>
-  >>
-  \layout {
-    indent = 17
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
-    \override Score.SpacingSpanner.uniform-stretching = ##t
-    ragged-last = ##f
-  }
-}
-
-\score {
-  <<
-    \new Staff \with {
-      instrumentName = \markup { \bold "3" }}<<
-        \clef treble
-        \new Voice = beSop {
-          \nhacMauBonMuoiBay
-        }
-      \new Lyrics \lyricsto beSop \loiMauBonMuoiBay
-    >>
-  >>
-  \layout {
-    indent = 17
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
-    \override Score.SpacingSpanner.uniform-stretching = ##t
-    ragged-last = ##f
-  }
-}
-
-\score {
-  <<
-    \new Staff \with {
-      instrumentName = \markup { \bold "3" }}<<
-        \clef treble
-        \new Voice = beSop {
-          \nhacMauBonMuoiTam
-        }
-      \new Lyrics \lyricsto beSop \loiMauBonMuoiTam
     >>
   >>
   \layout {
