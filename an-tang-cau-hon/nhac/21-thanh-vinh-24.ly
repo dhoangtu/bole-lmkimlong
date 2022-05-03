@@ -10,7 +10,7 @@
 }
 
 % Nhạc
-nhacMauHaiMuoiBon = \relative c' {
+nhacMauHaiMot = \relative c' {
   \key f \major
   \time 2/4
   \partial 4 f8 (g) |
@@ -30,7 +30,7 @@ nhacMauHaiMuoiBon = \relative c' {
   f4 \bar "||"
 }
 
-nhacMauHaiMuoiLam = \relative c' {
+nhacMauHaiHai = \relative c' {
   \key f \major
   \time 2/4
   \partial 4 c4 |
@@ -47,7 +47,7 @@ nhacMauHaiMuoiLam = \relative c' {
   f4 \bar "||"
 }
 
-nhacMauHaiMuoiSau = \relative c' {
+nhacMauHaiBa = \relative c' {
   \key f \major
   \time 2/4
   \partial 4 f8 g16 (f) |
@@ -67,7 +67,7 @@ nhacMauHaiMuoiSau = \relative c' {
   c4 \bar "||"
 }
 
-nhacMauHaiMuoiBay = \relative c' {
+nhacMauHaiBon = \relative c' {
   \key f \major
   \time 2/4
   \partial 4 c4 |
@@ -89,7 +89,7 @@ nhacMauHaiMuoiBay = \relative c' {
   >>
 }
 
-nhacMauHaiMuoiTam = \relative c' {
+nhacMauHaiNam = \relative c' {
   \key f \major
   \time 2/4
   \partial 4 c4 |
@@ -114,32 +114,32 @@ nhacMauHaiMuoiTam = \relative c' {
 }
 
 % Lời
-loiMauHaiMuoiBon = \lyricmode {
+loiMauHaiMot = \lyricmode {
   Lạy Chúa xin nhớ lại lượng từ bi
   và lòng thương xót của Chúa đã có từ muôn đời.
   Lạy Chúa xin nhớ đến con theo lòng thương xót Chúa
   vì Chúa thật nhân lành.
 }
 
-loiMauHaiMuoiLam = \lyricmode {
+loiMauHaiHai = \lyricmode {
   Lòng con se thắt, xin nới ra cho,
   xin kéo con khỏi cơn quẫn bách.
   Xin nhìn phận con lầm than khốn khổ
   và thương tha thứ mọi tội lỗi con.
 }
 
-loiMauHaiMuoiSau = \lyricmode {
+loiMauHaiBa = \lyricmode {
   Xin giữ gìn mạng con và thương giải thoát,
   Chớ để con xấu hổ vì con tín thác nơi Ngài.
   Ước chi lòng trong sạch và ngay thẳng giữ gìn con
   vì con trọn niềm trông cậy ở Chúa.
 }
 
-loiMauHaiMuoiBay = \lyricmode {
+loiMauHaiBon = \lyricmode {
   Lạy Chúa, con nâng tâm hồn lên cùng Chúa.
 }
 
-loiMauHaiMuoiTam = \lyricmode {
+loiMauHaiNam = \lyricmode {
   Lạy Chúa, ai trông cậy Chúa sẽ chẳng hổ ngươi.
 }
 
@@ -159,21 +159,15 @@ loiMauHaiMuoiTam = \lyricmode {
   print-page-number = ##f
 }
 
-\markup {
-  \line {
-    \bold "Thánh vịnh 24"
-  }
-}
-
 \score {
   <<
     \new Staff \with {
       instrumentName = \markup { \bold "1" }}<<
         \clef treble
         \new Voice = beSop {
-          \nhacMauHaiMuoiBon
+          \nhacMauHaiMot
         }
-      \new Lyrics \lyricsto beSop \loiMauHaiMuoiBon
+      \new Lyrics \lyricsto beSop \loiMauHaiMot
     >>
   >>
   \layout {
@@ -191,9 +185,9 @@ loiMauHaiMuoiTam = \lyricmode {
       instrumentName = \markup { \bold "2" }}<<
         \clef treble
         \new Voice = beSop {
-          \nhacMauHaiMuoiLam
+          \nhacMauHaiHai
         }
-      \new Lyrics \lyricsto beSop \loiMauHaiMuoiLam
+      \new Lyrics \lyricsto beSop \loiMauHaiHai
     >>
   >>
   \layout {
@@ -212,9 +206,9 @@ loiMauHaiMuoiTam = \lyricmode {
       instrumentName = \markup { \bold "3" }}<<
         \clef treble
         \new Voice = beSop {
-          \nhacMauHaiMuoiSau
+          \nhacMauHaiBa
         }
-      \new Lyrics \lyricsto beSop \loiMauHaiMuoiSau
+      \new Lyrics \lyricsto beSop \loiMauHaiBa
     >>
   >>
   \layout {
@@ -233,9 +227,9 @@ loiMauHaiMuoiTam = \lyricmode {
       instrumentName = \markup { \bold "Đáp" }}<<
         \clef treble
         \new Voice = beSop {
-          \nhacMauHaiMuoiBay
+          \nhacMauHaiBon
         }
-      \new Lyrics \lyricsto beSop \loiMauHaiMuoiBay
+      \new Lyrics \lyricsto beSop \loiMauHaiBon
     >>
   >>
   \layout {
@@ -254,9 +248,9 @@ loiMauHaiMuoiTam = \lyricmode {
       instrumentName = \markup { \bold "hoặc" }}<<
         \clef treble
         \new Voice = beSop {
-          \nhacMauHaiMuoiTam
+          \nhacMauHaiNam
         }
-      \new Lyrics \lyricsto beSop \loiMauHaiMuoiTam
+      \new Lyrics \lyricsto beSop \loiMauHaiNam
     >>
   >>
   \layout {
