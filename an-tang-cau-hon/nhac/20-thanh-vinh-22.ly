@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  title = "Nghi Thức An Táng"
+  title = "Thánh Vịnh 22"
   composer = "Lm. Kim Long"
   %arranger = " "
   tagline = ##f
