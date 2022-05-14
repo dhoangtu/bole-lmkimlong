@@ -4,6 +4,7 @@
 
 \header {
   title = "Thánh Vịnh 50"
+  subsubtitle = \markup { \normal-text \italic "Hát khi rước xác đến nhà thờ" }
   composer = "Lm. Kim Long"
   %arranger = " "
   tagline = ##f
