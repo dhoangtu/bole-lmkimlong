@@ -4,9 +4,8 @@
 \include "gregorian.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Kinh Tiền Tụng Thánh Thể" }
+  title = "Kinh Tiền Tụng Thánh Thể"
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -51,17 +50,16 @@ loiPhienKhucSop = \lyrics {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
 	 		       "Deja Vu Serif Condensed"
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 2
 }
 
 TongNhip = {
@@ -91,6 +89,5 @@ TongNhip = {
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
     ragged-last = ##f
-    indent = 10
   } 
 }

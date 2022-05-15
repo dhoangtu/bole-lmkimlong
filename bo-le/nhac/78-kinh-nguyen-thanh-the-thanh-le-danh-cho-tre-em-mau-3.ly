@@ -3,11 +3,8 @@
 \include "english.ly"
 
 \header {
-  %title = "Kinh Nguyện Thánh Thể"
-  %subtitle = \markup { \huge \bold "Thánh Lễ Dành Cho Trẻ Em" }
   subsubtitle = \markup { \large \bold "Mẫu 3" }
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -73,10 +70,10 @@ loiMauHai = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -84,6 +81,7 @@ loiMauHai = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
+  page-count = 2
 }
 
 \markup {
@@ -104,9 +102,8 @@ loiMauHai = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    %\override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.defaultBarType = ""
@@ -117,14 +114,22 @@ loiMauHai = \lyricmode {
 
 \markup {
   \column {
+    \vspace #1
     \line { \bold "Thánh! Thánh! Thánh!" }
     \line { "có thể sử dụng như ở Mẫu 2" }
-    \vspace #2
+    \vspace #1
     \line { \bold "Tung hô sau Truyền Phép" }
     \line { "có thể dùng 1 trong 4 cách ở Mẫu 1" }
-    \vspace #2
+  }
+}
+
+\pageBreak
+
+\markup {
+  \column {
     \line { \bold "Linh mục tiếp tục đọc các lời nguyện," }
     \line { \bold "sau mỗi lời, Giáo Dân tung hô:" }
+    \vspace #1
   }
 }
 
@@ -139,12 +144,11 @@ loiMauHai = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #1.5
     ragged-last = ##f
   }
 }

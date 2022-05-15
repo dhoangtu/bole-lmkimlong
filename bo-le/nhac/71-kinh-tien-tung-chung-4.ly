@@ -4,9 +4,8 @@
 \include "gregorian.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Kinh Tiền Tụng Chung (IV)" }
+  title = "Kinh Tiền Tụng Chung (IV)"
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -38,17 +37,16 @@ loiPhienKhucSop = \lyrics {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
 	 		       "Deja Vu Serif Condensed"
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 1
 }
 
 TongNhip = {
@@ -71,13 +69,12 @@ TongNhip = {
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #1.2
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override Score.SpacingSpanner.packed-spacing = ##f
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
     ragged-last = ##f
-    indent = 10
   } 
 }

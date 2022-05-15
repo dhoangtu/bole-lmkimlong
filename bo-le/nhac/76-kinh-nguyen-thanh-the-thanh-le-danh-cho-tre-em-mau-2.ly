@@ -3,11 +3,8 @@
 \include "english.ly"
 
 \header {
-  %title = "Kinh Nguyện Thánh Thể"
-  %subtitle = \markup { \huge \bold "Thánh Lễ Dành Cho Trẻ Em" }
   subsubtitle = \markup { \large \bold "Mẫu 2" }
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -347,10 +344,10 @@ loiMauSau = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -377,7 +374,6 @@ loiMauSau = \lyricmode {
   >>
   \layout {
     indent = 15
-    %\override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.8
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -388,7 +384,7 @@ loiMauSau = \lyricmode {
 }
 
 \markup {
-  \vspace #2
+  %\vspace #2
   \bold "Linh mục đọc tiếp và kết: như con cái"
 }
 
@@ -415,7 +411,7 @@ loiMauSau = \lyricmode {
 
 \markup {
   \column {
-    \vspace #2
+    %\vspace #2
     \line { \bold "Linh mục đọc tiếp phần Truyền Phép." }
     \line { \bold "Tung hô sau Truyền Phép: như Mẫu 1" }
     \vspace #2
@@ -444,7 +440,7 @@ loiMauSau = \lyricmode {
 }
 
 \markup {
-  \vspace #2
+  %\vspace #2
   \bold "Giáo dân tung hô:"
 }
 
@@ -496,7 +492,7 @@ loiMauSau = \lyricmode {
 
 \markup {
   \column {
-    \vspace #2
+    %\vspace #2
     \line { \bold "Linh mục đọc tiếp 3 lời nguyện," }
     \line { \bold "sau mỗi lời, Giáo dân tung hô:" }
   }
