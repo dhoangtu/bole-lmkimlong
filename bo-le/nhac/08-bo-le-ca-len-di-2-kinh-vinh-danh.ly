@@ -5,7 +5,6 @@
 \header {
   subtitle = \markup { \huge \bold "Kinh Vinh Danh" }
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -93,7 +92,7 @@ nhacPhienKhucSop = \relative c'' {
   d2 |
   e4 f |
   c2 ~ |
-  c4 d8 (e) |
+  c4 d8 _(e) |
   f2 ~ |
   f4 \stemDown e |
   f2 ~ |
@@ -222,11 +221,10 @@ loiPhienKhucSop = \lyrics {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
-  indent = #0
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
 	 		       "Deja Vu Serif Condensed"
@@ -259,7 +257,6 @@ notBePhu =
 \score {
   \new ChoirStaff <<
     \new Staff \with {
-        \consists "Merge_rests_engraver"
         printPartCombineTexts = ##f
       }
       <<
@@ -271,9 +268,10 @@ notBePhu =
       >>
   >>
   \layout {
+    indent = #10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override LyricHyphen.minimum-distance = #1
+    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   } 
