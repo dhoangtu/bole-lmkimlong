@@ -6,17 +6,17 @@
   title = \markup \fill-line {
     \center-column {
       \box \pad-markup #2 "Bộ Lễ CA LÊN ĐI 5"
-      \null \null \null
+      \null
     }
   }
   subtitle = \markup { \huge \bold "Kinh Thương Xót" }
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
 % Nhạc
 nhacDiepKhucCongDoan = \relative c' {
+  \autoPageBreaksOff
   \partial 4 r4 |
   R2.
   r2 e4 |
@@ -27,6 +27,7 @@ nhacDiepKhucCongDoan = \relative c' {
   a4. a8 c a |
   g2. |
   R2.
+  \pageBreak
   r4 d'8 e d4 ~ |
   d8 d e4 d |
   c2. ~ |
@@ -134,19 +135,16 @@ loiDiepKhucTenor = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
-  indent = #0
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
 	 		       "Deja Vu Serif Condensed"
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  %system-system-spacing = #'((basic-distance . 0.1) (padding . 2))
-  ragged-bottom = ##f
 }
 
 TongNhip = {
@@ -185,7 +183,6 @@ notBePhu =
     instrumentName = \markup { \bold "Ca đoàn" }
   }<<
     \new Staff  \with {
-        \consists "Merge_rests_engraver"
         printPartCombineTexts = ##f
       }
       <<
@@ -196,7 +193,6 @@ notBePhu =
       \new Lyrics \lyricsto beSop \loiDiepKhucSop
       >>
     \new Staff  \with {
-        \consists "Merge_rests_engraver"
         printPartCombineTexts = ##f
       }
       <<
@@ -210,13 +206,13 @@ notBePhu =
     >>
   >>
   \layout {
-    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \context {
       \Staff \RemoveEmptyStaves
       \override VerticalAxisGroup.remove-first = ##t
     }
-    indent = 30
+    indent = 25
   }
 }

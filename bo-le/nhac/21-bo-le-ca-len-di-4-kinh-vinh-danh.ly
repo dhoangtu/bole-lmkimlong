@@ -320,7 +320,7 @@ loiDiepKhucBas = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  systems-per-page = 4
+  %systems-per-page = 4
 }
 
 TongNhip = {

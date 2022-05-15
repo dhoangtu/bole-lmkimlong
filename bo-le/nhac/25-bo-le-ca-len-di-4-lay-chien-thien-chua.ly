@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Lạy Chiên Thiên Chúa" }
+  title = "Lạy Chiên Thiên Chúa"
   composer = "Lm. Kim Long"
   tagline = ##f
 }
@@ -129,17 +129,16 @@ loiDiepKhucBas = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 5\mm
-  bottom-margin = 5\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
 	 		       "Deja Vu Serif Condensed"
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
-  print-page-number = ##f
   page-count = 1
 }
 
@@ -167,7 +166,7 @@ TongNhip = {
     >>
   >>
   \layout {
-    \override Lyrics.LyricSpace.minimum-distance = #0.45
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
