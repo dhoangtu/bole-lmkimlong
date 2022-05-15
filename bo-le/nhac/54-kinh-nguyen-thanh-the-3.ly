@@ -3,9 +3,8 @@
 \include "english.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Kinh Nguyện Thánh Thể III" }
+  title = "Kinh Nguyện Thánh Thể III"
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -177,10 +176,10 @@ loiMauSau = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -188,8 +187,6 @@ loiMauSau = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  %page-count = 6
-  %systems-per-page = 9
 }
 
 TongNhip = {
@@ -255,7 +252,6 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #0.5
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
     ragged-last = ##f
@@ -280,13 +276,13 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #0.5
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
   }
 }
 
 \markup {
+  \vspace #3
   \column {
     \line { \bold "Cộng đoàn có thể Tung hô như KNTT II" }
     \line { \bold "hoặc theo cung điệu trang 47" }
@@ -311,7 +307,7 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #0.5
+    \override LyricHyphen.minimum-distance = #2
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
   }
@@ -335,7 +331,7 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #0.5
+    \override LyricHyphen.minimum-distance = #2
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
     ragged-last = ##f
@@ -361,7 +357,7 @@ notBePhu =
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #0.5
+    \override LyricHyphen.minimum-distance = #2
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
   }

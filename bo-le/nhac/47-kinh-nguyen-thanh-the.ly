@@ -3,9 +3,8 @@
 \include "english.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Kinh Nguyện Thánh Thể" }
+  title = "Kinh Nguyện Thánh Thể"
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -226,10 +225,10 @@ loiMauSau = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -237,7 +236,7 @@ loiMauSau = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 2
+  %page-count = 2
 }
 
 TongNhip = {
@@ -278,8 +277,8 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 18
-    \override Lyrics.LyricSpace.minimum-distance = #0.45
+    indent = 30
+    \override Lyrics.LyricSpace.minimum-distance = #0.6
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.defaultBarType = ""
@@ -287,14 +286,14 @@ notBePhu =
   }
 }
 
-%\markup { \vspace #0.5 }
+\markup { \vspace #0.5 }
 
 \markup {
   \bold "Lời tung hô Tưởng Niệm"
   \normal-text \italic "(sau Truyền Phép)"
 }
 
-%\markup { \vspace #0.5 }
+\markup { \vspace #0.5 }
 
 \score {
   <<
@@ -313,11 +312,10 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 14
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 30
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #0.5
   }
 }
 
@@ -340,11 +338,10 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 14
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 30
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #0.5
   }
 }
 
@@ -365,11 +362,10 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 14
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 30
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #0.5
   }
 }
 
@@ -390,8 +386,8 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 22
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 30
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #0.5
@@ -420,9 +416,9 @@ notBePhu =
   \layout {
     indent = 30
     ragged-right = ##f
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #0.5
+    \override LyricHyphen.minimum-distance = #2
   }
 }

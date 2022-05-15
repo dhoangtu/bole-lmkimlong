@@ -5,7 +5,6 @@
 \header {
   subtitle = \markup { \huge \bold "Nghi Thức Đầu Lễ" }
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -85,10 +84,10 @@ loiMauBon = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -131,7 +130,7 @@ notBePhu =
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #1
@@ -157,9 +156,9 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 15
+    indent = 30
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #1.5
@@ -181,12 +180,12 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 15
+    indent = 30
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #1.5
+    \override LyricHyphen.minimum-distance = #2
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
     ragged-last = ##f
@@ -205,9 +204,9 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 15
+    indent = 30
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.defaultBarType = ""
@@ -220,7 +219,6 @@ notBePhu =
   <<
     \new Staff \with {
       instrumentName = \markup {
-         
         \column {
           \line { \bold "Khi Chủ tế" }
           \line { \bold "là giám mục" }
@@ -235,9 +233,9 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 28
+    indent = 30
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \set Score.defaultBarType = ""

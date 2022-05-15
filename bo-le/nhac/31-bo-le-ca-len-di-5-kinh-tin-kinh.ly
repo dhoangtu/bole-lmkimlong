@@ -5,7 +5,6 @@
 \header {
   subtitle = \markup { \huge \bold "Kinh Tin Kính" }
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -605,10 +604,10 @@ loiDiepKhucBas = \lyricmode {
 
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -616,7 +615,7 @@ loiDiepKhucBas = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 14
+  %page-count = 14
 }
 
 
@@ -658,6 +657,7 @@ TongNhip = {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     ragged-right = ##f
+    indent = #10
   }
 }
 
