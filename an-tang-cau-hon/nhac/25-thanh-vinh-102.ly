@@ -5,7 +5,6 @@
 \header {
   title = "Thánh Vịnh 102"
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -117,10 +116,10 @@ loiMauBon = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -128,13 +127,12 @@ loiMauBon = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 1
 }
 
 \score {
   <<
     \new Staff \with {
-      instrumentName = \markup { \bold "Đáp" }}<<
+      instrumentName = \markup { \bold "Đáp" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauMot
@@ -144,7 +142,7 @@ loiMauBon = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -154,7 +152,7 @@ loiMauBon = \lyricmode {
 \score {
   <<
     \new Staff \with {
-      instrumentName = \markup { \bold "1" }}<<
+      instrumentName = \markup { \bold "1" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauHai
@@ -163,9 +161,8 @@ loiMauBon = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
-    %\override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -175,7 +172,7 @@ loiMauBon = \lyricmode {
 \score {
   <<
     \new Staff \with {
-      instrumentName = \markup { \bold "2" }}<<
+      instrumentName = \markup { \bold "2" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauBa
@@ -184,9 +181,8 @@ loiMauBon = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
-    %\override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -196,7 +192,7 @@ loiMauBon = \lyricmode {
 \score {
   <<
     \new Staff \with {
-      instrumentName = \markup { \bold "3" }}<<
+      instrumentName = \markup { \bold "3" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauBon
@@ -205,9 +201,8 @@ loiMauBon = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
-    %\override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f

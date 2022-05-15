@@ -459,7 +459,7 @@ nhacMauHaiMuoiBay = \relative c' {
   a'8. a16 bf8 g |
   a4 f8 f |
   g a d, d16 (f) |
-  g2 |
+  g2 ~ |
   g8 f bf bf |
   c,8. e16 e8 g |
   f2 ~ |
@@ -638,10 +638,10 @@ loiMauHaiMuoiBay = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -670,9 +670,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
-    \override LyricHyphen.minimum-distance = #1.5
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -691,12 +691,12 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #1.5
+    \override LyricHyphen.minimum-distance = #2
     ragged-last = ##f
   }
 }
@@ -713,9 +713,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -734,10 +734,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override LyricHyphen.minimum-distance = #1
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -756,9 +755,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -777,9 +776,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -798,9 +797,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 20
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -819,10 +818,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override LyricHyphen.minimum-distance = #1.5
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -841,9 +839,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -862,9 +860,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -883,9 +881,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -904,9 +902,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -925,9 +923,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 20
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -946,9 +944,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -967,7 +965,7 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -988,7 +986,7 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -1015,9 +1013,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1036,9 +1034,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1057,9 +1055,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1078,9 +1076,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 20
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1099,9 +1097,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1120,9 +1118,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1141,9 +1139,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1168,8 +1166,8 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1188,9 +1186,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1209,9 +1207,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1230,9 +1228,9 @@ loiMauHaiMuoiBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 17
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
