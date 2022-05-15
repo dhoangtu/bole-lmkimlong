@@ -5,7 +5,6 @@
 \header {
   %title = "Nghi Thức An Táng"
   %composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -58,6 +57,7 @@ nhacMauMot = \relative c' {
 nhacMauHai = \relative c'' {
   \key c \major
   \time 2/4
+  \autoPageBreaksOff
   \partial 4. b8 c b |
   b4. c8 
   <<
@@ -160,6 +160,7 @@ nhacMauBon = \relative c'' {
 nhacMauNam = \relative c' {
   \key c \major
   \time 2/4
+  %\autoPageBreaksOff
   \partial 8 e8 |
   e d f16 (e) d8 |
   c4 f8 f |
@@ -403,10 +404,10 @@ loiMauBay = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -414,6 +415,7 @@ loiMauBay = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
+  %page-count = 3
 }
 
 \markup {
@@ -447,8 +449,8 @@ loiMauBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -466,9 +468,9 @@ loiMauBay = \lyricmode {
     >>
   >>
   \layout {
-    %indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #1.5
@@ -487,9 +489,9 @@ loiMauBay = \lyricmode {
     >>
   >>
   \layout {
-    %indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -528,10 +530,10 @@ loiMauBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override LyricHyphen.minimum-distance = #1
+    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -550,9 +552,10 @@ loiMauBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -571,9 +574,9 @@ loiMauBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -605,9 +608,9 @@ loiMauBay = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f

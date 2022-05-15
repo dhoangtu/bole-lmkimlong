@@ -482,7 +482,7 @@ loiMauBay = \lyricmode {
   hãy đến lãnh nhận Nước Trời đã chuẩn bị cho các ngươi
   từ khi tạo dựng vũ trụ.”
   trụ.”
-  Al -- le -- lu -- ai.
+  Al -- le -- lu -- ia.
 }
 
 loiMauTam = \lyricmode {
