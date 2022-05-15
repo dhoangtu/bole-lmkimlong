@@ -73,7 +73,7 @@ nhacMauMot = \relative c'' {
   <<
     {
       \voiceOne
-      a'16 (b) a8
+      a'16 _(b) a8
     }
     \new Voice = "splitpart" {
       \voiceTwo
@@ -142,7 +142,7 @@ nhacMauBa = \relative c' {
   <<
     {
       \voiceOne
-      e'8 (d)
+      e'8 _(d)
     }
     \new Voice = "splitpart" {
       \voiceTwo
@@ -198,10 +198,10 @@ loiMauBon = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -212,7 +212,7 @@ loiMauBon = \lyricmode {
 }
 
 \markup {
-  \vspace #2
+  \vspace #1
   \column {
     \left-align {
       \line {
@@ -238,7 +238,7 @@ loiMauBon = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -259,16 +259,15 @@ loiMauBon = \lyricmode {
   \layout {
     indent = 17
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #1.5
     ragged-last = ##f
   }
 }
 
 \markup {
-  \vspace #2
+  \vspace #1
   \line {
     \bold "Mẫu 2"
   }
@@ -287,7 +286,7 @@ loiMauBon = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -307,8 +306,7 @@ loiMauBon = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override LyricHyphen.minimum-distance = #1
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
