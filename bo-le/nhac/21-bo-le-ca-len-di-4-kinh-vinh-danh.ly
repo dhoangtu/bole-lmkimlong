@@ -5,17 +5,19 @@
 \header {
   subtitle = \markup { \huge \bold "Kinh Vinh Danh" }
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
 % Nhạc điệp khúc
-nhacDiepKhucSop = \relative c'' {
+nhacXuong = \relative c'' {
   \override Score.BarLine.break-visibility = ##(#f #f #f)
-  \partial 8 c8 c c d4 c8 d ([c]) a
-  \partial 4 g4 \bar "||" \break
-  \override Score.BarLine.break-visibility = ##(#t #t #t)
-  
+  \autoBeamOff
+  c8 c c d4 c8 d ([c]) a g4
+  \override Score.BarLine.break-visibility = ##(#t #f #f)
+  \bar "||"
+}
+
+nhacDiepKhucSop = \relative c'' {
   g8 g a b |
   c4. b8 |
   a4 c |
@@ -86,9 +88,6 @@ nhacDiepKhucSop = \relative c'' {
 }
 
 nhacDiepKhucAlto = \relative c'' {
-  r8
-  R2*2
-  r4
   g8 g f f |
   e4. g8 |
   f4 e8 (a) |
@@ -162,9 +161,6 @@ nhacDiepKhucAlto = \relative c'' {
 }
 
 nhacDiepKhucBas = \relative c' {
-  r8
-  R2*2
-  r4
   g8 e d d |
   c4. e8 |
   f4 a |
@@ -243,10 +239,12 @@ nhacDiepKhucBas = \relative c' {
 }
 
 % Lời điệp khúc
-loiDiepKhucSop = \lyricmode {
+loiXuong = \lyricmode {
   \override Lyrics.LyricText.font-series = #'bold
   Vinh danh Thiên Chúa trên các tầng trời
-  \revert Lyrics.LyricText.font-series
+}
+
+loiDiepKhucSop = \lyricmode {
   Và bình an dưới thế cho người thiện tâm.
   Chúng con tôn vinh Chúa,
   Chúng con cảm tạ Chúa vì vinh quang cao cả Chúa.
@@ -312,25 +310,43 @@ loiDiepKhucBas = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
-  indent = #0
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
 	 		       "Deja Vu Serif Condensed"
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  system-system-spacing = #'((basic-distance . 0.1) (padding . 4.5))
-  page-count = 5
+  systems-per-page = 4
 }
 
 TongNhip = {
   \key c \major \time 2/4
   \set Timing.beamExceptions = #'()
   \set Timing.baseMoment = #(ly:make-moment 1/4)
+}
+
+\score {
+  \new ChoirStaff <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \TongNhip \nhacXuong
+        }
+        \new Lyrics \lyricsto beSop \loiXuong
+    >>
+  >>
+  \layout {
+    indent = #10
+    ragged-right = ##f
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+  }
 }
 
 \score {
@@ -358,12 +374,9 @@ TongNhip = {
     >>
   >>
   \layout {
-    \context {
-      \Staff \RemoveEmptyStaves
-      \override VerticalAxisGroup.remove-first = ##t
-    }
+    indent = #0
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }

@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Thánh" }
+  title = "Thánh"
   composer = "Lm. Kim Long"
   tagline = ##f
 }
@@ -112,7 +112,6 @@ TongNhip = {
 \score {
   \new ChoirStaff <<
     \new Staff \with {
-      \consists "Merge_rests_engraver"
       printPartCombineTexts = ##f
     }
     <<
