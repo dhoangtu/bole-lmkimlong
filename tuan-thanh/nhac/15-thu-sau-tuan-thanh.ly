@@ -5,7 +5,6 @@
 \header {
   title = "Thứ Sáu Tuần Thánh"
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -186,7 +185,7 @@ nhacMauBon = \relative c'' {
       f4
     }
   >>
-  \break
+  %\break
   
   d8 (f) |
   g4. f8 |
@@ -197,14 +196,14 @@ nhacMauBon = \relative c'' {
   f4. g8 |
   a a a, (c) |
   d2 ~ |
-  \partial 4 d4 \bar "|." \break
+  \partial 4 d4 \bar "|." %\break
   
   f8 (e) d a' |
   a2 |
   bf8 bf4 g8 |
   e2 |
   a8 a4 a8 |
-  d,4 \bar "|." \break
+  d,4 \bar "|." %\break
   
   d8 (f) |
   g2 |
@@ -305,7 +304,7 @@ nhacMauChin = \relative c' {
   e4 e8 g |
   g a f e |
   d2 ~ |
-  d4 \bar "|."
+  d4 \bar "|." \break
   
   e8 f |
   e4 a,8 f' |
@@ -574,10 +573,10 @@ loiMauMuoi = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -585,7 +584,7 @@ loiMauMuoi = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  %page-count = 9
+  page-count = 6
 }
 
 \markup {
@@ -605,7 +604,7 @@ loiMauMuoi = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.6
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -643,7 +642,7 @@ loiMauMuoi = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -703,8 +702,8 @@ loiMauMuoi = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -728,10 +727,9 @@ loiMauMuoi = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
-    \override LyricHyphen.minimum-distance = #1
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -754,9 +752,9 @@ loiMauMuoi = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -779,9 +777,9 @@ loiMauMuoi = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -805,8 +803,8 @@ loiMauMuoi = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -839,7 +837,7 @@ loiMauMuoi = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.8
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -863,8 +861,8 @@ loiMauMuoi = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f

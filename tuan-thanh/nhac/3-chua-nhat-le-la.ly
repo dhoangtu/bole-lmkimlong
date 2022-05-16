@@ -5,7 +5,6 @@
 \header {
   title = "Chúa Nhật Lễ Lá"
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -215,6 +214,7 @@ nhacMauHai = \relative c'' {
 nhacMauBa = \relative c'' {
   \key f \major
   \time 2/4
+  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \partial 8 a8 |
   d, (e) f (g) |
   a4. g8 |
@@ -499,7 +499,7 @@ nhacMauBay = \relative c'' {
   bf (a) g g |
   a4. f8 |
   e a a, (c) |
-  d2 \bar "|."
+  d2 \bar "|." \break
   
   f8 (e) d a' |
   a4. a8 |
@@ -578,7 +578,7 @@ nhacMauChin = \relative c'' {
 
 % Lời
 loiMauMot = \lyricmode {
-  Hoan hô Con Vua Đa -- bít,
+  Hoan hô Con Vua Đa -- vít,
   chúc tụng Vua Is -- ra -- el, Đấng ngự đến nhân danh Chúa.
   Hoan hô (nào) hoan hô trên các tầng trời.
   <<
@@ -619,7 +619,7 @@ loiMauMot = \lyricmode {
 loiMauHai = \lyricmode {
   Các trẻ em Do Thái trải áo trên đường
   và chúc tụng rằng: Hoan hô Con Vua Đa -- vít,
-  chúc tụng Đấng ngự đến nhân danh Chúa.
+  chúc tụng Đấng ngự đến nhân danh "Chúa. "
   <<
     {
       \set stanza = "1."
@@ -881,10 +881,10 @@ loiMauChin = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -892,7 +892,7 @@ loiMauChin = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 9
+  %page-count = 7
 }
 
 \markup {
@@ -911,8 +911,9 @@ loiMauChin = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override LyricHyphen.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -936,7 +937,7 @@ loiMauChin = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -962,8 +963,8 @@ loiMauChin = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -972,9 +973,11 @@ loiMauChin = \lyricmode {
 
 \markup {
   \vspace #2
-  "Hoặc" \bold "Ca Vãn" \normal-text "sau đây:"
 }
 
+\markup {
+  "Hoặc" \bold "Ca Vãn" \normal-text "sau đây:"
+}
 
 \score {
   <<
@@ -987,13 +990,15 @@ loiMauChin = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
   }
 }
+
+\pageBreak
 
 \markup {
   \vspace #2
@@ -1011,8 +1016,9 @@ loiMauChin = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    \override LyricHyphen.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1035,8 +1041,8 @@ loiMauChin = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1060,8 +1066,8 @@ loiMauChin = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1084,8 +1090,8 @@ loiMauChin = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #1.5
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1108,7 +1114,7 @@ loiMauChin = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

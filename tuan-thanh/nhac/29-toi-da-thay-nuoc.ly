@@ -6,7 +6,6 @@
   title = "Tôi đã thấy nước"
   subsubtitle = "(hát khi rẩy nước thánh)"
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
 
@@ -148,7 +147,7 @@ nhacMauMot = \relative c'' {
   <a e c>4 |
   <a fs d>8 <a fs d> <d fs, c>4 |
   <g, d b>2 ~ |
-  <g d b>4 r8 \bar "|."
+  <g d b>4 r8 \bar "|." \break
   
   d'8 |
   b (a) g (a) |
@@ -200,10 +199,10 @@ loiMauMot = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -224,7 +223,6 @@ loiMauMot = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
     \override Lyrics.LyricSpace.minimum-distance = #1.2
     \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
