@@ -3,12 +3,10 @@
 \include "english.ly"
 
 \header {
-  subtitle = "Thánh Vịnh 102"
+  title = "Thánh Vịnh 102"
   composer = "Lm. Kim Long"
-  %arranger = " "
   tagline = ##f
 }
-
 
 % Nhạc
 nhacMauMot = \relative c'' {
@@ -104,10 +102,10 @@ loiMauBon = \lyricmode {
 % Dàn trang
 \paper {
   #(set-paper-size "a5")
-  top-margin = 10\mm
-  bottom-margin = 10\mm
-  left-margin = 10\mm
-  right-margin = 10\mm
+  top-margin = 3\mm
+  bottom-margin = 3\mm
+  left-margin = 3\mm
+  right-margin = 3\mm
   indent = #0
   #(define fonts
 	 (make-pango-font-tree "Deja Vu Serif Condensed"
@@ -129,8 +127,8 @@ loiMauBon = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.6
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -149,12 +147,11 @@ loiMauBon = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #1.5
     ragged-last = ##f
   }
 }
@@ -171,13 +168,11 @@ loiMauBon = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #1.5
     ragged-last = ##f
   }
 }
@@ -194,13 +189,11 @@ loiMauBon = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #0.7
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
-    \override LyricHyphen.minimum-distance = #1.5
     ragged-last = ##f
   }
 }
