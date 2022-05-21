@@ -4,7 +4,7 @@
 
 \header {
   title = "Tôi đã thấy nước"
-  subsubtitle = "(hát khi rẩy nước thánh)"
+  subsubtitle = \markup { \normal-text \fontsize #1.5 "(hát khi rẩy nước thánh)" }
   composer = "Lm. Kim Long"
   tagline = ##f
 }
