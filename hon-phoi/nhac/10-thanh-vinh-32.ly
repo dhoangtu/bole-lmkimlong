@@ -4,7 +4,7 @@
 
 \header {
   title = "Thánh Vịnh Đáp Ca"
-  subtitle = "Thánh Vịnh 32"
+  subtitle = \markup { \fontsize #3 "Thánh Vịnh 32" }
   composer = "Lm. Kim Long"
   tagline = ##f
 }

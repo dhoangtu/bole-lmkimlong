@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  subsubtitle = "Mẫu 3"
+  subtitle = "Mẫu 3"
   composer = "Lm. Kim Long"
   tagline = ##f
 }

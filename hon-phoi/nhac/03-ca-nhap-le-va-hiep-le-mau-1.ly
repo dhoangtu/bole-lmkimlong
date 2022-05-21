@@ -3,8 +3,8 @@
 \include "english.ly"
 
 \header {
-  subtitle = "Ca Nhập Lễ và Hiệp Lễ"
-  subsubtitle = "Mẫu 1"
+  title = "Ca Nhập Lễ và Hiệp Lễ"
+  subtitle = "Mẫu 1"
   composer = "Lm. Kim Long"
   tagline = ##f
 }
