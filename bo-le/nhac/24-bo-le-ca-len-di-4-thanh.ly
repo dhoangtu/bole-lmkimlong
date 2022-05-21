@@ -17,13 +17,13 @@ nhacDiepKhucSop = \relative c'' {
   e4. d8 e f |
   g2 r4 |
   r2 e'8 e |
-  f4. d8 e16 (d) c8 |
+  f4. d8 e16 _(d) c8 |
   c2 r4 |
   r2 d8 (e16 d) |
   c4. f8 d4 |
   e2 r4 |
   r2 e8 e |
-  f4. d8 e16 (d) c8 |
+  f4. d8 e16 _(d) c8 |
   c2. ~ |
   c4 r2 \bar "|."
 }

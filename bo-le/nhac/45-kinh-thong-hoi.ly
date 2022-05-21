@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Kinh Thống Hối" }
+  title = "Kinh Thống Hối"
   composer = "Lm. Kim Long"
   tagline = ##f
 }
@@ -144,7 +144,7 @@ nhacMauBa = \relative c' {
   a'8 a b g a4 g8 a g ([f]) e4 e8 g
   a b a c b d ([c]) b a4 \bar "||"
   
-  e8 ([g a b]) a4
+  e8 ([g a b]) a4 \bar "||"
 }
 
 % Lời

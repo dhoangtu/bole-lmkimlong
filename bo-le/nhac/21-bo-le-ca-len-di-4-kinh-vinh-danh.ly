@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Kinh Vinh Danh" }
+  title = "Kinh Vinh Danh"
   composer = "Lm. Kim Long"
   tagline = ##f
 }
@@ -320,7 +320,7 @@ loiDiepKhucBas = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  %systems-per-page = 4
+  page-count = 5
 }
 
 TongNhip = {

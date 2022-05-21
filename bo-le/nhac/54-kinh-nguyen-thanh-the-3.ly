@@ -225,7 +225,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 20
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -248,7 +248,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 20
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -272,7 +272,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 20
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -303,7 +303,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 20
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -327,7 +327,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 20
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -352,7 +352,7 @@ notBePhu =
     >>
   >>
   \layout {
-    indent = 20
+    indent = 10
     ragged-right = ##f
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)

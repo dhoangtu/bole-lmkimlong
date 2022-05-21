@@ -4,7 +4,7 @@
 \include "gregorian.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Thánh" }
+  title = "Thánh"
   composer = "Lm. Kim Long"
   tagline = ##f
 }
@@ -67,6 +67,6 @@ TongNhip = {
     \override Score.SpacingSpanner.packed-spacing = ##f
     \set Score.defaultBarType = ""
     ragged-last = ##f
-    indent = #10
+    %indent = #10
   } 
 }

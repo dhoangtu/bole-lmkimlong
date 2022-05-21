@@ -3,7 +3,6 @@
 \include "english.ly"
 
 \header {
-  subsubtitle = \markup { \huge \bold "Kinh Thương Xót" }
   subtitle = \markup {
     \column {
       \left-align {
@@ -20,6 +19,7 @@
       }
     }
   }
+  subsubtitle = \markup { \fontsize #5 \bold "Kinh Thương Xót" }
   composer = "Lm. Kim Long"
   tagline = ##f
 }

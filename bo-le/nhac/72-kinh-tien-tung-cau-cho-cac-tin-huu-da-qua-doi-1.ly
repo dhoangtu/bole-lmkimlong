@@ -6,8 +6,8 @@
 \header {
   title = \markup {
     \center-column {
-      \huge \bold "Kinh Tiền Tụng"
-      \huge \bold "Cầu Cho Các Tín Hữu Đã Qua Đời I" }
+      \fontsize #0.1 \bold "Kinh Tiền Tụng"
+      \fontsize #0.1 \bold "Cầu Cho Các Tín Hữu Đã Qua Đời I" }
   }
   composer = "Lm. Kim Long"
   tagline = ##f

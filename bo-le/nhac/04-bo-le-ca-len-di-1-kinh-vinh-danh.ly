@@ -4,7 +4,7 @@
 \include "gregorian.ly"
 
 \header {
-  subtitle = \markup { \huge \bold "Kinh Vinh Danh" }
+  title = "Kinh Vinh Danh"
   composer = "Lm. Kim Long"
   tagline = ##f
 }

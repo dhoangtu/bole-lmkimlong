@@ -10,7 +10,7 @@
       \null \null \null
     }
   }
-  subtitle = \markup { \huge \bold "Kinh Thương Xót" }
+  subtitle = \markup { \fontsize #3 \bold "Kinh Thương Xót" }
   composer = "Lm. Kim Long"
   tagline = ##f
 }

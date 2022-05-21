@@ -4,8 +4,8 @@
 
 \header {
   title = "Kinh Nguyện Thánh Thể"
-  subtitle = \markup { \huge \bold "Thánh Lễ Dành Cho Trẻ Em" }
-  subsubtitle = \markup { \large \bold "Mẫu 1" }
+  subtitle = \markup { \fontsize #3 \bold "Thánh Lễ Dành Cho Trẻ Em" }
+  subsubtitle = \markup { \huge \bold "Mẫu 1" }
   composer = "Lm. Kim Long"
   tagline = ##f
 }

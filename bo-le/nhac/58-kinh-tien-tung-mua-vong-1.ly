@@ -85,6 +85,5 @@ TongNhip = {
     \set Score.defaultBarType = ""
     \set Score.barAlways = ##t
     ragged-last = ##f
-    %indent = #10
   } 
 }
