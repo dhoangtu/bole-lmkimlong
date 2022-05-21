@@ -282,35 +282,217 @@ nhacMauBay = \relative c'' {
 }
 
 nhacMauTam = \relative c'' {
-  
+  \key c \major
+  \time 2/4
+  <<
+    {
+      g8 a g e |
+      d4. c8 |
+      a'4. g8 |
+      d' d d d |
+      c2 ~ |
+      c4 \bar "|."
+    }
+    {
+      e,8 f e c |
+      b4. c8 |
+      f4. e8 |
+      f fs g g |
+      e2 ~ |
+      e4
+    }
+  >>
+  \tuplet 3/2 { g8 a g } |
+  e4. c8 |
+  a'8. g16 \tuplet 3/2 { c8 c c } |
+  b4 \tuplet 3/2 { a8 b a } |
+  g8. d'16 \tuplet 3/2 { d8 e, f } | \break
+  g2 ~ |
+  g4 \tuplet 3/2 { d8 f e } |
+  e8. e16 \tuplet 3/2 { b'8 b a } |
+  a4 \tuplet 3/2 { f8 a g } |
+  d8. b16 \tuplet 3/2 { d8 g c } |
+  c2 \bar "||"
 }
 
-nhacMauChin = \relative c' {
+nhacMauChin = \relative c'' {
+  \key c \major
+  \time 2/4
+  <<
+    {
+      e8. c16 d8 c |
+      g4. a8 |
+      a4. f8 |
+      d8. g16 g8 g
+    }
+    {
+      c8. a16 f8 f |
+      e4. f8 |
+      f4. d8 |
+      b8. b16 b8 b
+    }
+  >>
+  c2 ~ |
+  \partial 4. c4 \bar "|."
   
+  e16 e |
+  f8 f f d |
+  g4. g16 g |
+  f8 e a16 g c8 |
+  b4 r8 b |
+  e8. e16 a,8 c |
+  g8. a16 f8 e |
+  d8. d16 d g b,8 |
+  c4 \bar "||"
 }
 
 nhacMauMuoi = \relative c' {
-  
+  \key g \major
+  \time 2/4
+  \partial 8 d8 |
+  <<
+    {
+      b'4 d8 d |
+      g, a4 e8 |
+      b'4. a8 |
+      g4 \bar "|." \break
+    }
+    {
+      g4 fs8 fs |
+      e d4 c8 |
+      d4. c8 |
+      b4
+    }
+  >>
+  g'8. g16 |
+  g8 fs e4 ~ |
+  e8 e c' b |
+  d4 d8. c16 |
+  b8 e a,4 ~ |
+  a8 fs e d |
+  g4 r8 \bar "||"
 }
 
 nhacMauMuoiMot = \relative c' {
+  \key f \major
+  \time 2/4
+  \partial 8 f16 e |
+  <<
+    {
+      a4 \tuplet 3/2 { g8 f g } |
+      g8 a f e
+    }
+    {
+      f4 \tuplet 3/2 { e8 d e } |
+      e f d c
+    }
+  >>
+  d2 ~ |
+  d4 r8 \bar "|."
   
+  d16 d |
+  d4. a8 |
+  f'8. e16 \tuplet 3/2 { d8 e g } |
+  a4. bf16 g |
+  a4 \tuplet 3/2 { g8 f bf } |
+  e,4 e16 (f) e8 |
+  d4 \tuplet 3/2 { f8 e e } |
+  a4 r8 f16 f |
+  g4 \tuplet 3/2 { f8 e a }  |
+  d,2 ~ |
+  d4 r8 \bar "||"
 }
 
-nhacMauMuoiHai = \relative c' {
+nhacMauMuoiHai = \relative c'' {
+  \key bf \major
+  \time 2/4
+  \partial 4 g8 g |
+  f4. g8 |
+  d d bf' bf |
+  a4 r8 d, |
+  bf'4. g8 |
+  c c c4 ~ |
+  c8 bf16 (c) d8 f, |
+  g2 ~ |
+  g4 r8 \bar "|." \break
   
+  g16 g |
+  f4. g8 |
+  ef4. c8 |
+  c ef4 ef8 |
+  d4 r8 d |
+  g4. bf16 a |
+  a4. a16 a |
+  a8. a16 \tuplet 3/2 { c8 d bf } |
+  g4 \bar "||"
 }
 
 nhacMauMuoiBa = \relative c' {
-  
+  \key c \major
+  \time 2/4
+  e8 g4 ( a8 [b g] g4 a8 [g])
+  g4 (a8 [b g])
+  g4 (a8 g [c a b] a4 g) \bar "||"
 }
 
 nhacMauMuoiBon = \relative c' {
-  
+  f8 g a f4 g8 \hide ([a]) g f e4 (c8) f g \hide ([a]) g4 f \bar "||"
 }
 
-nhacMauMuoiLam = \relative c' {
+nhacMauMuoiLam = \relative c'' {
+  \key f \major
+  \time 2/4
+  \partial 8 a16 g |
+  a4 \tuplet 3/2 { f8 f g } |
+  e4. d8 |
+  d a'16 a f8 f |
+  g4 r8 \once \stemUp c16
+  <<
+    {
+      \voiceOne
+       bf16
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      \once \override NoteColumn.force-hshift = #-1.6
+      \tweak font-size #-2
+      \parenthesize
+      c16
+    }
+  >>
+  \oneVoice
+  \stemNeutral
+  bf8 g c a16 (g) |
+  d4. c8 |
+  c g'16 g e8 e |
+  f4 r8 \bar "||"
+}
+
+nhacMauMuoiSau = \relative c'' {
+  \key f \major
+  \time 2/4
+  \partial 4 c8 a |
+  a4. g8 |
+  f g d16 (f) a8 |
+  g8. a16 f8 bf |
+  bf4 bf8 d |
+  c c f, (g) |
+  a8. bf16 bf8 a |
+  g2 ~ |
+  g8 f f g |
+  d d e (d) |
+  c2 ~ |
+  c8 c e g |
+  f2 \bar "|." \break
   
+  a8 e e (g) |
+  a2 ~ |
+  a8 d, d f |
+  g4. f8 |
+  a f g e |
+  d2 ~ |
+  d8 c g' g |
+  f4 \bar "||"
 }
 
 % Lời
@@ -487,35 +669,236 @@ loiMauBay = \lyricmode {
 }
 
 loiMauTam = \lyricmode {
-  
+  Con sẽ ca tụng Ngài, lạy Chúa vì Chúa đã cứu thoát con.
+  <<
+    {
+      \set stanza = "1."
+      Con tán dương Ngài, lạy Chúa, vì Chúa đã cứu con,
+      không để quân thù đắc chí nhạo cười con.
+      Từ cõi âm ty Ngài đã kéo con lên,
+      tưởng đã xuống mồ mà Ngài thương cứu sống.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Ai tín trung hoài cùng Chúa, nào hát kính Thánh Danh,
+      qua phút nổi giận, giáng phúc cả đời liên.
+      Lệ có tuôn rơi chập tối tới canh khuya,
+      hừng sáng lên rồi là hò reo múa hát.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Xin lắng nghe lời, lạy Chúa và ghé mắt xót thương.
+      Xin Đấng con thờ giúp đỡ phù trợ con.
+      Đổi khúc bi ca thành vũ khúc hân hoan.
+      Xin đến muôn đời ngợi ca danh Chúa mãi.
+    }
+  >>
 }
 
 loiMauChin = \lyricmode {
-  
+  Các bạn hãy vui mừng múc nước tận nguồn suối Đấng Cứu Độ.
+  <<
+    {
+      \set stanza = "1."
+      Đây Thiên Chúa, Đấng cứu độ tôi,
+      tôi tin tưởng và không sợ hãi chi.
+      Vì Chúa chính là sức mạnh, Đấng tôi ca mừng,
+      Ngài từng cứu độ tôi.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Hân hoan tới múc nước tận suối Đấng cứu độ
+      và cảm tạ Chúa đi.
+      Cầu khấn Chúa và tỏ bày giữa muôn dân rằng:
+      Sự nghiệp Chúa huyền siêu.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Uy công Chúa hãy hát mừng luôn.
+      Cao rao để trần gian cùng ngắm trông.
+      Vì Đấng Thánh thật vĩ đại của Is -- ra -- el,
+      Si -- on hãy hò reo.
+    }
+  >>
 }
 
 loiMauMuoi = \lyricmode {
-  
+  Lạy Chúa, Chúa có lời ban sự sống muôn đời.
+  <<
+    {
+      \set stanza = "1."
+      Mệnh lệnh Chúa thiện toàn bồi dưỡng hồn vía.
+      Thánh chỉ Ngài vững bền giúp ta học khôn.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Lề luật Chúa chân thực sảng khoái lòng trí.
+      Huấn lệnh Ngài sáng ngời chiếu soi thị quan.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Lòng sợ Chúa thanh vẹn bên vững ngàn kiếp.
+      Phán định Ngài xác thực mãi luôn thẳng ngay.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "4."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Thật là quý hơn vàng, vàng khối thuần chất,
+      giống như mật thắm ngọt tiết tự tàng ong.
+    }
+  >>
 }
 
 loiMauMuoiMot = \lyricmode {
-  
+  Ôi lạy Chúa, xin tạo cho con trái tim trong sạch.
+  <<
+    {
+      \set stanza = "1."
+      Ban cho con, lạy Chúa, cõi lòng thực trong trắng,
+      Phú vào con tinh thần vững mạnh,
+      Chớ xua từ con khỏi mặt Chúa,
+      Đừng biệt con khỏi Thần Trí Ngài.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Cho con vui được thấy ơn Ngài thương cứu rỗi,
+      Đỡ vực con theo lòng quảng đại,
+      Lối đi Ngài con sẽ dạy dỗ để tội nhân trở lại với Ngài.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Đâu ra chi, lạy Chúa, phẩm vật con dâng tiến.
+      Lễ toàn thiêu đâu ngài có cần.
+      Lễ dâng Ngài, tâm thần dập nát,
+      Ngài chẳng chê cõi lòng nát dập.
+    }
+  >>
 }
 
 loiMauMuoiHai = \lyricmode {
-  
+  Như nai rừng mong tìm về suối nước trong,
+  lạy Chúa hồn con trông mong được tới gần Ngài.
+  <<
+    {
+      \set stanza = "1."
+      Những khát mong Chúa Trời,
+      thật là Chúa vĩnh sinh,
+      Hồn con tới khi nao được tìm về,
+      được ra trước nhan Ngài.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Nhớ những khi trẩy hội về đền thánh Chúa xưa,
+      Hòa muôn tiếng reo vui,
+      từng đoàn người cùng nao nức tưng bừng.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Chúa đoái thương phái gửi sự thật với ánh quang
+      hầu soi dẫn con đi về đền thờ và lên núi thánh Ngài.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "4."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Tiến bước lên tế đàn,
+      được gần Chúa, xiết vui,
+      Đàn lên, xướng ca lên cảm tạ Ngài là Thiên Chúa con thờ.
+    }
+  >>
 }
 
 loiMauMuoiBa = \lyricmode {
-  
+  Al -- le -- lu -- ia.
 }
 
 loiMauMuoiBon = \lyricmode {
-  
+  Al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia.
 }
 
 loiMauMuoiLam = \lyricmode {
-  
+<<
+    {
+      \set stanza = "1."
+      Chúc tụng Chúa vì Ngài nhân từ,
+      ngàn đời Chúa vẫn trọn tình thương.
+      Is -- ra -- el hãy nói lên rằng:
+      Ngàn đời Chúa vẫn trọn tình thương.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Cánh tay Chúa vận dụng uy lực,
+      Kìa là cánh tay hữu Nagif vùng cao.
+      Thoát vong thân để sống loan truyền
+      sự nghiệp Chúa trót cả đời tôi.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Đó viên đá thợ nề đã loại
+      lại thành đá góc tường rồi đây.
+      Đó \markup { \italic "chính" } công trình Chúa đã làm
+      kỳ diệu trước mắt mọi phàm nhân.
+    }
+  >>
+}
+
+loiMauMuoiSau = \lyricmode {
+  Đức Ki -- tô, Chiên Vượt Qua của chúng ta đã bị sát tế.
+  Vậy chúng ta hãy mừng lễ với bánh khôn men
+  là lòng tinh tuyền và chân thật,
+  al -- le -- lu -- ia.
+  <<
+    {
+      \set stanza = "1."
+      Hãy cảm tạ Chúa vì Ngài hảo tâm,
+      vì đức từ bi của Ngài bền vững muôn đời.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "2."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Chính đây tảng đá thợ nề loại ra
+      rầy Chúa làm cho trở thành là đá góc tường.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "3."
+      Chính trong ngày thánh mà Ngài dựng nên,
+      nào hãy cùng nhau tưng bừng đàn hát sướng vui.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "4."
+      \override Lyrics.LyricText.font-shape = #'italic
+      Cánh tay của Chúa vận dụng uy phong
+      tạo tác kỳ công muôn vàn, trần thế ngắm trông.
+    }
+    \new Lyrics {
+      \set associatedVoice = "beSop"
+      \set stanza = "5."
+      Tiếng reo khởi thắng từ trại hiền nhân:
+      Kìa Chúa vung tay uy lực mạnh mẽ biết bao.
+    }
+  >>
 }
 
 % Dàn trang
@@ -532,6 +915,7 @@ loiMauMuoiLam = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
+  page-count = 10
 }
 
 \markup {
@@ -615,7 +999,7 @@ loiMauMuoiLam = \lyricmode {
 \score {
   <<
     \new Staff \with {
-      instrumentName = \markup { "Đáp:" }} <<
+      instrumentName = \markup { \bold "Đáp" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauBa
@@ -634,23 +1018,10 @@ loiMauMuoiLam = \lyricmode {
   }
 }
 
-\markup {
-  \vspace #2
-  \column {
-    \left-align {
-      \line {
-        "Khi cộng đoàn hôn kính Thánh Giá, có thể hát bài:" \bold "Dân Ta ơi"
-      }
-      \line {
-        "(Tt. Ca lên đi, trang 644) hoặc các câu than vãn sau đây:"
-      }
-    }
-  }
-}
-
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "hoặc" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauBon
@@ -667,11 +1038,12 @@ loiMauMuoiLam = \lyricmode {
   }
 }
 
+%\pageBreak
+
 \markup {
   \vspace #2
   "Hoặc: " \bold "Tv. 32"
 }
-
 
 \score {
   <<
@@ -749,7 +1121,7 @@ loiMauMuoiLam = \lyricmode {
 
 \markup {
   \vspace #2
-  "Lặp lại: Dân ta hỡi..."
+  "Sau bài đọc 4:" \bold "Tv. 29"
 }
 
 
@@ -774,17 +1146,7 @@ loiMauMuoiLam = \lyricmode {
 
 \markup {
   \vspace #2
-  \column {
-    \left-align {
-      \line {
-        "Lặp lại: Dân ta hỡi..."
-      }
-      \null
-      \line {
-        "Có thể hát thêm" \bold "Đối ca" \normal-text "sau đây:"
-      }
-    }
-  }
+  "Sau bài đọc 5:" \bold "Is. 12"
 }
 
 \score {
@@ -808,7 +1170,7 @@ loiMauMuoiLam = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Ca Vãn"
+  "Sau bài đọc 6:" \bold "Tv. 18"
 }
 
 \score {
@@ -819,6 +1181,163 @@ loiMauMuoiLam = \lyricmode {
           \nhacMauMuoi
         }
       \new Lyrics \lyricsto beSop \loiMauMuoi
+    >>
+  >>
+  \layout {
+    indent = 15
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    ragged-last = ##f
+  }
+}
+
+\markup {
+  \vspace #2
+  "Sau bài đọc 7:" \bold "Tv. 50"
+}
+
+\score {
+  <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "Đáp:" }} <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauMuoiMot
+        }
+      \new Lyrics \lyricsto beSop \loiMauMuoiMot
+    >>
+  >>
+  \layout {
+    indent = 15
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    ragged-last = ##f
+  }
+}
+
+\markup {
+  \vspace #2
+  "Hoặc:" \bold "Tv. 41, 42"
+}
+
+\score {
+  <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "Đáp:" }} <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauMuoiHai
+        }
+      \new Lyrics \lyricsto beSop \loiMauMuoiHai
+    >>
+  >>
+  \layout {
+    indent = 15
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    ragged-last = ##f
+  }
+}
+
+\markup {
+  \vspace #2
+  \column {
+    \left-align {
+      \line {
+        \italic "Sau bài Thánh Thư, Linh mục xướng ALLELUIA (3 lần, cao giọng dần)"
+      }
+      \line {
+        \italic "và Cộng đoàn lặp lại:"
+      }
+    }
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauMuoiBa
+        }
+      \new Lyrics \lyricsto beSop \loiMauMuoiBa
+    >>
+  >>
+  \layout {
+    indent = 15
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \set Score.defaultBarType = ""
+    \set Score.barAlways = ##t
+    ragged-last = ##f
+  }
+}
+
+\markup {
+  \vspace #2
+  \bold "Thánh vịnh Đáp ca: Tv. 117"
+}
+
+\score {
+  <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "Đáp:" }} <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauMuoiBon
+        }
+      \new Lyrics \lyricsto beSop \loiMauMuoiBon
+    >>
+  >>
+  \layout {
+    indent = 15
+    \override Staff.TimeSignature.transparent = ##t
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    \set Score.defaultBarType = ""
+    \set Score.barAlways = ##t
+    ragged-last = ##f
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauMuoiLam
+        }
+      \new Lyrics \lyricsto beSop \loiMauMuoiLam
+    >>
+  >>
+  \layout {
+    %indent = 15
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    ragged-last = ##f
+  }
+}
+
+\markup {
+  \vspace #2
+  \bold "Ca hiệp lễ"
+}
+
+\score {
+  <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "Đáp:" }} <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauMuoiSau
+        }
+      \new Lyrics \lyricsto beSop \loiMauMuoiSau
     >>
   >>
   \layout {

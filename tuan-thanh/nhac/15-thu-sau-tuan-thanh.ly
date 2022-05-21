@@ -358,7 +358,10 @@ nhacMauMuoi = \relative c' {
   e g f (e) |
   \partial 4 d4 \bar "||"
   d8 f \bar ":|."
-  r8 a \bar "||"
+  r8 a
+  \once \override Score.RehearsalMark.font-size = #0.1
+  \mark \markup { \musicglyph #"scripts.segno" }
+  \bar "||"
   d,4 d8 (e16 d) |
   c4 ( d ~ |
   d) r8 a' \bar "|."
