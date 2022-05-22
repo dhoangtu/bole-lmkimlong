@@ -3,11 +3,7 @@
 \include "english.ly"
 
 \header {
-  title = "Thánh Lễ"
-  %subtitle = "Ca Nhập Lễ và Hiệp Lễ"
-  %subsubtitle = \markup { \huge "I. Lễ an táng" }
-  %composer = "Lm. Kim Long"
-  %arranger = " "
+  subtitle = "C - Trong Mọi Trường Hợp"
   tagline = ##f
 }
 

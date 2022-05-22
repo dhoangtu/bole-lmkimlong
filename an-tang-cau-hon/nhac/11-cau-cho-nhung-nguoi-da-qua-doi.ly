@@ -3,10 +3,18 @@
 \include "english.ly"
 
 \header {
-  %title = "Thánh Lễ"
-  %subtitle = "Ca Nhập Lễ và Hiệp Lễ"
-  %subsubtitle = \markup { \huge "I. Lễ an táng" }
-  %composer = "Lm. Kim Long"
+  subtitle = \markup {
+    \column {
+      \center-align {
+        \line {
+          \bold "B - Cầu cho nhiều"
+        }
+        \line {
+          \bold "hoặc tất cả những người đã qua đời"
+        }
+      }
+    }
+  }
   tagline = ##f
 }
 
@@ -308,16 +316,9 @@ loiMauMuoiHai = \lyricmode {
 }
 
 \markup {
-  \vspace #2
-  \column {
-    \left-align {
-      \line {
-        \bold "B - Cầu cho nhiều hoặc tất cả những người đã qua đời"
-      }
-      \line {
-        \bold "Mẫu 1"
-      }
-    }
+  \vspace #1
+  \line {
+    \bold "Mẫu 1"
   }
 }
 

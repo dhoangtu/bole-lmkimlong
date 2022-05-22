@@ -4,7 +4,7 @@
 
 \header {
   title = "Ca Nhập Lễ và Hiệp Lễ"
-  subtitle = "Mẫu 1"
+  subtitle = \markup { \fontsize #1 "Mẫu 1" }
   composer = "Lm. Kim Long"
   tagline = ##f
 }

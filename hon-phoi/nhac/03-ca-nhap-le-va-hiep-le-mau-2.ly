@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  subtitle = "Mẫu 2"
+  subtitle = \markup { \fontsize #1 "Mẫu 2" }
   composer = "Lm. Kim Long"
   tagline = ##f
 }

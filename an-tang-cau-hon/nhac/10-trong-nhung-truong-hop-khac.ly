@@ -3,11 +3,17 @@
 \include "english.ly"
 
 \header {
-  %title = "Thánh Lễ"
-  %subtitle = "Ca Nhập Lễ và Hiệp Lễ"
-  subsubtitle = \markup { \huge "III. Trong Những Trường Hợp Khác" }
-  composer = "Lm. Kim Long"
-  %arranger = " "
+  subtitle = \markup { \fontsize #1 "III. Trong Những Trường Hợp Khác" }
+  subsubtitle = \markup {
+    \vspace #1
+    \column {
+      \center-align {
+        \line {
+          \fontsize #2 \bold "A - Cầu cho một người qua đời"
+        }
+      }
+    }
+  }
   tagline = ##f
 }
 
@@ -213,15 +219,8 @@ loiMauBon = \lyricmode {
 
 \markup {
   \vspace #1
-  \column {
-    \left-align {
-      \line {
-        \bold "A - Cầu cho một người qua đời"
-      }
-      \line {
-        \bold "Mẫu 1"
-      }
-    }
+  \line {
+    \bold "Mẫu 1"
   }
 }
 
