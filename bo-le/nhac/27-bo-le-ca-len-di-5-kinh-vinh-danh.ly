@@ -413,6 +413,10 @@ TongNhip = {
   \set Timing.baseMoment = #(ly:make-moment 1/4)
 }
 
+\markup {
+  \vspace #13
+}
+
 \score {
   \new ChoirStaff <<
     \new Staff <<

@@ -645,7 +645,7 @@ TongNhip = {
 }
 
 \markup {
-  \vspace #12
+  \vspace #13
 }
 
 \score {

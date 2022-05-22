@@ -17,13 +17,13 @@ nhacDiepKhucSop = \relative c'' {
   e4. d8 e f |
   g2 r4 |
   r2 e'8 e |
-  f4. d8 e16 _(d) c8 |
+  f4. d8 e16 (d) c8 |
   c2 r4 |
   r2 d8 (e16 d) |
   c4. f8 d4 |
   e2 r4 |
   r2 e8 e |
-  f4. d8 e16 _(d) c8 |
+  f4. d8 e16 (d) c8 |
   c2. ~ |
   c4 r2 \bar "|."
 }
@@ -100,7 +100,6 @@ loiDiepKhucBas = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 1
 }
 
 TongNhip = {
@@ -111,16 +110,19 @@ TongNhip = {
 
 \score {
   \new ChoirStaff <<
-    \new Staff \with {
-      printPartCombineTexts = ##f
-    }
-    <<
-      \clef treble
-    \new Voice \TongNhip \partCombine 
-      \nhacDiepKhucSop
-      \nhacDiepKhucAlto
-    \new NullVoice = beSop \nhacDiepKhucSop
-    \new Lyrics \lyricsto beSop \loiDiepKhucSop
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \TongNhip \nhacDiepKhucSop
+        }
+        \new Lyrics \lyricsto beSop \loiDiepKhucSop
+    >>
+    \new Staff <<
+        \clef treble
+        \new Voice = beAlto {
+          \TongNhip \nhacDiepKhucAlto
+        }
+        \new Lyrics \lyricsto beAlto \loiDiepKhucSop
     >>
     \new Staff <<
         \clef bass
@@ -131,7 +133,7 @@ TongNhip = {
     >>
   >>
   \layout {
-    \override Lyrics.LyricSpace.minimum-distance = #0.5
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }
