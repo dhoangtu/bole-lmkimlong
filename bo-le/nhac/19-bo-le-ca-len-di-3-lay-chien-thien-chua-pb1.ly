@@ -29,62 +29,71 @@ nhacPhienKhucSop = \relative c' {
   a (gs) a (b) |
   c4 d8 d |
   c (b) a4 |
-  b <d a f>8 <d a f> |
-  <<
-    {
-      \voiceOne
-      e8 (d) c (d)
-    }
-    \new Voice = "splitpart" {
-      \voiceTwo
-      <gs, e>4 <gs e>
-    }
-  >>
-  \oneVoice
-  <c a a,>2 ~ |
-  <c a a,>4 r8 a |
+  b4 d8 d |
+  e (d) c (d) |
+  \stemDown c2 ~ |
+  c4 r8 \stemNeutral a |
   c (b) c (d) |
   e4 e8 e |
-  c (d) a4 |
-  d <c a a>8 <c a a> |
-  <<
-    {
-      \voiceOne
-      d (c) b (c)
-    }
-    \new Voice = "splitpart" {
-      \voiceTwo
-      <a f>4 <a d,>
-    }
-  >>
-  \oneVoice
-  <b gs e>2 ~ |
-  <b gs e>4 r8 e, |
+  c (b) a4 |
+  d4 c8 c |
+  d (c) b (c) |
+  b2 ~ |
+  b4 r8 e, |
   a (gs) a (b) |
   c4 d8 d |
   c (b) a4 |
   b2 |
   g4 g8 e |
-  a4. <b a d,>8 |
+  a4.
+  \once \override NoteColumn.force-hshift = #-0.5
+  \once \stemUp
+  b8 |
+  c ([b a b]) |
+  \stemDown a2 ~ |
+  a4 \bar "|."
+}
+
+nhacPhienKhucAlto = \relative c' {
+  e8 |
+  a (gs) a (b) |
+  c4 d8 d |
+  c (b) a4 |
+  b4 <a f>8 <a f> |
+  <gs e>4 <gs e> |
+  <a a,>2 ~ |
+  <a a,>4 r8 a |
+  c (b) c (d) |
+  e4 e8 e |
+  c (b) a4 |
+  d4 a8 a |
+  <a f>4 <a d,> |
+  <gs e>2 ~ |
+  <gs e>4 r8 e |
+  a (gs) a (b) |
+  c4 d8 d |
+  c (b) a4 |
+  b2 |
+  g4 g8 e |
+  a4. <a d,>8 |
   <<
-    {
+    { \notBePhu -2 {
+      \stemUp
       \voiceOne
-      c8 ([b a b])
-    }
+      \once \override NoteColumn.force-hshift = #1.7
+      a4.
+      \once \override NoteColumn.force-hshift = #1
+      _(gs8)
+    }}
     \new Voice = "splitpart" {
       \voiceTwo
-      \override NoteColumn.force-hshift = #-1
-      a4. (gs8)
-    }
-    \new Voice = "splitpart" {
-      \voiceThree
-      \override NoteColumn.force-hshift = #1
-      \stemDown e2
+      \once \override NoteColumn.force-hshift = #-1.5
+      e2
     }
   >>
-  \oneVoice
-  <a e c a>2 ~ |
-  <a e c a>4 \bar "|."
+  \stemDown
+  <e c a>2 _~ |
+  <e c a>4
 }
 
 % Lời phiên khúc
@@ -123,14 +132,15 @@ TongNhip = {
 \score {
   \new ChoirStaff <<
     \new Staff \with {
-      \remove "Time_signature_engraver"
-    }
-    <<
-      \new Voice = "beSop" {
-        \clef treble \TongNhip \nhacPhienKhucSop
+        printPartCombineTexts = ##f
       }
+      <<
+      \new Voice \TongNhip \partCombine 
+        \nhacPhienKhucSop
+        \notBePhu -1 { \nhacPhienKhucAlto }
+      \new NullVoice = beSop \nhacPhienKhucSop
       \new Lyrics \lyricsto beSop \loiPhienKhucSop
-    >>
+      >>
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
