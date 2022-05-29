@@ -20,25 +20,25 @@ nhacPhienKhucSop = \relative c'' {
   c4. b8 |
   c (b) a (b) |
   a4 r8 d |
-  e4. c8 |
+  \once \stemDown  e4. c8 |
   d (c) b (c) |
-  b2 ~ |
-  b4 r |
+  \once \stemDown b2 ~ |
+  \once \stemDown b4 r |
   a4 c8 b |
   a4 ( \slashedGrace { g16 ( } e8) ) a |
   c (b) a (b) |
   a2 |
-  e'4 f8 e |
-  d4. d8 |
+  \once \stemDown e'4 f8 e |
+  \once \stemDown d4. d8 |
   e (d) c (d) |
-  c2 ~ |
-  c4 r8 a |
+  \once \stemDown c2 ~ |
+  \once \stemDown c4 r8 a |
   c4. b8 |
   c (b) a (b) |
   a2 |
-  d4. d8 |
+  \once \stemDown d4. d8 |
   <e c>8 (<d b>) <c a> (<d b>) |
-  <c g>2 ~ |
+  \stemDown <c g>2 ~ |
   <c g>4 \bar "|."
 }
 

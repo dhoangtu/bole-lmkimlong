@@ -478,6 +478,7 @@ nhacMauSau = \relative c'' {
       e4
     }
   >>
+  \break
   c'8 e, |
   f8. a16 a8 d, |
   e4 e8 e |

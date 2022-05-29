@@ -40,7 +40,7 @@ nhacDiepKhucChuTe = \relative c' {
   g4 r |
   R2*4
   r4 r8 c |
-  b (a) c (d) |
+  g (a) c (d) |
   \slashedGrace { d16 ( } e8) e e (d16 c) |
   d4. d8 |
   e4 d |
@@ -242,7 +242,7 @@ nhacDiepKhucTenor = \relative c {
   c c c4 ( |
   b) r |
   R2*4
-  c4 ~ c8 b |
+  c4 (c8 b) |
   c2 ~ |
   c4 r
 }
@@ -334,7 +334,7 @@ loiDiepKhucSop = \lyricmode {
   Lạy Con Một Thiên Chúa, Chúa Giê -- su Ki -- tô
   Chúa xóa tội trần gian.
   Chúa xóa tội trần gian,
-  Xin nhận lời chúng con cầu khẩn.
+  Xin nhậm lời chúng con cầu khẩn.
   Xin thương xót chúng con.
   Chỉ có Chúa là Đấng Thánh,
   chỉ có Chúa là Chúa,
@@ -350,7 +350,7 @@ loiDiepKhucAlto = \lyricmode {
   Lạy Con Một Thiên Chúa, Chúa Giê -- su Ki -- tô
   Chúa xóa tội trần gian.
   Chúa xóa tội trần gian,
-  Xin nhận lời chúng con cầu khẩn.
+  Xin nhậm lời chúng con cầu khẩn.
   Xin thương xót chúng con.
   Chỉ có Chúa là Đấng Thánh,
   chỉ có Chúa là Chúa, chỉ có Chúa là Đấng Tối Cao
@@ -367,7 +367,7 @@ loiDiepKhucTenor = \lyricmode {
   là Chúa Cha toàn năng.
   Chúa Giê -- su Ki -- tô
   Chúa xóa tội trần gian
-  Xin nhận lời chúng con cầu khẩn.
+  Xin nhậm lời chúng con cầu khẩn.
   Xin thương xót chúng con.
   Chỉ có Chúa là Đấng Thánh, chỉ có Chúa là Chúa,
   chỉ có Chúa là Đấng Tối Cao
@@ -383,7 +383,7 @@ loiDiepKhucBas = \lyricmode {
   là Chúa Cha toàn năng.
   Chúa Giê -- su Ki -- tô
   Chúa xóa tội trần gian
-  Xin nhận lời Chúng con cầu khẩn.
+  Xin nhậm lời Chúng con cầu khẩn.
   Xin thương đoàn con.
   Chỉ có Chúa là Đấng Thánh,
   chỉ có Chúa là Chúa, chỉ có Chúa là Đấng Tối Cao
@@ -434,7 +434,7 @@ TongNhip = {
 }
 
 \score {
-  \new ChoirStaff <<
+  <<
     \new Staff <<
         \clef treble
         \new Voice = chuTe {
@@ -442,37 +442,40 @@ TongNhip = {
         }
         \new Lyrics \lyricsto chuTe \loiDiepKhucChuTe
     >>
-    \new Staff <<
-        \clef treble
-        \new Voice = beSop {
-          \TongNhip \nhacDiepKhucSop
-        }
-        \new Lyrics \lyricsto beSop \loiDiepKhucSop
-    >>
-    \new Staff <<
-        \clef treble
-        \new Voice = beAlto {
-          \TongNhip \nhacDiepKhucAlto
-        }
-        \new Lyrics \lyricsto beAlto \loiDiepKhucAlto
-    >>
-    \new Staff <<
-        \clef "violin_8"
-        \new Voice = beTenor {
-          \TongNhip \nhacDiepKhucTenor
-        }
-        \new Lyrics \lyricsto beTenor \loiDiepKhucTenor
-    >>
-    \new Staff <<
-        \clef bass
-        \new Voice = beBas {
-          \TongNhip \nhacDiepKhucBas
-        }
-        \new Lyrics \lyricsto beBas \loiDiepKhucBas
+    \new ChoirStaff <<
+      \new Staff <<
+          \clef treble
+          \new Voice = beSop {
+            \TongNhip \nhacDiepKhucSop
+          }
+          \new Lyrics \lyricsto beSop \loiDiepKhucSop
+      >>
+      \new Staff <<
+          \clef treble
+          \new Voice = beAlto {
+            \TongNhip \nhacDiepKhucAlto
+          }
+          \new Lyrics \lyricsto beAlto \loiDiepKhucAlto
+      >>
+      \new Staff <<
+          \clef "violin_8"
+          \new Voice = beTenor {
+            \TongNhip \nhacDiepKhucTenor
+          }
+          \new Lyrics \lyricsto beTenor \loiDiepKhucTenor
+      >>
+      \new Staff <<
+          \clef bass
+          \new Voice = beBas {
+            \TongNhip \nhacDiepKhucBas
+          }
+          \new Lyrics \lyricsto beBas \loiDiepKhucBas
+      >>
     >>
   >>
   \layout {
     \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override LyricHyphen.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }

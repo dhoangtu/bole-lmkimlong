@@ -18,7 +18,7 @@
 % Nhạc phiên khúc
 nhacPhienKhucSop = \relative c' {
   \autoBeamOff
-  d8 [c d e] f4 g8 b [g] f [e] d4 \bar "||" \break
+  d8 [c d e] f4 g8 a [g] f [e] d4 \bar "||" \break
   a'8 c b [a g] a4 g8 a [g] f [e] d4 \bar "||" \break
   d8 [c d e] f4 g8 a [g] f [e] d4 \bar "||" \break
   d8 [c d e] f4 f8 [e f g] a4 g8 a [g] f [e] d4 \bar "||"

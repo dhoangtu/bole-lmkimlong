@@ -91,8 +91,8 @@ nhacDiepKhucAlto = \relative c'' {
   g8 g f f |
   e4. g8 |
   f4 e8 (a) |
-  g2 ~ |
-  g4 r |
+  b2 ~ |
+  b4 r |
   R2
   r4 f8 (e) |
   d4 e16 (d) c8 |
@@ -176,12 +176,12 @@ nhacDiepKhucBas = \relative c' {
   e4 r8 a16 (c) |
   g8 f e (g) |
   a4. e8 |
-  f f4 b8 |
+  f f4 b,8 |
   <<
     {
       \voiceOne
-      d,4 (g)
-      g2 ~ |
+      d4 (g)
+      \stemDown g2 ~ |
       g4
     }
     \new Voice = "splitpart" {

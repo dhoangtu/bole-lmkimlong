@@ -34,7 +34,9 @@ nhacPhienKhucSop = \relative c'' {
 
 % Lời phiên khúc
 loiPhienKhucSop = \lyrics {
+  \override Lyrics.LyricText.font-series = #'bold
   Vinh danh Thiên Chúa trên các tầng trời.
+  \revert Lyrics.LyricText.font-series
   Và bình an dưới thế cho người thiện tâm.
   Chúng con ca ngợi Chúa.
   Chúng con chúc tụng Chúa.

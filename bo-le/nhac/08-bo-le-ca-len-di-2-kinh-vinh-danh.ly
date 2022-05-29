@@ -12,7 +12,7 @@
 nhacPhienKhucSop = \relative c'' {
   \override Score.BarLine.break-visibility = ##(#f #f #f)
   a8 a a c4 
-  a8 bf (g) f4 f \bar "||" \break
+  a8 bf \hide (g) f4 f \bar "||" \break
   \override Score.BarLine.break-visibility = ##(#t #t #t)
   
   \partial 4 c8 c |
@@ -55,9 +55,9 @@ nhacPhienKhucSop = \relative c'' {
   a4. a8 |
   f (e) d4 |
   g2 |
-  c4. (b!8) |
+  c4. ^(b!8) |
   c4 r |
-  a4. (gs8) |
+  a4. ^(gs8) |
   a4 g8 g |
   a4 g |
   f2 |
@@ -142,9 +142,9 @@ nhacPhienKhucAlto = \relative c' {
   a4. a8 |
   f (e) d4 |
   g2 |
-  a4. (gs8) |
+  a4. _(gs8) |
   a4 r |
-  f4. (e8) |
+  f4. _(e8) |
   f4 e8 e |
   f4 c |
   d2 |

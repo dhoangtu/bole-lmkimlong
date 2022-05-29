@@ -220,8 +220,10 @@ notBePhu =
     \new Staff \with {
       instrumentName = \markup {
         \column {
-          \line { \bold "Khi Chủ tế" }
-          \line { \bold "là giám mục" }
+          \center-align {
+            \line { \bold "Khi Chủ tế" }
+            \line { \bold "là Giám mục" }
+          }
         }
       }
     } <<

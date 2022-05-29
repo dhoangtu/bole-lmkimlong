@@ -80,7 +80,7 @@ TongNhip = {
         \column {
           \center-align {
             \line { \bold "Khi Chủ tế" }
-            \line { \bold "là giám mục" }
+            \line { \bold "là Giám mục" }
           }
         }
       }

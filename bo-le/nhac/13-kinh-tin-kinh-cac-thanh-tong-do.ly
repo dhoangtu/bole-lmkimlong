@@ -43,10 +43,10 @@ nhacPhienKhucSop = \relative c'' {
   a4 e8 (f) |
   g g g g |
   \time 3/4
-  c4 c8 [c] a (g) |
+  c,4 c8 [c] a' (g) |
   \time 2/4
   f4. f8 |
-  d16 (f) d8 g g |
+  e16 (f) d8 g g |
   g4. f8 |
   g4 r8 e |
   \time 3/4
@@ -125,13 +125,13 @@ nhacPhienKhucAlto = \relative c'' {
   \time 2/4
   f2 ~ |
   
-  a4 e8 (f) |
+  f4 e8 (f) |
   g g g g |
   \time 3/4
-  c4 c8 [c] a (g) |
+  c,4 c8 [c] a' (g) |
   \time 2/4
   f4. f8 |
-  d16 (f) d8 g g |
+  e16 (f) d8 g g |
   g4. f8 |
   g4 r8 e |
   \time 3/4
@@ -174,7 +174,7 @@ nhacPhienKhucAlto = \relative c'' {
   e2 |
   d8 d b! [b] |
   c2 |
-  bf4 ~ bf |
+  bf4 (c) |
   a2 ~ |
   a4
 }

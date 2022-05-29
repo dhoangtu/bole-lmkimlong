@@ -11,7 +11,7 @@
 % Nhạc phiên khúc
 nhacPhienKhucSop = \relative c'' {
   \override Score.BarLine.break-visibility = ##(#f #f #f)
-  a8 a c (a) f g a4 \bar "||" \break
+  a8 a c \hide (a) f g a4 \bar "||" \break
   \override Score.BarLine.break-visibility = ##(#t #t #t)
   
   \partial 4 c,4 |
@@ -78,7 +78,7 @@ nhacPhienKhucSop = \relative c'' {
   
   \key c \major
   r8 g e' (f) |
-  d4 bf16 (c) d8 |
+  d4 b16 (c) d8 |
   g,4. f8 |
   e4 a |
   g4 r8 g |
@@ -133,7 +133,7 @@ nhacPhienKhucSop = \relative c'' {
   a4 bf |
   d4. f8 |
   c4 g8 g |
-  bf4 (a8) f |
+  bf4 ^(a8) f |
   g2 |
   g4 (a8 g) |
   f2 ~ |
@@ -262,7 +262,7 @@ nhacPhienKhucAlto = \relative c' {
   f4 g |
   bf4. bf8 |
   a4 e8 e |
-  d4 (f8) d |
+  d4 _(f8) d |
   c2 |
   bf4. ( c8) |
   a2 ~ |

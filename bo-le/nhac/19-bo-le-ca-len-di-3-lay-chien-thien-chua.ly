@@ -8,6 +8,21 @@
   tagline = ##f
 }
 
+% Đổi kích thước nốt cho bè phụ
+notBePhu =
+#(define-music-function (font-size music) (number? ly:music?)
+   (for-some-music
+     (lambda (m)
+       (if (music-is-of-type? m 'rhythmic-event)
+           (begin
+             (set! (ly:music-property m 'tweaks)
+                   (cons `(font-size . ,font-size)
+                         (ly:music-property m 'tweaks)))
+             #t)
+           #f))
+     music)
+   music)
+
 % Nhạc phiên khúc
 nhacPhienKhucSop = \relative c' {
   \partial 8 e8 |
@@ -16,8 +31,8 @@ nhacPhienKhucSop = \relative c' {
   c (b) a4 |
   b4 d8 d |
   e (d) c (d) |
-  c2 ~ |
-  c4 r8 a |
+  \stemDown c2 ~ |
+  c4 r8 \stemNeutral a |
   c (b) c (d) |
   e4 e8 e |
   c (b) a4 |
@@ -30,9 +45,12 @@ nhacPhienKhucSop = \relative c' {
   c (b) a4 |
   b2 |
   g4 g8 e |
-  a4. b8 |
+  a4.
+  \once \override NoteColumn.force-hshift = #-0.5
+  \once \stemUp
+  b8 |
   c ([b a b]) |
-  a2 ~ |
+  \stemDown a2 ~ |
   a4 \bar "|."
 }
 
@@ -59,16 +77,21 @@ nhacPhienKhucAlto = \relative c' {
   g4 g8 e |
   a4. <a d,>8 |
   <<
-    {
+    { \notBePhu -2 {
+      \stemUp
       \voiceOne
-      \stemDown a4. _(gs8)
-    }
+      \once \override NoteColumn.force-hshift = #1.7
+      a4.
+      \once \override NoteColumn.force-hshift = #1
+      _(gs8)
+    }}
     \new Voice = "splitpart" {
       \voiceTwo
-      \once \override NoteColumn.force-hshift = #0.7
+      \once \override NoteColumn.force-hshift = #-1.5
       e2
     }
   >>
+  \stemDown
   <e c a>2 _~ |
   <e c a>4
 }
@@ -105,21 +128,6 @@ TongNhip = {
   \set Timing.beamExceptions = #'()
   \set Timing.baseMoment = #(ly:make-moment 1/4)
 }
-
-% Đổi kích thước nốt cho bè phụ
-notBePhu =
-#(define-music-function (font-size music) (number? ly:music?)
-   (for-some-music
-     (lambda (m)
-       (if (music-is-of-type? m 'rhythmic-event)
-           (begin
-             (set! (ly:music-property m 'tweaks)
-                   (cons `(font-size . ,font-size)
-                         (ly:music-property m 'tweaks)))
-             #t)
-           #f))
-     music)
-   music)
 
 \score {
   \new ChoirStaff <<

@@ -40,7 +40,7 @@ nhacDiepKhucSop = \relative c' {
   d4 r |
   R2
   d'8. d16 e8 d |
-  c2 ~ |
+  \stemDown c2 ~ |
   c4 \bar "||"
 }
 
@@ -101,13 +101,13 @@ nhacDiepKhucBas = \relative c {
     }
   >>
   \oneVoice
-  <b g>2 ~ <b g>4 r |
+  <b' g>2 ~ <b g>4 r |
   r g |
   c2 |
   b8. b16 c8 b |
   a4 r8 e |
   f8. fs16 g8 g |
-  c2 ~ |
+  c,2 ~ |
   c4
 }
 

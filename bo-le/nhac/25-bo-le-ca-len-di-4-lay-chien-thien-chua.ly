@@ -40,16 +40,16 @@ nhacDiepKhucSop = \relative c' {
     }
     {
       \time 3/4
-      r4 f8 f d d |
+      r4 f,8 f d d |
       \time 2/4
-      e,2 ~ |
+      e2 ~ |
       e4
     }
   >>
   r4 |
   <<
     {
-      b'8. b16 c8 d |
+      b'8. b16 c8 b |
       a2
     }
     {
