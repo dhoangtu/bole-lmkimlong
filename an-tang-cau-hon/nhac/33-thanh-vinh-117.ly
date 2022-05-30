@@ -3,7 +3,7 @@
 \include "english.ly"
 
 \header {
-  title = "Thánh Lễ"
+  title = "Thánh Vịnh 117"
   subsubtitle = \markup { \normal-text \italic "Hát khi di quan ra nghĩa trang" }
   composer = "Lm. Kim Long"
   tagline = ##f
