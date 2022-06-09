@@ -27,6 +27,8 @@ nhacDiepKhucChuTe = \relative c' {
   c4 r |
   R2*10
   r4 e,8 (g) |
+  
+  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \time 3/4
   a4. g8 a ([b]) |
   c4. a8 b [c] |
@@ -89,6 +91,8 @@ nhacDiepKhucSop = \relative c' {
   a a a4 |
   g2 ~ |
   g4 r 
+  
+  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \time 3/4|
   R2.*2
   \time 2/4
@@ -152,6 +156,8 @@ nhacDiepKhucAlto = \relative c' {
   f e d4 |
   d2 ~ |
   d4 r 
+  
+  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \time 3/4|
   R2.*2
   \time 2/4
@@ -218,6 +224,9 @@ nhacDiepKhucTenor = \relative c {
   c c c4 |
   b2 ~ |
   b4 r |
+  
+  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
+  \time 3/4
   R2.*2
   R2*2
   r4 a8 a f (e) d4 |
@@ -277,6 +286,9 @@ nhacDiepKhucBas = \relative c {
   f f fs4 |
   g2 ~ |
   g4 r |
+  
+  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
+  \time 3/4
   R2.*2
   R2*2
   r4 a8 a |
