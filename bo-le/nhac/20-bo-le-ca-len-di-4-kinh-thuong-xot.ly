@@ -139,14 +139,14 @@ loiDiepKhucBas = \lyricmode {
   Xin Chúa Ki -- tô
   xin thương
   <<
-  { xót }
+  { xót chúng }
   \new Lyrics {
 	  \set associatedVoice = "beBas"
 	  \override Lyrics.LyricText.font-shape = #'italic
-	  đoàn
+	  đoàn -
 	}
   >>
-  chúng con
+  con
   Xin Chúa
   xin thương xót chúng con,
   nguyện xin thương xót chúng con.

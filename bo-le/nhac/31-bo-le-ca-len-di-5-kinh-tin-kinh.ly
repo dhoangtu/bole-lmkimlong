@@ -11,7 +11,7 @@
 % Nhạc điệp khúc
 nhacDiepKhucXuong = \relative c'' {
   \override Score.BarLine.break-visibility = ##(#f #f #f)
-  g8 g a ([g]) c, d e4
+  g8 g a \hide ([g]) c, d e4
   \override Score.BarLine.break-visibility = ##(#t #t #t)
   \bar "||"
 }
@@ -19,7 +19,7 @@ nhacDiepKhucXuong = \relative c'' {
 nhacDiepKhucChuTe = \relative c' {
   R2*6
   r4 e8 e |
-  f4 (d8) d |
+  f4 (e8) d |
   a' g g g |
   g2 |
   a8 g a (b) |
@@ -52,7 +52,7 @@ nhacDiepKhucChuTe = \relative c' {
   d2 ~ |
   d4 r |
   R2*9
-  r4 d16 (e d c) |
+  r4 d16 (f d c) |
   a4 d8 c |
   a16 (c a g) e8 (d) |
   e2 ~ |
@@ -71,7 +71,7 @@ nhacDiepKhucChuTe = \relative c' {
   c4 r |
   R2*11
   r4 d'8 d |
-  c c d16 ([d]) d ([c]) |
+  c c d16 ([e]) d ([c]) |
   g4 d8 f |
   a8. ([c16 a8]) f |
   g4 \fermata d' ( _~ |
@@ -194,7 +194,7 @@ nhacDiepKhucAlto = \relative c' {
   R2*7
   r8 c c d |
   e d e4 |
-  g r8 a |
+  d r8 a' |
   a g a4 |
   g4 c8 d |
   a a a f |
@@ -284,14 +284,14 @@ nhacDiepKhucTenor = \relative c {
   a2 |
   a8 g a16 (c a g) |
   d8 d e16 (g e d) |
-  a2 ~ |
-  a4 r |
+  c2 ~ |
+  c4 r |
   R2*7
   r8 c c d |
   e d g4 |
   g r8 a |
   a g c4 |
-  c c8 c |
+  c c8 d |
   a a c c |
   b2 ~ |
   b4 r |
@@ -383,8 +383,8 @@ nhacDiepKhucBas = \relative c {
   a2 |
   a8 g a16 (c a g) |
   d8 d e16 (g e d) |
-  a2 ~ |
-  a4 r |
+  c2 ~ |
+  c4 r |
   R2*7
   r8 c c d |
   e d c4 |
@@ -454,10 +454,10 @@ nhacDiepKhucBas = \relative c {
   g (f) e4 |
   f4. f8 |
   g4 g |
-  c2 ~ |
+  c,2 ~ |
   c4 r |
   R2*9
-  r4 g4 |
+  r4 g'4 |
   g e8 (g) |
   c4. d8 |
   e4 d16 (e d c) |
@@ -708,7 +708,7 @@ TongNhip = {
   \layout {
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.6
-    \override LyricHyphen.minimum-distance = #2
+    \override LyricHyphen.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
   }

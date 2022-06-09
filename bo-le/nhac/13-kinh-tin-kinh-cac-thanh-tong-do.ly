@@ -113,7 +113,7 @@ nhacPhienKhucAlto = \relative c'' {
   a4 f8 f |
   
   \time 3/4
-  g8. g16 g8 f e d |
+  g8. g16 g8 [f] e d |
   
   \time 2/4
   c4. d8 |

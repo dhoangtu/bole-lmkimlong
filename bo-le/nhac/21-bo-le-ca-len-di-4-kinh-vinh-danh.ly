@@ -72,7 +72,7 @@ nhacDiepKhucSop = \relative c'' {
   a' (c) a8 g g |
   g2 ~ |
   g4 r |
-  r e16 (f) a8 |
+  r e16 (g) a8 |
   a4. g8 |
   c4 a16 (c) d8 |
   d4. (e16 d) |
@@ -115,13 +115,13 @@ nhacDiepKhucAlto = \relative c'' {
   e2 ~ |
   e4
   
-  r4 |
-  R2
-  c'16 (d) c8 b a |
-  g4 r8 r |
-  R2
-  R2
-  r8 e g g |
+  c8. e16 |
+  d8 g a4 |
+  c16 (d) c8 b a |
+  g4 r8 g |
+  c (b) a c |
+  d2 ~ |
+  d8 e, g g |
   c4. c,8 |
   f4 a8 a |
   e2 |
@@ -274,8 +274,9 @@ loiDiepKhucAlto = \lyricmode {
   Chúng con cảm tạ Chúa vì vinh quang cao cả Chúa.
   Lạy Chúa là Thiên Chúa, là Vua trên trời,
   là Chúa Cha toàn năng.
+  Lạy Con Một Thiên Chúa,
   Chúa Giê -- su Ki -- tô.
-  là Chiên Thiên Chúa,
+  Lạy Chúa là Thiên Chúa, là Chiên Thiên Chúa,
   là Con Đức Chúa Cha.
   Chúa xóa tội trần gian
   xin thương xót chúng con.

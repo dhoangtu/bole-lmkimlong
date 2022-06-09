@@ -122,14 +122,14 @@ loiDiepKhucTenor = \lyricmode {
   Xin Chúa thương xót chúng con
   xin thương
   <<
-  { xót }
+  { xót chúng}
   \new Lyrics {
 	  \set associatedVoice = "beBas"
 	  \override Lyrics.LyricText.font-shape = #'italic
-	  đoàn
+	  đoàn -
 	}
   >>
-  chúng con.
+  con.
 }
 
 % Dàn trang

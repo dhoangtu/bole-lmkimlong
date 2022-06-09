@@ -61,7 +61,9 @@ nhacPhienKhucSop = \relative c'' {
   a bf a g |
   f4. d8 |
   f e \slashedGrace { e16 ( } g4) ~ |
-  g8 g f a |
+  g8
+  \once \override NoteColumn.X-offset = 1.2 <>
+  g f a |
   bf4 a8 g |
   g4. f8 |
   g (a) f (e) |
@@ -287,7 +289,8 @@ loiPhienKhucSop = \lyrics {
   Vì loài người chúng ta, và để cứu rỗi chúng ta,
   Người đã từ trời xuống thế.
   Bởi phép Đức Chúa Thánh Thần,
-  Người đã nhập thể trong lòng Trinh Nữ Ma -- ri -- a,
+  Người đã nhập thể
+  \tweak extra-offset #'(0.8 . 0) trong lòng Trinh Nữ Ma -- ri -- a,
   và đã làm người.
   Người chịu đóng đinh vào thập giá vì chúng ta
   thời quan Phong -- xi -- ô Phi -- la -- tô,

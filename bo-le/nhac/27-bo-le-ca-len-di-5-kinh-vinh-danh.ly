@@ -278,11 +278,11 @@ nhacDiepKhucBas = \relative c {
   g2 ~ |
   g4 r |
   R2.*2
-  R2
+  R2*2
   r4 a8 a |
   f (e) d4 |
   g r |
-  R2*4
+  R2*3
   r4 c ~ |
   c8 g g c |
   a (g) e4 |

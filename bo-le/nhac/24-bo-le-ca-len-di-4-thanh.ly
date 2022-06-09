@@ -49,7 +49,7 @@ nhacDiepKhucAlto = \relative c'' {
 
 nhacDiepKhucBas = \relative c' {
   c2 c8 c |
-  c2 r8 e, |
+  c2 r8 c, |
   f f e4 e8 e |
   a2. ~ |
   a4 r a |
