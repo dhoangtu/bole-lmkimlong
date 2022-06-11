@@ -121,7 +121,7 @@ nhacMauBa = \relative c'' {
   \key g \major
   \time 2/4
   \partial 8 g8 |
-  g4 \tuplet 3/2 { a8 d <b g> } |
+  g4 \tuplet 3/2 { a8 d, <b' g> } |
   <<
     {
       b4 \tuplet 3/2 { g8 g g } |
@@ -483,7 +483,7 @@ nhacMauMuoiSau = \relative c'' {
   d d e (d) |
   c2 ~ |
   c8 c e g |
-  f2 \bar "|." \break
+  f2 \bar "|." \pageBreak
   
   a8 e e (g) |
   a2 ~ |
@@ -551,7 +551,7 @@ loiMauBon = \lyricmode {
       \set stanza = "5."
       Kỳ công Chúa đầy dẫy khắp nơi,
       thật khôn khéo Chúa đã hoàn tất vạn sắc với muôn mầu.
-      Khắp địa cầy đầy thụ tạo của Ngài.
+      Khắp địa cầu đầy thụ tạo của Ngài.
       Vậy hồn ta hỡi ca tụng Chúa Trời đi.
     }
   >>
@@ -642,7 +642,8 @@ loiMauBay = \lyricmode {
       Đấng như một anh hùng
       ném xuống đáy đại dương xa mã Pha -- ra -- on,
       và từng lớp kỵ binh tướng công tinh nhuệ
-      nhận chìm dưới biển Hồng "luôn. Đ."
+      nhận chìm dưới biển Hồng
+      \markup { "luôn." \bold "Đ." }
     }
     \new Lyrics {
       \set associatedVoice = "beSop"
@@ -650,16 +651,18 @@ loiMauBay = \lyricmode {
       Đây bao nhiêu vực thẳm há ra để chôn vùi
       chúng rớt xuống vực mau như đá tảng chìm sâu,
       Này Ngài đã biểu dương,
-      cánh tay vung mạnh mà nghiền nát lũ địch "quân. Đ."
+      cánh tay vung mạnh mà nghiền nát lũ địch
+      \markup { "quân." \bold "Đ." }
     }
     \new Lyrics {
       \set associatedVoice = "beSop"
       \set stanza = "4."
       \override Lyrics.LyricText.font-shape = #'italic
       Cho con dân được tới núi gia nghiệp của Ngài,
-      tới chỗ đó địnhc ư do chính tay Ngài chọn,
+      tới chỗ đó định cư do chính tay Ngài chọn,
       Và Ngài thiết lập nên thánh cung nơi này,
-      ngự trị mãi mãi ngàn "năm. Đ."
+      ngự trị mãi mãi ngàn
+      \markup { "năm." \bold "Đ." }
     }
   >>
   \stanzaReminderOff
@@ -691,8 +694,8 @@ loiMauTam = \lyricmode {
       \set associatedVoice = "beSop"
       \set stanza = "3."
       Xin lắng nghe lời, lạy Chúa và ghé mắt xót thương.
-      Xin Đấng con thờ giúp đỡ phù trợ con.
-      Đổi khúc bi ca thành vũ khúc hân hoan.
+      Xin Đấng con thờ giúp đỡ phù trợ con,
+      đổi khúc bi ca thành vũ khúc hân hoan.
       Xin đến muôn đời ngợi ca danh Chúa mãi.
     }
   >>
@@ -781,7 +784,7 @@ loiMauMuoiMot = \lyricmode {
       \set associatedVoice = "beSop"
       \set stanza = "3."
       Đâu ra chi, lạy Chúa, phẩm vật con dâng tiến.
-      Lễ toàn thiêu đâu ngài có cần.
+      Lễ toàn thiêu đâu Ngài có cần.
       Lễ dâng Ngài, tâm thần dập nát,
       Ngài chẳng chê cõi lòng nát dập.
     }
@@ -846,7 +849,7 @@ loiMauMuoiLam = \lyricmode {
       \set stanza = "2."
       \override Lyrics.LyricText.font-shape = #'italic
       Cánh tay Chúa vận dụng uy lực,
-      Kìa là cánh tay hữu Nagif vùng cao.
+      Kìa là tay hữu Ngài vùng cao.
       Thoát vong thân để sống loan truyền
       sự nghiệp Chúa trót cả đời tôi.
     }
@@ -863,7 +866,7 @@ loiMauMuoiLam = \lyricmode {
 
 loiMauMuoiSau = \lyricmode {
   Đức Ki -- tô, Chiên Vượt Qua của chúng ta đã bị sát tế.
-  Vậy chúng ta hãy mừng lễ với bánh khôn men
+  Vậy chúng ta hãy mừng lễ với bánh không men
   là lòng tinh tuyền và chân thật,
   al -- le -- lu -- ia.
   <<
@@ -915,7 +918,7 @@ loiMauMuoiSau = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 10
+  page-count = 11
 }
 
 \markup {
@@ -923,7 +926,7 @@ loiMauMuoiSau = \lyricmode {
   \column {
     \left-align {
       \line {
-        "Sau khi làm phép Lửa Mới, linh mục thắp nến Phục Sinh và kiệu vào nhà thờ,"
+        "Sau khi làm phép Lửa Mới, Linh mục thắp nến Phục Sinh và kiệu vào nhà thờ,"
       }
       \line {
         "ngài nâng cao nến Phục Sinh (3 lần, mỗi lần cao giọng hơn) và công bố:"
@@ -1009,7 +1012,6 @@ loiMauMuoiSau = \lyricmode {
   >>
   \layout {
     indent = 15
-    %\override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -1038,10 +1040,10 @@ loiMauMuoiSau = \lyricmode {
   }
 }
 
-%\pageBreak
+\pageBreak
 
 \markup {
-  \vspace #2
+  %\vspace #2
   "Hoặc: " \bold "Tv. 32"
 }
 
@@ -1058,7 +1060,6 @@ loiMauMuoiSau = \lyricmode {
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override LyricHyphen.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -1067,8 +1068,10 @@ loiMauMuoiSau = \lyricmode {
   }
 }
 
+\pageBreak
+
 \markup {
-  \vspace #2
+  %\vspace #2
   "Sau bài đọc 2:" \bold "Tv. 15"
 }
 
@@ -1085,13 +1088,14 @@ loiMauMuoiSau = \lyricmode {
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
   }
 }
+
+%\pageBreak
 
 \markup {
   \vspace #2
@@ -1111,13 +1115,14 @@ loiMauMuoiSau = \lyricmode {
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
   }
 }
+
+\pageBreak
 
 \markup {
   \vspace #2
@@ -1127,7 +1132,8 @@ loiMauMuoiSau = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "Đáp" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauTam
@@ -1144,6 +1150,8 @@ loiMauMuoiSau = \lyricmode {
   }
 }
 
+\pageBreak
+
 \markup {
   \vspace #2
   "Sau bài đọc 5:" \bold "Is. 12"
@@ -1151,7 +1159,8 @@ loiMauMuoiSau = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "Đáp" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauChin
@@ -1175,7 +1184,8 @@ loiMauMuoiSau = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      instrumentName = \markup { \bold "Đáp" }} <<
         \clef treble
         \new Voice = beSop {
           \nhacMauMuoi
@@ -1217,6 +1227,8 @@ loiMauMuoiSau = \lyricmode {
   }
 }
 
+\pageBreak
+
 \markup {
   \vspace #2
   "Hoặc:" \bold "Tv. 41, 42"
@@ -1235,7 +1247,7 @@ loiMauMuoiSau = \lyricmode {
   >>
   \layout {
     indent = 15
-    \override Lyrics.LyricSpace.minimum-distance = #0.8
+    \override Lyrics.LyricSpace.minimum-distance = #0.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -1276,6 +1288,8 @@ loiMauMuoiSau = \lyricmode {
     ragged-last = ##f
   }
 }
+
+\pageBreak
 
 \markup {
   \vspace #2

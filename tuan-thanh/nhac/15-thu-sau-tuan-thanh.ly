@@ -114,8 +114,8 @@ nhacMauMot = \relative c' {
   <g b,>4 <a d,>8 <b d,> |
   <c e,>2 \bar "|."
   
-  c8 b16 (c) d8 d |
-  g,4 e8 e |
+  c8 b16 (c) d8 c |
+  g4 e8 e |
   f g d16 (e) d8 |
   c2 |
   c8 g' a (g) |
@@ -150,7 +150,7 @@ nhacMauBa = \relative c'' {
   d4 \bar "|."
 }
 
-nhacMauBon = \relative c'' {
+nhacMauBonA = \relative c'' {
   \key f \major
   \time 2/4
   <<
@@ -167,7 +167,7 @@ nhacMauBon = \relative c'' {
       d'4. bf8 |
       g4. a8 |
       a2 ~ |
-      a4 \bar "|."
+      a4 \bar "|." \break
     }
     {
       f4. f8 |
@@ -176,8 +176,8 @@ nhacMauBon = \relative c'' {
       a4 r8 g |
       f16 (g) a8 a g |
       f2 |
-      e8 e f8. a16 |
-      d,8 d e d |
+      e8 e f8. a,16 |
+      d8 d e d |
       cs2 |
       d4. g8 |
       e4. e8 |
@@ -186,8 +186,12 @@ nhacMauBon = \relative c'' {
     }
   >>
   %\break
-  
-  d8 (f) |
+}
+
+nhacMauBonB = \relative c' {
+  \key f \major
+  \time 2/4
+  \partial 4 d8 (f) |
   g4. f8 |
   g bf a g |
   f (g) a f |
@@ -196,16 +200,24 @@ nhacMauBon = \relative c'' {
   f4. g8 |
   a a a, (c) |
   d2 ~ |
-  \partial 4 d4 \bar "|." %\break
-  
+  \partial 4 d4 \bar "|." \break
+}
+
+nhacMauBonC = \relative c' {
+  \key f \major
+  \time 2/4
   f8 (e) d a' |
   a2 |
   bf8 bf4 g8 |
   e2 |
   a8 a4 a8 |
-  d,4 \bar "|." %\break
-  
-  d8 (f) |
+  d,4 \bar "|." \break
+}
+
+nhacMauBonD = \relative c' {
+  \key f \major
+  \time 2/4
+  \partial 4 d8 (f) |
   g2 |
   f8 g bf bf |
   a4. g8 |
@@ -386,7 +398,7 @@ loiMauMot = \lyricmode {
       \override Lyrics.LyricText.font-shape = #'italic
       Con bị lũ quân thù, bạn bè thân thích thảy chê cười,
       vừa khi ngó mặt, kinh tởm _ tránh xa,
-      quên lãng như mật thây ma, và coi như thứ bỏ đi.
+      quên lãng như một thây ma, và coi như thứ bỏ đi.
     }
     \new Lyrics {
       \set associatedVoice = "beSop"
@@ -414,14 +426,22 @@ loiMauBa = \lyricmode {
   Chúng ta hãy đến thờ lạy.
 }
 
-loiMauBon = \lyricmode {
+loiMauBonA = \lyricmode {
   Dân Ta hỡi, dân Ta hỡi, Ta đã làm gì cho ngươi,
   Hay Ta đã làm phiền lòng người điều gì?
   Hãy trả lời cho Ta.
+}
+
+loiMauBonB = \lyricmode {
   Phải chăng vì Ta dẫn ngươi ra khỏi đất Ai Cập,
   mà ngươi dọn thập tự cho Đấng Cứu Chuộc ngươi?
-  
+}
+
+loiMauBonC = \lyricmode {
   Chúa là Đấng Thánh, Đấng Thánh uy hùng, Đấng Thánh vĩnh hằng.
+}
+
+loiMauBonD = \lyricmode {
   Phải chăng vì Ta đã dẫn ngươi qua sa mạc bốn mươi năm,
   mà ngươi dọn thập tự cho Đấng Cứu Chuộc ngươi?
 }
@@ -512,7 +532,7 @@ loiMauMuoi = \lyricmode {
       \set stanza = "4."
       \override Lyrics.LyricText.font-shape = #'italic
       Chính Con Chúa xuống thế trần mặc xác phàm nhân,
-      tời gian tới hồi viên mãn, CHúa đã sai phái đến
+      thời gian tới hồi viên mãn, Chúa đã sai phái đến
       Đấng tác tạo muôn loài được thánh mẫu,
       đấng đồng trinh sinh hạ.
       - - Ôi
@@ -554,9 +574,9 @@ loiMauMuoi = \lyricmode {
     \new Lyrics {
       \set associatedVoice = "beSop"
       \set stanza = "9."
-      Chỉ ngươi xúng với giá chuộc lại cả trần gian,
+      Chỉ ngươi xứng với giá chuộc lại cả trần gian,
       và nên giống tàu thiêng thấm máu của Chiên Chí thánh,
-      dẫn thế giới sa chìm được tiến tới bến bờ cách an bình.
+      dẫn thế gian sa chìm được tiến tới bến bờ cách an bình.
       Ôi Thánh
     }
     \new Lyrics {
@@ -564,7 +584,7 @@ loiMauMuoi = \lyricmode {
       \set stanza = "10."
       \override Lyrics.LyricText.font-shape = #'italic
       Sáng danh Chúa mãi tới ngàn đời vẫn hiển vinh,
-      là Cha thánh, và Con Chúa với Thần Linh chí ái.
+      là Cha thánh, và Con Chúa với Thần Linh chí ái,
       đã xuống ơn cao trọng mà cứu rỗi,
       giữ gìn chúng con - - - - hoài.
       A -- men.
@@ -587,7 +607,7 @@ loiMauMuoi = \lyricmode {
 			       "Deja Vu Serif Condensed"
 			       (/ 20 20)))
   print-page-number = ##f
-  page-count = 6
+  page-count = 7
 }
 
 \markup {
@@ -622,7 +642,15 @@ loiMauMuoi = \lyricmode {
         \line {
           \bold "Câu xướng trước Tin Mừng:" \normal-text "như Chúa Nhật Lễ Lá, trang 8"
         }
-        \null
+      }
+  }
+}
+
+\pageBreak
+
+\markup {
+  \vspace #2
+  \column {
         \line {
           \bold "TÔN THỜ THÁNH GIÁ"
         }
@@ -631,7 +659,6 @@ loiMauMuoi = \lyricmode {
           \normal-text \italic "Linh mục mở lần khăn phủ Thánh Giá, nâng cao và hát (3 lần, lên cung dần)"
         }
       }
-  }
 }
 
 \score {
@@ -699,9 +726,66 @@ loiMauMuoi = \lyricmode {
     \new Staff <<
         \clef treble
         \new Voice = beSop {
-          \nhacMauBon
+          \nhacMauBonA
         }
-      \new Lyrics \lyricsto beSop \loiMauBon
+      \new Lyrics \lyricsto beSop \loiMauBonA
+    >>
+  >>
+  \layout {
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    ragged-last = ##f
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauBonB
+        }
+      \new Lyrics \lyricsto beSop \loiMauBonB
+    >>
+  >>
+  \layout {
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    ragged-last = ##f
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauBonC
+        }
+      \new Lyrics \lyricsto beSop \loiMauBonC
+    >>
+  >>
+  \layout {
+    indent = 10
+    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    \override Score.SpacingSpanner.uniform-stretching = ##t
+    ragged-last = ##f
+  }
+}
+
+\score {
+  <<
+    \new Staff <<
+        \clef treble
+        \new Voice = beSop {
+          \nhacMauBonD
+        }
+      \new Lyrics \lyricsto beSop \loiMauBonD
     >>
   >>
   \layout {
@@ -847,6 +931,8 @@ loiMauMuoi = \lyricmode {
     ragged-last = ##f
   }
 }
+
+\pageBreak
 
 \markup {
   \vspace #2

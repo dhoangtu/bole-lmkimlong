@@ -155,13 +155,13 @@ nhacMauMot = \relative c'' {
       c,2 |
       b8 b d (e) |
       fs2 ~ |
-      fs8 g c d |
+      fs8 g c, d |
       b4
     }
   >>
    r8 \bar "|."
    
-   g16 fs |
+   g'16 fs |
    fs8 b b e, |
    a4 r8 fs16 g |
    a8 g g e |
@@ -339,7 +339,7 @@ nhacMauBa = \relative c'' {
   r8 g
   <<
     {
-      e8. a16 c8 d |
+      e'8. a,16 c8 d |
       d4 b8 b |
       c4 a8 a |
       b4.
@@ -388,7 +388,7 @@ nhacMauNam = \relative c'' {
   g8. a16 f8 bf |
   bf2 |
   <c a>8 <a f> <bf g> (<a f>) |
-  <g c>4 bf8 d |
+  <g c,>4 bf8 d |
   c c f, (g) |
   a8. bf16 bf8 a |
   g2 ~ |
@@ -488,7 +488,7 @@ loiMauBa = \lyricmode {
 }
 
 loiMauBon = \lyricmode {
-  Chiên Vượt Qua của chúng ta là Đức Ki -- tô đã bị sát tế,
+  Chiên Vượt Qua của chúng ta là Đức Ki -- tô đã bị sát tế.
   Vậy chúng ta hãy mừng lễ trong Chúa.
 }
 
@@ -600,7 +600,7 @@ loiMauNam = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Alleluia:" \normal-text "(khởi với Alleluia như thưởng lễ) Câu Xướng:"
+  \bold "Alleluia:" \normal-text "(khởi với Alleluia như thường lễ) Câu Xướng:"
 }
 
 

@@ -120,8 +120,8 @@ nhacMauMot = \relative c'' {
     }
     {
       g4. g8 |
-      c c c4 |
-      d a8 a |
+      c, c c4 |
+      d a'8 a |
       g2 ~ |
       g4
     }
@@ -249,8 +249,8 @@ nhacMauBon = \relative c' {
   g4 g8 g |
   g2 |
   a8 (bf) g g |
-  a4. d,8 |
-  g a a16 (c) b!8 |
+  a4. d8 |
+  g, a a16 (c) b!8 |
   a4. f8 |
   g g f (e) |
   c c e (f) |
@@ -392,7 +392,7 @@ nhacMauChin = \relative c'' {
   a8 g bf \hide ([a]) g f g a4 f8 a
   g f g \hide ([f]) e d4 \bar "|" d8 e f \hide ([e]) d f g a4 \bar "|"
   f8 e c e f e d4 \bar "|" a'8 b!? c c b \hide ([a]) g \bar "|"
-  a4 a8 bf a g f \hide ([e f]) e d4 \bar "||"
+  a4 a8 bf a g f \hide ([g f]) e d4 \bar "||"
   d8 \hide ([c e f]) d4 \bar "||"
 }
 
@@ -602,7 +602,7 @@ loiMauChin = \lyricmode {
       Đêm từ giã, trong tiệc sau hết,
       cùng với anh em lúc chung bàn,
       và khi đã thực thi chu tất
-      thức ăn được nghi ghi xưa,
+      thức ăn được nghi thức ghi xưa,
       Người trao hiến chính thân mình đây
       nên của ăn cho các Tông Đồ.
     }
@@ -633,7 +633,7 @@ loiMauChin = \lyricmode {
       \override Lyrics.LyricText.font-shape = #'italic
       Dâng về Chúa Cha và Con Chúa,
       lời tán dương mừng chúc vang hòa
-      cùng vinh phúc quyền ăng, danh giá,
+      cùng vinh phúc quyền năng, danh giá,
       tựa khói trầm bay tỏa ngát hương,
       cùng tiến Chúa Thánh Linh từ hậu
       khúc tán dương cảm tạ suốt đời.
@@ -874,10 +874,10 @@ loiMauChin = \lyricmode {
           \bold "Khi kiệu Thánh Thể"
         }
         \line {
-          \normal-text \italic "Hát lại 4 câu trên khi cuộc rước còn tiếp diễn."
+          \normal-text \italic "Hát lại 4 câu đầu 1-4 khi cuộc rước còn tiếp diễn."
         }
         \line {
-          \normal-text \italic "Khi linh mục đã đặt Mình Thánh lên bàn thờ, hát câu 5 & 6:"
+          \normal-text \italic "Khi linh mục đã đặt Mình Thánh lên bàn thờ, hát câu 5, 6:"
         }
       }
   }

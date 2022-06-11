@@ -155,11 +155,11 @@ nhacMauMot = \relative c'' {
   \oneVoice
   <<
     {
-      c2 ~ |
+      c'2 ~ |
       c4 \bar "|." \break
     }
     {
-      e2 ~ |
+      e,2 ~ |
       e4
     }
   >>
@@ -214,7 +214,7 @@ nhacMauHai = \relative c'' {
 nhacMauBa = \relative c'' {
   \key f \major
   \time 2/4
-  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
+  %\override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \partial 8 a8 |
   d, (e) f (g) |
   a4. g8 |
@@ -458,7 +458,7 @@ nhacMauSau = \relative c'' {
   <<
     {
       \voiceOne
-      g'8 _([b a])
+      a'8 _([b a])
     }
     \new Voice = "splitpart" {
       \voiceTwo
@@ -482,7 +482,7 @@ nhacMauSau = \relative c'' {
   c'8 e, |
   f8. a16 a8 d, |
   e4 e8 e |
-  f8. f16 e (e) c8 |
+  f8. f16 e (f) c8 |
   g'4. e16 (f) g8 g f e |
   a4 r8 c |
   c b16 (e) a,8 a |
@@ -546,7 +546,7 @@ nhacMauTam = \relative c'' {
   <<
     {
       \voiceOne
-      a' (bf)
+      a' _(bf)
     }
     \new Voice = "splitpart" {
       \voiceTwo
@@ -761,7 +761,7 @@ loiMauNam = \lyricmode {
   Hoan hô trên các tầng trời.
   Nghe tin Chúa Giê -- su đến Giê -- ru -- sa -- lem,
   dân chúng ra đón Người,
-  tay cầm cành là ca vang:
+  tay cầm cành lá ca vang:
   Hoan hô trên các tầng trời.
 }
 
@@ -805,7 +805,7 @@ loiMauBay = \lyricmode {
       \set stanza = "2."
       \override Lyrics.LyricText.font-shape = #'italic
       Ác thù xấn tới tựa lũ chó vây chặt,
-      đâm thấu chân tay, xương xẩu con đếm xem vằn dài,
+      đâm thấu chân tay, xương xẩu con đếm xem vắn dài,
       mắt căm hờn, nhìn chòng chọc con nhạo báng.
     }
     \new Lyrics {
@@ -868,7 +868,7 @@ loiMauChin = \lyricmode {
       \set associatedVoice = "beSop"
       \set stanza = "4."
       \override Lyrics.LyricText.font-shape = #'italic
-      Đoan hữa chi là tôi tuân giữ ngay ở trước dân Ngài.
+      Đoan hứa chi là tôi tuân giữ ngay ở trước dân Ngài.
     }
     \new Lyrics {
       \set associatedVoice = "beSop"
@@ -965,6 +965,7 @@ loiMauChin = \lyricmode {
   >>
   \layout {
     indent = 10
+    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.8
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
