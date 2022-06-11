@@ -10,19 +10,19 @@
 
 % Nhạc
 nhacMauMot = \relative c'' {
-  c8 c (b) a b c4 \bar "||" \break
-  g8 a d4 e8 b c b a4 \bar "|" \break
+  c8 c \hide ([b]) a b c4 \bar "||" \break
+  g8 a d,4 e8 b' c b a4 \bar "|" \break
   
-  a8 g g b a4 e8 a a ([b]) c4 \bar "||"
-  a8 c ([b]) e, e e ([g]) a ([b] a4) \bar "||"
+  a8 g g b a4 e8 a a \hide ([b]) c4 \bar "||"
+  a8 c \hide ([b]) e, e e \hide ([g]) a ([b] a4) \bar "||"
 }
 
 nhacMauHai = \relative c'' {
-  b8 b c a b4 c8 d4 b8 c ([b]) a b ([c]) g4
-  a8 b g a a e ([g]) a4 \bar "||" \break
+  b8 b c a b4 c8 d4 b8 c \hide ([b]) a b \hide ([c]) g4
+  a8 b g a a e \hide ([g]) a4 \bar "||" \break
   g8 g4 ([a]) \bar "||"
   
-  c8 b4 d8 c b c ([b]) a g a4 \bar "||"
+  c8 b4 d8 c b c \hide ([b]) a g a4 \bar "||"
   <c a>4 <d b g> \bar "|"
   <e c g c,>2 ~ <e c g c,>4 \bar "||"
 }

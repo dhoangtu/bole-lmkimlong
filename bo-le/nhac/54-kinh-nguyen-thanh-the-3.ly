@@ -12,7 +12,7 @@
 nhacMauMot = \relative c'' {
   g8 \hide ([a]) b4 b8 a a c c4 a8 b g a e e4 e8 g a
   g a4 g8 g c b b b b b c4 c8 c \hide ([b]) a4 a8
-  g a b e e b \hide ([c]) b a4 c8 b a b g a
+  g a b e, e b' \hide ([c]) b a4 c8 b a b g a
   a e e4 e8 g e a g g a a4 b8 \hide ([c]) a
   b b b4 b8 d d d \hide ([e]) b d d \hide ([c]) b a4 \bar "||"
   
@@ -73,14 +73,14 @@ nhacMauNam = \relative c'' {
 
 
 nhacMauSau = \relative c'' {
-  a8 a a c (b) a g a b a g a (g) e4
+  a8 a a c \hide ([b]) a g a b a g a \hide ([g]) e4
   e8 e e b' g g a g b c a b b4 e,8 e
   c'8 a a b4 b8 a b g4 g8 a e c' a
-  c b4 b8 b g c b (c) g b a4 a8 b a a
+  c b4 b8 b g c b \hide ([c]) g b a4 a8 b a a
   g c c4 a8 a b g g a a a a e4 a8 a
   a g c c c b4 a8 b c a a c b c d
   d c4 g8 a e4 c'8 b c a b c b4 b8 d c
-  b c b a4 e8 c' b b c b c b a4 g8 g
+  b c b a4 e8 c' b b c b a4 g8 g
   a g a g a e b' c a4 \bar "||"
 }
 
@@ -126,7 +126,7 @@ loiMauBon = \lyricmode {
   sự sống lại và lên trời vinh hiển của con Chúa,
   đồng thời mong đợi Người lại đến,
   chúng con dâng lên Chúa hy lễ hằng sống và thánh thiện này
-  để tạ ơn Chúa
+  để tạ ơn Chúa.
   Chúng con nài xin Chúa đoái nhìn hiến tế của Hội Thánh
   dâng lên Chúa và khi Chúa nhận đây chính là của lễ
   mà Chúa hiến tế để nguôi lòng Chúa
@@ -168,7 +168,7 @@ loiMauSau = \lyricmode {
   khi Cha lau sạch nước mắt chúng con,
   vì khi thấy tận tường Cha là Thiên Chúa chúng con
   thì muôn đời chúng con sẽ trở nên giống Cha
-  và sẽ ca ngợi Cha khôn cùng nhờ Đức Giê -- su Ki -- tô
+  và sẽ ca ngợi Cha khôn cùng nhờ Đức Ki -- tô
   Chúa chúng con.
   Nhờ Người Cha rộng ban mọi ơn lành cho thế gian.
 }

@@ -10,22 +10,23 @@
 
 % Nhạc
 nhacMauMot = \relative c'' {
-  a8 g ([a]) b b b4 a8 b a c ([b]) g g4 (b)
+  a8 g \hide ([a]) b b b4 a8 b a c \hide ([b]) g g4 (a)
   a8 g a g4 e \bar "||"
   
-  e8 ([g]) a b a4 b8 a g4
-  a8 g e a a g ([a]) b4 c8 b a ([b]) c4 c8 b g g
-  b b c b ([c]) b a4 \bar "|"
+  e8 \hide ([g]) a b a4 b8 a g4
+  a8 g e a a g \hide ([a]) b4 c8 b a \hide ([b]) c4 c8 b g g
+  b b c b \hide ([c]) b a4 \bar "|"
   b8 b b c b a a4
-  g8 e d e4 e8 a g ([a]) b a4 b8 c b c
-  b4 a8 c b d c4 a8 b e, ([g]) b a a b
-  b b4 b8 c c b a g ([a]) e ([g]) b ([c] a4) \bar "|" \break
+  g8 e d e4 e8 a g \hide ([a]) b a4 b8 c b c
+  b4 a8 c b d c4 a8 b e, \hide ([g]) b a a b
+  b b4 b8 c c b a g \hide ([a])
+  e \hide ([g]) b ([c] \once \stemDown a4) \bar "|" \break
   
-  g8 ([a]) b4 b8 c c b g g g ([a]) b4 b8 c8 b4 b8 c a
-  c b a b ([a]) g g a4 e8 g ([a]) g g a b c4 c8 b
-  c b b c ([b]) a a b4 g8 g a g g g a ([g])
-  e4 a8 a b a a g g a e a ([g]) c4 a8 a c b b ([c]) d c c
-  c c4 c8 b g b ([c]) a4 \bar "||" \break
+  g8 \hide ([a]) b4 b8 c c b g g g \hide ([a]) b4 b8 c8 b4 b8 c a
+  c b a b \hide ([a]) g g a4 e8 a \hide ([b]) g g a b c4 c8 b
+  c b b c \hide ([b]) a a b4 g8 g a g g g a \hide ([g])
+  e4 a8 a b a a g g a e a \hide ([b]) c4 a8 a c b b \hide ([c]) d c c
+  c c4 c8 b g b \hide ([c]) a4 \bar "||" \break
   
   e8 [a] \bar "|"
   g4.
@@ -33,13 +34,13 @@ nhacMauMot = \relative c'' {
     {
       c8 \bar "|"
       b4 b8 [d] \bar "|"
-      c b c ([d]) \bar "|"
+      c [b] c ([d]) \bar "|"
       e4
     }
     {
       a,8 \bar "|"
       e4 d8 g \bar "|"
-      e d a' ([g]) \bar "|"
+      e [d] a' ([g]) \bar "|"
       c4
     }
   >>
@@ -66,16 +67,16 @@ nhacMauMot = \relative c'' {
   >>
   \bar "||" \break
   
-  e8 ([g]) b a a a a4 c8 c c c c b a a4 g8 g g
-  g a b c b4 a8 b a b g ([a]) e b' c a4 a8 g b
-  e, b' ([c]) a4 a8 a g c c b c a d d4 b8 c b
-  b b a c ([b]) g g a4 a8 a c b d d d4 d8 b
-  c ([b]) a b a a g4 \bar "||"
+  e8 \hide ([g]) b a a a a4 c8 c c c c b a a4 g8 g g
+  g a b c b4 a8 b a b g \hide ([a]) e b' c a4 a8 g b
+  e, b' \hide ([c]) a4 a8 a g c c b c a d d4 b8 c b
+  b b a c \hide ([b]) g g a4 a8 a c b d d d4 d8 b
+  c \hide ([b]) a b a a g4 \bar "||"
   
-  e8 ([g a b]) a4 \bar "||" \break
+  e8 \hide ([g a b]) a4 \bar "||" \break
   
-  a8 a a ([b]) c4 g8 g g a e ([g]) a4 \bar "||"
-  g8 a e ([g]) a4 \bar "||"
+  a8 a a \hide ([b]) c4 g8 g g a e \hide ([g]) a4 \bar "||"
+  g8 a e \hide ([g]) a4 \bar "||"
 }
 
 % Lời

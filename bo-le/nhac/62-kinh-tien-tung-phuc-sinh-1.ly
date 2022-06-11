@@ -20,7 +20,7 @@ nhacPhienKhucSop = \relative c'' {
   a b \hide ([a]) g4 b8 b d d4 c8 \hide ([b]) a4 a8 b a b
   c g b b \hide ([c]) a4 a8 c b g b a b b c4
   c8 d c c4 b8 a b a c b a g a \hide ([b]) b4 \bar "|"
-  g8 b \hide ([c]) a a b a4 b8 b \hide ([c]) a a b4 g8
+  g8 b \hide ([c]) a a b a4 d8 d \hide ([c]) a a b4 g8
   a \hide ([b]) b4 c8 c a a c b c b4 b8 d \hide ([c]) a4 a8 \hide ([b])
   g g g c b b \hide ([c]) a4 \bar "|" g8 \hide ([a]) b4 b8 a b b d
   c b c \hide ([b]) a b4 a8 b \hide ([c]) b a b c a a
@@ -32,9 +32,7 @@ nhacPhienKhucSop = \relative c'' {
 loiPhienKhucSop = \lyrics {
   Lạy Chúa, chúng con tuyên xưng Chúa mọi lúc
   nhất là trong đêm
-	  \override Lyrics.LyricText.font-shape = #'italic
-	  (ngày)
-	\revert Lyrics.LyricText.font-shape
+  \markup { \italic "(ngày, mùa)" }
   cực thánh này, thật là chính đáng phải đạo
   và đem lại ơn cứu độ cho chúng con,
   và chúng con càng hãnh diện tung hô Chúa khi Đức Ki -- tô,

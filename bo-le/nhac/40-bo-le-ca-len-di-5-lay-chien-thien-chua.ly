@@ -36,7 +36,7 @@ nhacDiepKhucChuTe = \relative c' {
   r4 d8 c d4 ~ |
   d8 d e4 (d) |
   c2. ~ |
-  c4 r r \bar "|."
+  c4 r2 \bar "|."
 }
 
 nhacDiepKhucSop = \relative c'' {
@@ -70,14 +70,14 @@ nhacDiepKhucSop = \relative c'' {
   a (g) a (c) |
   d2 |
   c8 c a (g) |
-  a2 |
+  c2 |
   b8 b g (e) |
   a2 ~ |
   
   \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \numericTimeSignature
   \time 3/4
-  a8 [g]
+  a8 [\once \override NoteColumn.X-offset = 1.5 <> g]
   <<
     {
       a8 [a]
@@ -111,7 +111,7 @@ nhacDiepKhucSop = \relative c'' {
       e4
     }
   >>
-  r4 r
+  r2
 }
 
 nhacDiepKhucBas = \relative c' {
@@ -165,7 +165,7 @@ nhacDiepKhucBas = \relative c' {
       c4
     }
   >>
-  r4 r \bar "|."
+  r2 \bar "|."
 }
 
 % Lời điệp khúc

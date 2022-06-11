@@ -40,8 +40,8 @@ nhacMauBa = \relative c'' {
   g8 a e \hide ([g]) a4 \bar "||"
 }
 
-nhacMauBon = \relative c'' {
-  g8 a g \hide ([a]) b4 g8 g a e \hide ([g]) a4 \bar "||"
+nhacMauBon = \relative c' {
+  e8 a g \hide ([a]) b4 g8 g a e \hide ([g]) a4 \bar "||"
 }
 
 % Lời

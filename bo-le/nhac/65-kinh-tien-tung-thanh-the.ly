@@ -12,7 +12,7 @@
 % Nhạc phiên khúc
 nhacPhienKhucSop = \relative c'' {
   g8 \hide ([a]) b4 a8 b c c4 b8 c d b c \hide ([b]) a b4
-  b8 a g a b a b a \hide ([b]) c4 a8 c b b a
+  b8 a g a b a b a \hide ([b]) c4 a8 c b b c
   c b4 b8 b d d4 c8 \hide ([b]) a4 a8 b a b c g
   b b \hide ([c]) a4 \bar "|" b8 a c c b c a c b a4 a8
   c a a a c b b c a4 g8 g

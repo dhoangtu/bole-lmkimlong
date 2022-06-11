@@ -30,10 +30,10 @@ loiPhienKhucSop = \lyrics {
   Lạy Chúa là Cha chí thánh, là Thiên Chúa toàn năng hằng hữu,
   chúng con tạ ơn Chúa mọi nơi mọi lúc nhờ Đức Ki -- tô, Chúa chúng con,
   thật là chính đáng, phải đạo và đem lại ơn cứu độ cho chúng con.
-  Trong Người, Chúa đã muôn canh tân mọi sự và cho hết thảy chúng con
+  Trong Người, Chúa đã muốn canh tân mọi sự và cho hết thảy chúng con
   được thông phần sự sung mãn của Người.
   Bởi vì, tuy vốn là Thiên Chúa, Người đã tự bỏ mình đi, và nhờ Máu Người
-  đổ ra trên thập giá, Người đã hòa giảu muôn loài.
+  đổ ra trên thập giá, Người đã hòa giải muôn loài.
   Bởi đó, Người đã được suy tôn trên hết mọi sự
   và trở nên căn nguyên cứu độ vĩnh cửu cho tất cả những ai vâng phục Người.
   Vì thế, cùng với các Thiên Thần và Tổng Lãnh Thiên Thần,

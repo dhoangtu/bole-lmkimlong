@@ -15,7 +15,7 @@ nhacMauMot = \relative c' {
   e8 g \hide ([a]) b4 b8 a g b c c a b c b4
   a8 \hide ([c]) d b c a b4 e,8 g b a a a a4 \bar "|" a8 a a
   b d c4 b8 c a g g b e, g b a4 a8 d c a c
-  b4 b8 f f g \hide ([a]) e4 g8 e e g \hide ([b]) a4 \bar "|" g8 \hide ([g]) a4 a8 a a
+  b4 b8 f f g \hide ([a]) e4 g8 e e g \hide ([b]) a4 \bar "|" e8 \hide ([g]) a4 a8 a a
   e e g a a4 g8 c a c d4 d8 c a c c a c
   b b c a4 b8 b a g g a \hide ([b]) b4 a8 d c a a g4 \bar "||"
 }
@@ -30,7 +30,7 @@ nhacMauHai = \relative c'' {
       c4 a8 b |
       b4 fs8 g |
       a4. a8 |
-      d4 r8 b |
+      d,4 r8 b' |
       a4 fs8 g |
       g2 ~ |
       g4 \bar "||"
@@ -103,6 +103,7 @@ loiMauHai = \lyricmode {
   >>
   \layout {
     indent = 10
+    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -128,7 +129,7 @@ loiMauHai = \lyricmode {
 \markup {
   \column {
     \line { \bold "Linh mục tiếp tục đọc các lời nguyện," }
-    \line { \bold "sau mỗi lời, Giáo Dân tung hô:" }
+    \line { \bold "sau mỗi lời, Giáo dân tung hô:" }
     \vspace #1
   }
 }

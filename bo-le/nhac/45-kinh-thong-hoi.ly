@@ -18,19 +18,27 @@ nhacMauHai = \relative c' {
   e8
   <<
     {
-      \voiceOne
       c' |
       b4 c8 b |
-      a4. d16 (e) |
-      \stemDown e2 ~ |
+      a4.
+    }
+    {
+      a8 |
+      g4 a8 g |
+      f4.
+    }
+  >>
+  <<
+    {
+      \voiceOne
+      d'16 (e) |
+      e2 ~ |
       e4
     }
     \new Voice = "splitpart" {
       \voiceTwo
-      a,8 |
-      g4 a8 g |
-      f4. <a f>8 |
-      <gs e>2 ~ |
+      <a, f>8 |
+      \stemUp <gs e>2 ~ |
       <gs e>4
     }
   >>
@@ -46,19 +54,27 @@ nhacMauHai = \relative c' {
   e8
   <<
     {
-      \voiceOne
       b' |
       b4. c8 |
-      e4 b8 c16 (b) |
-      \stemDown a2 ~ |
+      e,4
+    }
+    {
+      d8 |
+      e4. d8 |
+      c4
+    }
+  >>
+  <<
+    {
+      \voiceOne
+      b'8 c16 (b) |
+      a2 ~ |
       a4
     }
     \new Voice = "splitpart" {
       \voiceTwo
-      d,8 |
-      e4. d8 |
-      c4 d8 e |
-      <c a>2 ~ |
+      d,8 e |
+      \stemUp <c a>2 ~ |
       <c a>4
     }
   >>
@@ -66,18 +82,18 @@ nhacMauHai = \relative c' {
 }
 
 nhacMauBa = \relative c' {
-  e8 ([a]) b4 c8 b a b c b d d d
+  e8 \hide ([a]) b4 c8 b a b c b d d d
   c b e \bar "|"
   e4 r8 b \bar "|"
   c4. b8 \bar "|"
-  c ([b]) a ([g]) \bar "|"
+  c ([b]) a ([b]) \bar "|"
   a4 r8 \bar "||" \break
   
   <<
     {
       b8 \bar "|"
       c4. b8 \bar "|"
-      c ^([b]) a ^([g]) \bar "|"
+      c ([b]) a ([b]) \bar "|"
       a2 ~ \bar "|"
       a4
     }
@@ -91,7 +107,7 @@ nhacMauBa = \relative c' {
   >>
   \bar "||" \break
   
-  g'8 ([a]) c b b4 c8 c c b a d ([c]) b b
+  g'8 \hide ([a]) c b b4 c8 c c b a d \hide ([c]) b b
   e2 \bar "|"
   e4 f8 e \bar "|"
   d4. d8 \bar "|"
@@ -100,14 +116,14 @@ nhacMauBa = \relative c' {
   
   <<
     {
-      e4 f8 e |
+      e4 f8 [e] |
       d4. d8 |
-      e ([d]) c ([d]) |
-      c2 ~ |
+      e ([d]) c ([d]) \bar "|"
+      c2 ~ \bar "|"
       c4
     }
     {
-      c4 d8 c |
+      c4 d8 [c] |
       b4. b8 |
       c (b) a (b) |
       a2 ~ |
@@ -116,7 +132,7 @@ nhacMauBa = \relative c' {
   >>
   \bar "||" \break
   
-  e8 ([a]) b c a d e e f ([e]) d4 c8 b
+  e8 \hide ([a]) b c a d e e f \hide ([e]) d4 c8 b
   a b c \bar "|"
   b4 r8 b \bar "|"
   c4. b8 \bar "|"
@@ -141,8 +157,8 @@ nhacMauBa = \relative c' {
   >>
   \bar "||" \break
   
-  a'8 a b g a4 g8 a g ([f]) e4 e8 g
-  a b a c b d ([c]) b a4 \bar "||"
+  a'8 a b g a4 g8 a g \hide ([f]) e4 e8 g
+  a b a c b d \hide ([c]) b a4 \bar "||"
   
   e8 ([g a b]) a4 \bar "||"
 }

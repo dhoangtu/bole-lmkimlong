@@ -68,9 +68,9 @@ nhacMauBon = \relative c' {
   a8 a b a a a b e, \hide ([g]) a c c c b4 \bar "|" g8 b b b g
   b a4 g8 g e e fs g4 fs8 fs fs g fs e g \hide ([a]) b4 b8 b
   g g b b g e \hide ([g]) \bar "|" a4 d, \bar "|"
-  b'4. b8 g \hide ([b]) \bar "|" a4. d8 \bar "|"
+  b'4. b8 g b \bar "|" a4. d8 \bar "|"
   c4 a8 a \bar "|"
-  g4 d \bar "|" \break
+  g4 \bar "|" \break
   
   d4 \bar "|"
   <<
@@ -297,7 +297,7 @@ loiMauHai = \lyricmode {
   và vì Lời Chúa dùng để soi sáng tâm trí chúng con.
   Chúng con ca ngợi Chúa, vì trái đất và con người cư ngụ trên đó,
   và vì sự sống mà chúng con biết là Chúa đã ban cho chúng con.
-  Chúa là Đấng thật tốt lành, là Đâng yêu thương chúng con
+  Chúa là Đấng thật tốt lành, là Đấng yêu thương chúng con
   và làm cho chúng con những điều kỳ diệu.
   Vì thế tất cả chúng con đều hát mừng Chúa:
 }
@@ -609,4 +609,9 @@ notBePhu =
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##t
   }
+}
+
+\markup {
+  \vspace #2
+  \bold "Linh mục tiếp tục Thánh Lễ"
 }

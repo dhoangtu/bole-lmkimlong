@@ -11,14 +11,14 @@
 % Nhạc
 nhacMauMot = \relative c'' {
   \key c \major
-  a8 ([b]) g g a e ([g]) a4 \bar "||"
-  g8 a e ([g]) a4 \bar "||" \break
+  a8 \hide ([b]) g g a e \hide ([g]) a4 \bar "||"
+  g8 a e \hide ([g]) a4 \bar "||" \break
   
-  b8 ([c]) b b a4 b \bar "||"
-  b8 ([c]) b a b f ([a]) b4 \bar "||" \break
+  b8 \hide ([c]) b b a4 b \bar "||"
+  b8 \hide ([c]) b a b f \hide ([a]) b4 \bar "||" \break
   
-  a8 ([b a]) g a b a b c c ([b]) a4 \bar "||"
-  e8 e g ([a]) a4 \bar "||"
+  a8 \hide ([b a]) g a b a b c c \hide ([b]) a4 \bar "||"
+  e8 e g \hide ([a]) a4 \bar "||"
 }
 
 nhacMauHai = \relative c' {
@@ -87,7 +87,7 @@ nhacMauBa = \relative c' {
   <<
     {
       \voiceOne
-      d'4 (c ~ |
+      d'4 (c _~ |
       c4)
     }
     \new Voice = "splitpart" {
@@ -137,9 +137,9 @@ nhacMauBon = \relative c' {
 
 nhacMauNam = \relative c'' {
   \key c \major
-  c8 a a4 d8 b b c ([b]) a4 g8 g a e
-  e a a g c b d ([c]) a b a b4 b8 a
-  a c b ([c]) d ([c]) b a4 b8 a g4 \bar "||"
+  c8 a a4 d8 b b c \hide ([b]) a4 g8 g a e
+  e a a g c b d \hide ([c]) a b a b4 b8 a
+  a c b \hide ([c]) d \hide ([c]) b a4 b8 a g4 \bar "||"
   e8 ([g a b]) \bar "|"
   a2 \bar "||"
 }
@@ -147,14 +147,14 @@ nhacMauNam = \relative c'' {
 nhacMauSau = \relative c'' {
   <<
     {
-      c4 (b8 a) |
+      \once \stemUp c4 (b8 a) |
       b2 |
       d4. ^(f8) |
       e2 ~ |
       e4
     }
     {
-      a,4 (g8 f) |
+      \once \stemUp a,4 (g8 f) |
       e2 |
       <a f>4. _(<b d,>8) |
       <gs e>2 ~ |

@@ -17,19 +17,19 @@ nhacMauMot = \relative c'' {
 }
 
 nhacMauHai = \relative c'' {
-  a8 g b ([c]) b b b b b c b ([a]) a4 \bar "||"
+  a8 g b \hide ([c]) b b b b b c b ([a]) a4 \bar "||"
 }
 
 nhacMauBa = \relative c' {
-  \partial 4 e4 |
+  \partial 4 e4 \bar "|"
   <<
     {
-      c' d8 d |
-      e2 ~ |
+      c' d8 [d] \bar "|"
+      e2 ~ \bar "|"
       e4
     }
     {
-      a,4 b8 b |
+      a,4 b8 [b] |
       c2 ~ |
       c4
     }
@@ -38,7 +38,7 @@ nhacMauBa = \relative c' {
 }
 
 nhacMauBon = \relative c' {
-  \partial 4 e4 |
+  \partial 4 e4 \bar "|"
   <<
     {
       c'4. b8 \bar "|"

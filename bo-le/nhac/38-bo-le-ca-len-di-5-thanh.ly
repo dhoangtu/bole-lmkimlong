@@ -17,7 +17,7 @@ nhacDiepKhucChuTe = \relative c'' {
   g4 r r |
   R2.*2
   r2 c8 c |
-  d4 c8 d e (a,) |
+  d4 c8 d c (a) |
   g2. |
   R2.
   r2 a8 a |
@@ -32,11 +32,11 @@ nhacDiepKhucChuTe = \relative c'' {
   R1*4
   
   \time 3/4
-  r4 r c8 c |
+  r2 c8 c |
   d4 c8 [d] c ([a]) |
   g2. |
   R2.
-  r4 r a8 a |
+  r2 a8 a |
   c4 a8 [c] a ([g]) |
   e2. |
   r4 d'8 (e d4) |
@@ -65,9 +65,9 @@ nhacDiepKhucSop = \relative c'' {
   \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \numericTimeSignature
   \time 4/4
-  c4 (b8 a) g2 ~ |
+  \once \stemUp c4 (b8 a) g2 ~ |
   g4 d'8 (c) b2 |
-  c4. (d8) a4 (d) |
+  c4. (d8) a4 (\once \stemUp d) |
   c2 c4 c |
   
   d2. ~ |
@@ -183,8 +183,8 @@ nhacDiepKhucBas = \relative c' {
   \time 4/4
   r2 g'4 (f8 e) |
   d2 ~ d4 g8 (f) |
-  e2 d4 (c8 d) |
-  c4 (d) e4. ef8 |
+  e2 f4 (e8 d) |
+  c4 (\once \stemUp d) e4. ef8 |
   
   \time 3/4
   d2. ~ |
@@ -235,11 +235,23 @@ loiDiepKhucAlto = \lyricmode {
   Hoan hô Chúa trên các tầng trời.
 }
 
-loiDiepKhucBas = \lyricmode {
+loiDiepKhucTenor = \lyricmode {
   Thánh, Thánh, Thánh,
   Chúa là Thiên Chúa các đạo binh
   Trời đất đầy vinh quang Chúa
   vinh quang đầy vinh quang Chúa.
+  Hoan hô Chúa trên các tầng trời
+  Hoan hô Chúa trên các tầng trời.
+  Chúc tụng, chúc tụng Đấng ngự nhân danh Ngài.
+  Hoan hô Chúa trên các tầng trời.
+  Hoan hô Chúa trên các tầng trời.
+}
+
+loiDiepKhucBas = \lyricmode {
+  Thánh, Thánh, Thánh,
+  Chúa là Thiên Chúa các đạo binh
+  Trời đất đầy vinh quang Chúa
+  vinh quang đầy vinh quang Ngài.
   Hoan hô Chúa trên các tầng trời
   Hoan hô Chúa trên các tầng trời.
   Chúc tụng, chúc tụng Đấng ngự nhân danh Ngài.
@@ -322,7 +334,7 @@ TongNhip = {
           \new Voice = beTenor {
             \TongNhip \nhacDiepKhucTenor
           }
-          \new Lyrics \lyricsto beTenor \loiDiepKhucBas
+          \new Lyrics \lyricsto beTenor \loiDiepKhucTenor
       >>
       \new Staff <<
           \clef bass

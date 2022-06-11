@@ -19,54 +19,58 @@ nhacPhienKhucSop = \relative c'' {
   \partial 8 a8 |
   c4. b8 |
   c (b) a (b) |
-  a4 r8 d |
-  \once \stemDown  e4. c8 |
-  d (c) b (c) |
-  \once \stemDown b2 ~ |
-  \once \stemDown b4 r |
-  a4 c8 b |
-  a4 ( \slashedGrace { g16 ( } e8) ) a |
+  a4 r8 <d a f> |
+  <e gs, e>4. <c a f>8 |
+  <<
+    {
+      \voiceOne
+      d8 (c) b (c)
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      <a d,>4 <a d,>
+    }
+  >>
+  \oneVoice
+  <b gs e>2 ~ |
+  <b gs e>4 r |
+  a c8 b |
+  a4 (\slashedGrace { g16 } e8)
+  \once \override NoteColumn.X-offset = 1.5 <> a |
   c (b) a (b) |
   a2 |
-  \once \stemDown e'4 f8 e |
-  \once \stemDown d4. d8 |
-  e (d) c (d) |
-  \once \stemDown c2 ~ |
-  \once \stemDown c4 r8 a |
+  <e' g, c,>4 <f g, c,>8 <e g, c,> |
+  <d a f>4. <d a f>8 |
+  <<
+    {
+      \voiceOne
+      e8 (d) c (d)
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      <a e>4 <gs e>
+    }
+  >>
+  \oneVoice
+  <c a a,>2 ~ |
+  <c a a,>4 r8 a |
   c4. b8 |
   c (b) a (b) |
   a2 |
-  \once \stemDown d4. d8 |
-  <e c>8 (<d b>) <c a> (<d b>) |
-  \stemDown <c g>2 ~ |
-  <c g>4 \bar "|."
-}
-
-nhacPhienKhucAlto = \relative c'' {
-  a8 |
-  c4. b8 |
-  c (b) a (b) |
-  a4 r8 <a f> |
-  <gs e>4. <a f>8 |
-  <a d,>4 <a d,> |
-  <gs e>2 ~ |
-  <gs e>4 r |
-  a4 c8 b |
-  a4 ( \slashedGrace { g16 ( } e8) ) a |
-  c (b) a (b) |
-  a2 |
-  <g c,>4 <g c,>8 <g c,> |
-  <a f>4. <a f>8 |
-  <a e>4 <gs e> |
-  <a a,>2 ~ |
-  <a a,>4 r8 a |
-  c4. b8 |
-  c (b) a (b) |
-  a2 |
-  <a f>4. <a fs>8 |
-  g4. <f g,>8 |
-  <e c>2 ~ |
-  <e c>4
+  <d a f>4. <d a fs>8 |
+  <<
+    {
+      \voiceOne
+      <e c>8 (<d b>) <c a> (<d b>)
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      g,4. <f g,>8
+    }
+  >>
+  \oneVoice
+  <c' g e c>2 ~ |
+  <c g e c>4 \bar "|."
 }
 
 % Lời phiên khúc
@@ -83,7 +87,7 @@ loiPhienKhucSop = \lyrics {
 	    \set associatedVoice = "beBas"
 	    \override Lyrics.LyricText.font-shape = #'italic
 	    \once \override LyricText.self-alignment-X = #LEFT
-	    đoàn
+	    \tweak extra-offset #'(1.5 . 0) đoàn
 	  }
   >>
   con.
@@ -111,33 +115,14 @@ TongNhip = {
   \set Timing.baseMoment = #(ly:make-moment 1/4)
 }
 
-% Đổi kích thước nốt cho bè phụ
-notBePhu =
-#(define-music-function (font-size music) (number? ly:music?)
-   (for-some-music
-     (lambda (m)
-       (if (music-is-of-type? m 'rhythmic-event)
-           (begin
-             (set! (ly:music-property m 'tweaks)
-                   (cons `(font-size . ,font-size)
-                         (ly:music-property m 'tweaks)))
-             #t)
-           #f))
-     music)
-   music)
-
 \score {
   \new ChoirStaff <<
-    \new Staff \with {
-        printPartCombineTexts = ##f
+    \new Staff <<
+      \new Voice = "beSop" {
+        \clef treble \TongNhip \nhacPhienKhucSop
       }
-      <<
-      \new Voice \TongNhip \partCombine 
-        \nhacPhienKhucSop
-        \notBePhu -1 { \nhacPhienKhucAlto }
-      \new NullVoice = beSop \nhacPhienKhucSop
       \new Lyrics \lyricsto beSop \loiPhienKhucSop
-      >>
+    >>
   >>
   \layout {
     \override Lyrics.LyricSpace.minimum-distance = #1.8

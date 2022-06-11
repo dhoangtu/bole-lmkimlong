@@ -17,7 +17,7 @@ nhacPhienKhucSop = \relative c'' {
   g8 g g g b
   a a \once \stemDown a4 (b) a8 a c c b c c d d c \hide ([b]) a
   b c c b4 a8 b a c b c d b c \hide ([b]) a4 g8
-  b a g b c4 b8 c c a \hide ([b]) a g4 \bar "|" g8 ([b]) b4
+  b a g b c4 b8 c c a \hide ([b]) a g4 \bar "|" g8 \hide ([b]) b4
   a8 c c b a a a \hide ([b]) c b a4 c8 a a a
   b \hide ([a]) g4 g8 g b \hide ([c]) a b c d4 d8 b b
   a c a b c a b b c \hide ([b]) g4 (a) \bar "||"

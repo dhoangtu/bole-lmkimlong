@@ -13,7 +13,7 @@ nhacMauMot = \relative c'' {
   \key g \major
   \time 23/4
   \partial 8 g8 \bar "|"
-  a8 [g] e [g] \bar "|"
+  a8 [b] e, [g] \bar "|"
   a4. c8 b [b] \bar "|"
   b4 a8 [d] \bar "|"
   d4. g,8 g [c] \bar "|"
@@ -131,11 +131,11 @@ nhacMauMot = \relative c'' {
   a4. d8 \bar "|"
   b4 g8 [a] \bar "|"
   a4. fs8 g [a] \bar "|"
-  d2 \bar "||" \break
+  d,2 \bar "||" \break
   
   <<
     {
-      d4. d8 \bar "|"
+      d'4. d8 \bar "|"
       d4 r8 d a [b] \bar "|"
       c4 b8 [g] \bar "|"
       a2 ~ \bar "|"
@@ -253,7 +253,7 @@ nhacMauNam = \relative c'' {
       g4 r8 a |
       g4 fs8 e |
       d4 r8 g |
-      c4 d8 c |
+      c,4 d8 c |
       b2 ~ |
       b4
     }
@@ -363,8 +363,7 @@ loiMauSau = \lyricmode {
 
 \score {
   <<
-    \new Staff \with {
-      instrumentName = \markup { \bold "Mở đầu" }} <<
+    \new Staff <<
         \clef treble
         \new Voice = beSop {
           \nhacMauMot
@@ -373,7 +372,7 @@ loiMauSau = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Lyrics.LyricSpace.minimum-distance = #0.8
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -399,7 +398,7 @@ loiMauSau = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -430,7 +429,7 @@ loiMauSau = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -455,7 +454,7 @@ loiMauSau = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -481,7 +480,7 @@ loiMauSau = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -509,7 +508,7 @@ loiMauSau = \lyricmode {
     >>
   >>
   \layout {
-    indent = 15
+    indent = 10
     \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)

@@ -14,8 +14,8 @@ nhacMauMot = \relative c' {
   e4. e8 |
   a f e (a) |
   b4 \slashedGrace { b16 ( } c8) a |
-  e4. e8 |
-  a b b c |
+  e'4. e8 |
+  a, b b c |
   b (a) a (b) |
   e,2 |
   c8 d c b |
@@ -51,8 +51,8 @@ nhacMauBa = \relative c' {
   e4. e8 |
   a f e (a) |
   b4 \slashedGrace { b16 ( } c8) a |
-  e4. e8 |
-  a b b c |
+  e'4. e8 |
+  a, b b c |
   b (a) g (a) |
   e4. c8 |
   f f d e |

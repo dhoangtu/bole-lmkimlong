@@ -18,7 +18,7 @@ nhacPhienKhucSop = \relative c'' {
   b \hide ([a]) g a a b4 \bar "|" a8 \hide ([b]) c c c b a4 c8 b b
   b c a b a g \hide ([a]) b4 a8 c b b a c b4 a8 c c
   a \hide ([b]) g b a d d d c \hide ([b]) a c b b b b4 c8 b \hide ([c]) a4 \bar "|"
-  g8 \hide ([a g]) g4 c8 b a b \hide ([a]) g4 c8 b \hide ([a]) a a a4 c8
+  g8 \hide ([a g]) g4 c8 b a b \hide ([a]) g4 c8 b \hide ([c]) a a a4 c8
   a a c b c c d4 d8 d b c \hide ([b]) a4 a8
   c a c c4 a8 b b c \hide ([b]) a b4 b8 b c b
   a a b c c a a b \hide ([c]) b b a b b \hide ([a]) g4 (a) \bar "||"
