@@ -94,7 +94,7 @@ nhacMauSau = \relative c'' {
   bf8 bf c c16 (bf) |
   g4 a8 bf |
   a g4 e8 |
-  c4 (f ~ |
+  e4 (f ~ |
   f) \bar "||"
 }
 
@@ -126,7 +126,7 @@ loiMauBa = \lyricmode {
 }
 
 loiMauBon = \lyricmode {
-  Người nào yêu thương thì đã được sinh ra bởi Thiên Cháu
+  Người nào yêu thương thì đã được sinh ra bởi Thiên Chúa
   và nhận biết Thiên Chúa.
 }
 

@@ -649,7 +649,7 @@ loiMauMuoi = \lyricmode {
 \pageBreak
 
 \markup {
-  \vspace #2
+  %\vspace #2
   \column {
         \line {
           \bold "TÔN THỜ THÁNH GIÁ"

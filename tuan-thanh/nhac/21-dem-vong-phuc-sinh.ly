@@ -1043,7 +1043,7 @@ loiMauMuoiSau = \lyricmode {
 \pageBreak
 
 \markup {
-  %\vspace #2
+  \vspace #2
   "Hoặc: " \bold "Tv. 32"
 }
 
@@ -1071,7 +1071,7 @@ loiMauMuoiSau = \lyricmode {
 \pageBreak
 
 \markup {
-  %\vspace #2
+  \vspace #2
   "Sau bài đọc 2:" \bold "Tv. 15"
 }
 

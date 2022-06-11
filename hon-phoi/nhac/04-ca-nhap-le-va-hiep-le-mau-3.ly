@@ -60,14 +60,14 @@ nhacMauMot = \relative c' {
       g4
     }
     {
-      c8 |
+      c,8 |
       bf4
     }
   >>
   <<
     {
       \voiceOne
-      a8 g16 (f)
+      a'8 g16 (f)
     }
     \new Voice = "splitpart" {
       \voiceTwo
@@ -82,7 +82,7 @@ nhacMauMot = \relative c' {
       f4 \bar "|."
     }
     {
-      a8. a16 bf,8 c |
+      a,8. a16 bf8 c |
       a2 ~ |
       a4
     }

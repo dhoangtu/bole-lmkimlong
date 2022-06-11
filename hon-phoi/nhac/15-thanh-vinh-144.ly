@@ -33,8 +33,8 @@ nhacMauMot = \relative c' {
 nhacMauHai = \relative c' {
   \key f \major
   \time 2/4
-  \partial 4 f16 (g) c8 |
-  g8. e16 g8 g |
+  \partial 4 f16 (g) c,8 |
+  g'8. e16 g8 g |
   a2 |
   a16 (g) c8 f, (e) |
   d8. d16 f8 a |

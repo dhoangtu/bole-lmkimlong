@@ -60,7 +60,7 @@ nhacMauBa = \relative c'' {
   g'4. g8 g g \bar "|"
   a4 bf8 bf \bar "|"
   g4. g8 a c, \bar "|"
-  c2 \bar "||"
+  d2 \bar "||"
 }
 
 nhacMauBon = \relative c' {
@@ -69,7 +69,9 @@ nhacMauBon = \relative c' {
   \time 2/4
   \partial 4 f4 \bar "|"
   e8 e f (g) \bar "|"
+  \time 3/4
   a4 f8 f g (f) \bar "|"
+  \time 2/4
   e4 d8 g \bar "|"
   g4 bf8 g \bar "|"
   c2 \bar "||"
@@ -148,7 +150,6 @@ loiMauBon = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

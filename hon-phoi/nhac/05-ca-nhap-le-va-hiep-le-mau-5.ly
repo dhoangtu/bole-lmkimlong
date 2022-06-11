@@ -104,7 +104,9 @@ nhacMauHai = \relative c'' {
     }
   >>
   \oneVoice
-  r8 \bar "|."
+  <>_\markup { \halign #-1 \bold "Tận" }
+  r8
+  \bar "|."
   
   f8 |
   e4. f8 |
@@ -226,7 +228,7 @@ nhacMauTam = \relative c'' {
   a' c a (g) |
   g4 f16 (g) a8 |
   d,4. a'16 (b) |
-  g8 c4 b8 |
+  g8 a4 b8 |
   c2 ~ |
   c4 \bar "||"
 }
@@ -407,7 +409,7 @@ loiMauMuoiHai = \lyricmode {
         \bold "Sách ORDO CANTUS MISSAE ghi thêm"
       }
       \line {
-        \bold "Nhập lễ 1:" \italic "như mẫu 1 (trang 3) hoặc theo bản dịch của sách lễ 1974"
+        \bold "Nhập lễ 1:" \italic "như mẫu 1 (trang 3) hoặc theo bản dịch của sách lễ 1974:"
       }
     }
   }
@@ -450,7 +452,6 @@ loiMauMuoiHai = \lyricmode {
   >>
   \layout {
     indent = 20
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -498,7 +499,6 @@ loiMauMuoiHai = \lyricmode {
   >>
   \layout {
     indent = 20
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -660,7 +660,7 @@ loiMauMuoiHai = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Hát với Thánh vinh 36" \normal-text "(trang 5)"
+  \bold "Hát với Thánh vịnh 36" \normal-text "(trang 5)"
 }
 
 \score {
@@ -686,5 +686,5 @@ loiMauMuoiHai = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Hát với Thánh vinh 127" \normal-text "(trang 6)"
+  \bold "Hát với Thánh vịnh 127" \normal-text "(trang 6)"
 }
