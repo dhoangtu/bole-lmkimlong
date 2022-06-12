@@ -134,7 +134,7 @@ loiMauBa = \lyricmode {
 loiMauBon = \lyricmode {
   Vì anh em và thân bằng quyến thuộc,
   tôi nói rằng:
-  “Chúa thành thánh an bình, vì nhà Chúa,
+  “Chúc thành thánh an bình, vì nhà Chúa,
   Thiên Chúa chúng ta,
   Tôi chúc thành đô mọi phúc lành.”
 }
