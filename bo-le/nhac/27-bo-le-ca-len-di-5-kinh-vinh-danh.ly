@@ -442,6 +442,7 @@ TongNhip = {
   \layout {
     ragged-right = ##f
     indent = #10
+    \override Staff.TimeSignature.transparent = ##t
   }
 }
 
