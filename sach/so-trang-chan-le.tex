@@ -22,20 +22,17 @@
   \getpdfpages{nhac.pdf}
   \foreach \x in {1,...,\value{pdfpages}} {
   	\checkoddpage
-    %\ifthenelse{\boolean{oddpage}}
-      %{\lhead[]{} \rhead{\rmfamily\bfseries\fontsize{11pt}{11pt}\selectfont\thepage} \includepdf[pagecommand={\thispagestyle{fancy}},pages=\thepage,scale=0.9,offset=0.2cm 0cm]{nhac.pdf}}
-      %{\lhead{\rmfamily\bfseries\fontsize{11pt}{11pt}\selectfont\thepage} \rhead[]{} \includepdf[pagecommand={\thispagestyle{fancy}},pages=\thepage,scale=0.9,offset=0.2cm 0cm]{nhac.pdf}}
     % những trang không in số trang nhưng vẫn tính 1 trang
     \ifthenelse{\(\equal{\x}{1}\OR\equal{\x}{2}\OR\equal{\x}{60}
       \OR\equal{\x}{117}\OR\equal{\x}{118}\OR\equal{\x}{156}\OR\equal{\x}{157}\OR\equal{\x}{158}
       \OR\equal{\x}{168}\OR\equal{\x}{182}\OR\equal{\x}{183}\OR\equal{\x}{184}\)}
       {\ifthenelse{\boolean{oddpage}}
-        {\lhead[]{} \rhead{\rmfamily\bfseries\fontsize{10pt}{10pt}\selectfont\thepage} \includepdf[pagecommand={\thispagestyle{empty}},pages=\thepage,scale=0.93,offset=0.2cm 0cm]{nhac.pdf}}
-        {\lhead{\rmfamily\bfseries\fontsize{10pt}{10pt}\selectfont\thepage} \rhead[]{} \includepdf[pagecommand={\thispagestyle{empty}},pages=\thepage,scale=0.93,offset=0.2cm 0cm]{nhac.pdf}}
+        {\lhead[]{} \rhead{\rmfamily\bfseries\fontsize{10pt}{10pt}\selectfont\thepage} \includepdf[pagecommand={\thispagestyle{empty}},pages=\thepage,scale=0.93,offset=0.1cm 0cm]{nhac.pdf}}
+        {\lhead{\rmfamily\bfseries\fontsize{10pt}{10pt}\selectfont\thepage} \rhead[]{} \includepdf[pagecommand={\thispagestyle{empty}},pages=\thepage,scale=0.93,offset=0.1cm 0cm]{nhac.pdf}}
       }
       {\ifthenelse{\boolean{oddpage}}
-        {\lhead[]{} \rhead{\rmfamily\bfseries\fontsize{10pt}{10pt}\selectfont\thepage} \includepdf[pagecommand={\thispagestyle{fancy}},pages=\thepage,scale=0.93,offset=0.2cm 0cm]{nhac.pdf}}
-        {\lhead{\rmfamily\bfseries\fontsize{10pt}{10pt}\selectfont\thepage} \rhead[]{} \includepdf[pagecommand={\thispagestyle{fancy}},pages=\thepage,scale=0.93,offset=0.2cm 0cm]{nhac.pdf}}
+        {\lhead[]{} \rhead{\rmfamily\bfseries\fontsize{10pt}{10pt}\selectfont\thepage} \includepdf[pagecommand={\thispagestyle{fancy}},pages=\thepage,scale=0.93,offset=0.1cm 0cm]{nhac.pdf}}
+        {\lhead{\rmfamily\bfseries\fontsize{10pt}{10pt}\selectfont\thepage} \rhead[]{} \includepdf[pagecommand={\thispagestyle{fancy}},pages=\thepage,scale=0.93,offset=0.1cm 0cm]{nhac.pdf}}
       }
   }
 \end{document}
