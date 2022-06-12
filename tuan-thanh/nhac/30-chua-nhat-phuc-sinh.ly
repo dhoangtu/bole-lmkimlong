@@ -207,7 +207,7 @@ nhacMauBa = \relative c'' {
     {
       \voiceOne
       d8 d16 (c) |
-      a4 \slashedGrace { d16 _( } d8) b16 _(a) |
+      a4 \slashedGrace { b16 _( } d8) b16 _(a) |
     }
     \new Voice = "splitpart" {
       \voiceTwo
@@ -493,7 +493,7 @@ loiMauBon = \lyricmode {
 }
 
 loiMauNam = \lyricmode {
-  Đức Ki -- to, Chiên Vượt Qua của chúng ta đã bị sát tế,
+  Đức Ki -- tô, Chiên Vượt Qua của chúng ta đã bị sát tế,
   Al -- le -- lu -- ia.
   Vậy chúng ta hãy mừng lễ với bánh không men
   là lòng tinh tuyền và chân thật,
@@ -545,7 +545,7 @@ loiMauNam = \lyricmode {
   \column {
       \left-align {
         \line {
-          \bold "Thánh Vịnh Đáp ca:" \normal-text "như lễ Đêm, trang 28-29"
+          \bold "Thánh Vịnh Đáp ca:" \normal-text "như lễ Đêm"
         }
         \line {
           "Hoặc hát với câu Đáp sau đây:"
@@ -652,5 +652,5 @@ loiMauNam = \lyricmode {
 
 \markup {
   \vspace #2
-  \italic "Hát thêm các câu Thánh Vịnh như trong lễ Đêm (trang 29)"
+  \italic "Hát thêm các câu Thánh Vịnh như trong lễ Đêm"
 }

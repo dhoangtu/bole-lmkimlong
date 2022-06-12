@@ -311,7 +311,7 @@ notBePhu =
 
 \markup {
   \vspace #3
-  \bold "Có thể dùng những cung điệu nơi trang 47"
+  \bold "Có thể dùng những cung điệu nơi trang 66"
 }
 
 \score {

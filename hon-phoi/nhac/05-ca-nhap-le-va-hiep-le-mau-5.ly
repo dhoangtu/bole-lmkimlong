@@ -409,7 +409,7 @@ loiMauMuoiHai = \lyricmode {
         \bold "Sách ORDO CANTUS MISSAE ghi thêm"
       }
       \line {
-        \bold "Nhập lễ 1:" \italic "như mẫu 1 (trang 3) hoặc theo bản dịch của sách lễ 1974:"
+        \bold "Nhập lễ 1:" \italic "như mẫu 1 (trang 159) hoặc theo bản dịch của sách lễ 1974:"
       }
     }
   }
@@ -483,7 +483,7 @@ loiMauMuoiHai = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Hát với Thánh vịnh 127" \normal-text "(trang 6)"
+  \bold "Hát với Thánh vịnh 127" \normal-text "(trang 164)"
 }
 
 \score {
@@ -660,7 +660,7 @@ loiMauMuoiHai = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Hát với Thánh vịnh 36" \normal-text "(trang 5)"
+  \bold "Hát với Thánh vịnh 36" \normal-text "(trang 162)"
 }
 
 \score {
@@ -686,5 +686,5 @@ loiMauMuoiHai = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Hát với Thánh vịnh 127" \normal-text "(trang 6)"
+  \bold "Hát với Thánh vịnh 127" \normal-text "(trang 164)"
 }

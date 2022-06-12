@@ -640,7 +640,7 @@ loiMauMuoi = \lyricmode {
   \column {
       \left-align {
         \line {
-          \bold "Câu xướng trước Tin Mừng:" \normal-text "như Chúa Nhật Lễ Lá, trang 8"
+          \bold "Câu xướng trước Tin Mừng:" \normal-text "như Chúa Nhật Lễ Lá, trang 125"
         }
       }
   }

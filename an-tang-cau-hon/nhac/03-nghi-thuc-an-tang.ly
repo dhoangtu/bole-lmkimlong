@@ -777,7 +777,7 @@ loiMauHaiMuoiLam = \lyricmode {
       }
       \vspace #2
       \line {
-        \italic "* Thánh vịnh 114 (trang 26), với Đối ca"
+        \italic "* Thánh vịnh 114 (trang 236), với Đối ca"
       }
     }
   }
@@ -804,7 +804,7 @@ loiMauHaiMuoiLam = \lyricmode {
 
 \markup {
   %\vspace #2
-  \italic "* Thánh vịnh 115 (trang 26), với Đối ca"
+  \italic "* Thánh vịnh 115 (trang 236), với Đối ca"
 }
 
 \score {
@@ -828,7 +828,7 @@ loiMauHaiMuoiLam = \lyricmode {
 
 \markup {
   \vspace #2
-  \italic "* Thánh Vịnh 50 (trang 30), với Đối ca"
+  \italic "* Thánh Vịnh 50 (trang 244), với Đối ca"
 }
 
 \score {

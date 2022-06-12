@@ -285,7 +285,7 @@ notBePhu =
   \vspace #3
   \column {
     \line { \bold "Cộng đoàn có thể Tung hô như KNTT II" }
-    \line { \bold "hoặc theo cung điệu trang 47" }
+    \line { \bold "hoặc theo cung điệu trang 66" }
   }
 }
 
