@@ -3,7 +3,8 @@
 \include "english.ly"
 
 \header {
-  title = "Thánh Vịnh 22"
+  title = "Thánh Vịnh Đáp Ca"
+  subtitle = \markup { \vspace #2 \fontsize #3 "Thánh Vịnh 22" }
   composer = "Lm. Kim Long"
   tagline = ##f
 }
@@ -51,7 +52,7 @@ nhacMauHai = \relative c'' {
 nhacMauBa = \relative c'' {
   \key f \major
   \time 2/4
-  \partial 4 a8 f |
+  \partial 4 c8 f, |
   g2 ~ |
   g8 a f d |
   d4. e16 (d) |
@@ -96,8 +97,8 @@ nhacMauSau = \relative c' {
   g8. a16 a8 f |
   e4. g8 |
   g g4 a8 |
-  d4. c8 |
-  g (a) e e |
+  d,4. c8 |
+  g' (a) e e |
   f4 \bar "|."
 }
 

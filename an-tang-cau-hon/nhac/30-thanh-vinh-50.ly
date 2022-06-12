@@ -55,7 +55,7 @@ nhacPhanBa = \relative c' {
   r8 e a, d |
   d4 e8 e |
   f4. f8 |
-  g a e d |
+  g a e f |
   \slashedGrace { c16 ( } d4) f8 e |
   e4. f8 |
   g4 f8 e |
@@ -232,8 +232,8 @@ nhacPhanMuoiMot = \relative c' {
     }
     \new Voice = "beBas" {
       \voiceTwo
-      \override NoteColumn.force-hshift = #1
-      \tiny d4. e8
+      \override NoteColumn.force-hshift = #1.7
+      \tiny \parenthesize d4. \parenthesize e8
     }
   >>
   \oneVoice
@@ -250,13 +250,13 @@ nhacPhanMuoiMot = \relative c' {
     }
     \new Voice = "beBas" {
       \voiceTwo
-      \override NoteColumn.force-hshift = #1
-      \tiny c4. d8
+      \override NoteColumn.force-hshift = #1.7
+      \tiny \parenthesize c4. \parenthesize d8
     }
   >>
   \oneVoice
   d2 ~ |
-  d4 \bar "||"
+  d4 \bar "|."
 }
 
 % Lời

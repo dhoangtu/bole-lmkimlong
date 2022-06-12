@@ -119,7 +119,7 @@ nhacMauSau = \relative c'' {
   e4 r8 e |
   b'4 b8 c |
   a8. d16 g,8 g |
-  a4. fs16 (a) |
+  a4. fs16 (g) |
   a8 c b g |
   d'4 r8 d, |
   fs4 a |
@@ -237,7 +237,6 @@ loiMauSau = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -316,7 +315,6 @@ loiMauSau = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -338,7 +336,6 @@ loiMauSau = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)

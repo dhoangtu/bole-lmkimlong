@@ -182,6 +182,7 @@ loiMauBon = \lyricmode {
   >>
   \layout {
     indent = 10
+    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -202,6 +203,7 @@ loiMauBon = \lyricmode {
   >>
   \layout {
     indent = 10
+    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

@@ -66,7 +66,7 @@ nhacMauBa = \relative c'' {
   \set Timing.beamExceptions = #'()
   \set Timing.baseMoment = #(ly:make-moment 1/4)
   \set Timing.beatStructure = #'(1 1 1)
-  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
+  \override Staff.TimeSignature.break-visibility = #all-invisible
   \partial 4
   <<
     {
@@ -175,7 +175,7 @@ nhacMauBon = \relative c'' {
       a4.
     }
     {
-      g8 b c g |
+      g8 b, c g' |
       fs4. g8 |
       a fs e e |
       c4.
@@ -202,7 +202,7 @@ nhacMauNam = \relative c'' {
   a4. c8 |
   c a d d |
   g,4 d8 g16 (a) |
-  f8 (g) b a16 (g) |
+  fs8 (g) b a16 (g) |
   e (g) a8 b a |
   a4. c8 |
   a c d4 ~ |
@@ -563,7 +563,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -640,7 +639,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -673,7 +671,7 @@ loiMauMuoi = \lyricmode {
 \markup {
   \vspace #2
   \line {
-    \bold "D - An táng trẻ em đã Rửa tội"
+    \bold "D - An táng trẻ đã Rửa tội"
   }
 }
 
@@ -690,7 +688,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -711,7 +708,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -723,7 +719,7 @@ loiMauMuoi = \lyricmode {
 \markup {
   \vspace #2
   \line {
-    \bold "E - An táng trẻ em chưa Rửa tội"
+    \bold "E - An táng trẻ chưa Rửa tội"
   }
 }
 
@@ -740,7 +736,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -761,7 +756,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

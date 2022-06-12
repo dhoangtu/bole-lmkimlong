@@ -52,7 +52,7 @@ nhacMauBa = \relative c' {
   bf4 r8 c |
   bf (c) d g, |
   g4. g8 |
-  c4 g8 f |
+  c,4 g'8 f |
   f2 ~ |
   f4 \bar "||"
 }
@@ -134,7 +134,7 @@ loiMauHai = \lyricmode {
 loiMauBa = \lyricmode {
   Lạy Chúa xin nghe tiếng con kêu cầu,
   xin thương xót và nhậm lời con,
-  Con tưởng nhớ lời Ngài: Hãy tìm thánh nhan Ta.
+  con tưởng nhớ lời Ngài: Hãy tìm thánh nhan Ta.
 }
 
 loiMauBon = \lyricmode {

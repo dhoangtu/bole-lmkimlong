@@ -179,7 +179,7 @@ nhacMauBa = \relative c' {
   d4
   <<
     {
-      a8 a |
+      c8 c |
       d (c) b (c) |
       b2 ~ |
       b4
@@ -201,7 +201,7 @@ nhacMauBa = \relative c' {
   <<
     {
       \voiceOne
-      a8 ([b a b]) |
+      c8 ([b a b]) |
     }
     \new Voice = "splitpart" {
       \voiceTwo
@@ -261,7 +261,7 @@ loiMauBa = \lyricmode {
 \markup {
   %\vspace #2
   \line {
-    \bold "Xin Thương Xót"
+    \bold "Kinh Thương Xót"
   }
 }
 

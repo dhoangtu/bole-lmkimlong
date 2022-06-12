@@ -22,7 +22,7 @@ nhacMauMot = \relative c'' {
   bf4 a8 bf |
   a4. g8 |
   d'2 ~ |
-  d4 \bar "|."
+  d4 r8 \bar "|."
 }
 
 nhacMauHai = \relative c' {
@@ -72,8 +72,8 @@ nhacMauNam = \relative c'' {
   a f f g16 (a) |
   d,8. d16 a'8 bf |
   g2 |
-  r8 g bf a16 (g) |
-  a8. a16 a8 a |
+  r8 g bf a16 (bf) |
+  c8. a16 a8 a |
   d2 ~ |
   d4 \bar "||"
 }
@@ -878,6 +878,12 @@ loiMauBonMuoiBon = \lyricmode {
   }
 }
 
+\markup {
+  \line {
+    \hspace #3 \bold "Thánh vịnh 64"
+  }
+}
+
 \score {
   <<
     \new Staff \with {
@@ -913,6 +919,7 @@ loiMauBonMuoiBon = \lyricmode {
   >>
   \layout {
     indent = 17
+    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -995,7 +1002,6 @@ loiMauBonMuoiBon = \lyricmode {
   >>
   \layout {
     indent = 20
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -1007,7 +1013,7 @@ loiMauBonMuoiBon = \lyricmode {
 
 \markup {
   \line {
-    \bold "Thánh vịnh 6"
+    \hspace #3 \bold "Thánh vịnh 6"
   }
 }
 
@@ -1129,7 +1135,6 @@ loiMauBonMuoiBon = \lyricmode {
   >>
   \layout {
     indent = 20
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -1140,7 +1145,7 @@ loiMauBonMuoiBon = \lyricmode {
 \markup {
   \vspace #2
   \line {
-    \bold "Thánh Vịnh 117"
+    \hspace #3 \bold "Thánh Vịnh 117"
   }
 }
 
@@ -1283,7 +1288,6 @@ loiMauBonMuoiBon = \lyricmode {
   >>
   \layout {
     indent = 20
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -1293,7 +1297,7 @@ loiMauBonMuoiBon = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Thánh Vịnh 129"
+  \hspace #3 \bold "Thánh Vịnh 129"
 }
 
 \score {
@@ -1477,7 +1481,6 @@ loiMauBonMuoiBon = \lyricmode {
   >>
   \layout {
     indent = 17
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -1487,7 +1490,7 @@ loiMauBonMuoiBon = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Thánh Vịnh 120"
+  \hspace #3 \bold "Thánh Vịnh 120"
 }
 
 \score {
@@ -1650,7 +1653,6 @@ loiMauBonMuoiBon = \lyricmode {
   >>
   \layout {
     indent = 20
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -1660,7 +1662,7 @@ loiMauBonMuoiBon = \lyricmode {
 
 \markup {
   \vspace #2
-  \bold "Thánh Vịnh 141"
+  \hspace #3 \bold "Thánh Vịnh 141"
 }
 
 \score {

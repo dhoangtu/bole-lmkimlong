@@ -24,7 +24,7 @@ nhacMauMot = \relative c' {
   a8. e16 a (bf) a8 |
   g4 r8 g |
   f f g a |
-  e4 g8 a |
+  e4 g8 a | \break
   \slashedGrace { d,16 (f } d4) r8 a |
   f'8 e d4 ~ |
   d a'16 (bf) g8 |
@@ -38,7 +38,7 @@ nhacMauHai = \relative c' {
   \time 2/4
   \partial 4 f8 g |
   e8. f16 c8 d |
-  c4 d8 d16 (f) |
+  d4 d8 d16 (f) |
   e8. g16 f8 f16 (g) |
   a4 f8 bf16 (a) |
   g8. f16 g8 a |

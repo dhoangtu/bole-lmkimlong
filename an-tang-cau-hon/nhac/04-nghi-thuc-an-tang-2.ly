@@ -23,7 +23,8 @@ nhacMauMot = \relative c' {
     }
     {
       e,8 |
-      a4
+      a4 a |
+      a
     }
   >>
   \oneVoice
@@ -36,21 +37,21 @@ nhacMauMot = \relative c' {
   \once \override Score.RehearsalMark.font-size = #0.1
   \mark \markup { \musicglyph #"scripts.segno" }
   a a16 (g) e8 (d) |
+  e8. <b' e,>16 <c a>8 <b d,> |
+  <b e,>4
   <<
     {
       \voiceOne
-      e8. b'16 c8 b |
-      \once \stemDown b4 b16 (c) b8 |
+      b16 (c) b8 |
     }
     \new Voice = "splitpart" {
       \voiceTwo
-      e,8. e16 a8 d, |
-      e4 e8 d |
+      e,8 d |
     }
   >>
   \oneVoice
   <a' c,>2 ~
-  ^\markup { \halign #-2 \bold "Tận" }
+  ^\markup { \halign #-5 \bold "Tận" }
   \partial 4 <a c,>4 \bar "|." \break
 }
 
@@ -128,27 +129,30 @@ nhacMauBon = \relative c'' {
   f4 af8 g |
   g e f (e) |
   d4 r8 g |
-  e!? (f)
+  e!? (f) <g e> (<a d,>) |
+  <g e>4 <c e,>8 <d f,>
   <<
     {
       \voiceOne
-      g (a) |
-      \once \stemDown g4 c8 d |
       d (c) b (c) |
-      \once \stemDown a4. a8 |
-      a f a16 (c) a8 |
-      \once \stemDown g4 g8 g |
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      g4 g |
+    }
+  >>
+  \oneVoice
+  <a f>4. <a f>8 |
+  <a f> <f d> <a f>16 (<c a>) <a f>8 |
+  <g e>4 <g e>8 <g e>
+  <<
+    {
+      \voiceOne
       d'16 (e) d8
     }
     \new Voice = "splitpart" {
       \voiceTwo
-      e,8 (d) |
-      e4 e8 f |
-      g4 g |
-      f4. f8 |
-      f d f16 (a) f8 |
-      e4 e8 e |
-      f fs
+      f,8 fs
     }
   >>
   \oneVoice
@@ -232,12 +236,22 @@ nhacMauSau = \relative c'' {
     {
       \voiceOne
       d'16 _(e) |
-      d8 g, d'16 _(e) d8
     }
     \new Voice = "splitpart" {
       \voiceTwo
       f,8 |
-      g e f g
+    }
+  >>
+  \oneVoice
+  <d' g,>8 <g, e>
+  <<
+    {
+      \voiceOne
+      d'16 _(e) d8
+    }
+    \new Voice = "splitpart" {
+      \voiceTwo
+      f,8 g
     }
   >>
   \oneVoice
@@ -262,7 +276,7 @@ nhacMauBay = \relative c' {
     {
       f,8 d |
       e4 d8 c |
-      f f f fs
+      f f fs fs
     }
   >>
   g4. fs8 \bar "||" \break
@@ -278,7 +292,9 @@ nhacMauBay = \relative c' {
       d8 d |
       b4 (a8 b) |
       c2 ~ |
-      c4 r8 \bar "|."
+      c4 r8
+      ^\markup { \bold "Tận" }
+      \bar "|."
     }
     {
       fs,8 fs |
@@ -429,7 +445,7 @@ loiMauBay = \lyricmode {
         \italic "* Thánh lễ (xem phần sau)"
       }
       \line {
-        \italic "* Phó dâng và từ biệt lần cuối"
+        \italic "* Phó dâng và từ biệt lần cuối:"
       }
       \line {
         \italic "Sau lời kêu mời của Linh mục, rảy nước thánh, xông hương - tùy nghi hát"
@@ -512,7 +528,7 @@ loiMauBay = \lyricmode {
         \italic "Trong trường hợp này, sau Lời nguyện Hiệp lễ, người ta di quan."
       }
       \line {
-        \italic "Khi đó có thể hát một hoặc hai hoặc ba đối ca sau đây."
+        \italic "Khi đó có thể hát một hoặc hai hoặc ba đối ca sau đây:"
       }
     }
   }

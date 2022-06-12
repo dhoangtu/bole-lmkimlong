@@ -461,9 +461,9 @@ nhacMauHaiMuoiBay = \relative c' {
   g a d, d16 (f) |
   g2 ~ |
   g8 f bf bf |
-  c,8. e16 e8 g |
+  c8. e,16 e8 g |
   f2 ~ |
-  f8 \bar "|."
+  f4 \bar "|."
 }
 
 % Lời
@@ -514,7 +514,7 @@ loiMauBay = \lyricmode {
 
 loiMauTam = \lyricmode {
   Tiếng reo vui ca mừng chiến thắng
-  vang rền trong doanh trại chính nhân
+  vang rền trong doanh trại chính nhân.
   Tay hữu Chúa biểu dương sức mạnh.
   Tay hữu Chúa giơ cao, tay hữu Chúa biểu dương sức mạnh.
 }
@@ -996,6 +996,7 @@ loiMauHaiMuoiBay = \lyricmode {
 }
 
 \markup {
+  \vspace #2
   \line {
     \bold "Thánh vịnh 41, 42"
   }
@@ -1014,7 +1015,6 @@ loiMauHaiMuoiBay = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
