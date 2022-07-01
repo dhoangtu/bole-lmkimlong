@@ -380,20 +380,11 @@ loiMauBon = \lyricmode {
 loiMauNam = \lyricmode {
   Xin ca đoàn các Thiên Thần đón tiếp
   <<
-  { ông }
+  { ông và xin cho ông }
   \new Lyrics {
 	  \set associatedVoice = "beBas"
 	  \override Lyrics.LyricText.font-shape = #'italic
-	  bà
-	}
-  >>
-  và xin cho
-  <<
-  { ông }
-  \new Lyrics {
-	  \set associatedVoice = "beBas"
-	  \override Lyrics.LyricText.font-shape = #'italic
-	  bà
+	  bà _ _ _ bà
 	}
   >>
   được nghỉ yên muôn đời,
@@ -475,7 +466,9 @@ loiMauBay = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+    } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauHai
@@ -496,7 +489,9 @@ loiMauBay = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+    } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauBa
@@ -537,6 +532,7 @@ loiMauBay = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "1" }} <<
         \clef treble
         \new Voice = beSop {
@@ -547,7 +543,6 @@ loiMauBay = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -559,6 +554,7 @@ loiMauBay = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "2" }} <<
         \clef treble
         \new Voice = beSop {
@@ -569,8 +565,7 @@ loiMauBay = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override Lyrics.LyricSpace.minimum-distance = #0.6
     \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -581,6 +576,7 @@ loiMauBay = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "3" }} <<
         \clef treble
         \new Voice = beSop {
@@ -591,7 +587,6 @@ loiMauBay = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -615,7 +610,9 @@ loiMauBay = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+    }<<
         \clef treble
         \new Voice = beSop {
           \nhacMauBay
@@ -625,7 +622,6 @@ loiMauBay = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

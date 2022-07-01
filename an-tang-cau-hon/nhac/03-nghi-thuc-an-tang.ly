@@ -524,6 +524,7 @@ loiMauHaiMuoiLam = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "2" }} <<
         \clef treble
         \new Voice = beSop {
@@ -534,8 +535,7 @@ loiMauHaiMuoiLam = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     \override LyricHyphen.minimum-distance = #1.5
@@ -546,6 +546,7 @@ loiMauHaiMuoiLam = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "3" }} <<
         \clef treble
         \new Voice = beSop {
@@ -556,7 +557,6 @@ loiMauHaiMuoiLam = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.75
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -567,6 +567,7 @@ loiMauHaiMuoiLam = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "4" }} <<
         \clef treble
         \new Voice = beSop {
@@ -577,8 +578,7 @@ loiMauHaiMuoiLam = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #1
+    \override Lyrics.LyricSpace.minimum-distance = #0.8
     \override LyricHyphen.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -654,6 +654,7 @@ loiMauHaiMuoiLam = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "2" }} <<
         \clef treble
         \new Voice = beSop {
@@ -664,7 +665,6 @@ loiMauHaiMuoiLam = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -675,6 +675,7 @@ loiMauHaiMuoiLam = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "3" }} <<
         \clef treble
         \new Voice = beSop {
@@ -685,7 +686,6 @@ loiMauHaiMuoiLam = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -696,6 +696,7 @@ loiMauHaiMuoiLam = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "4" }} <<
         \clef treble
         \new Voice = beSop {
@@ -706,7 +707,6 @@ loiMauHaiMuoiLam = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -717,6 +717,7 @@ loiMauHaiMuoiLam = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "Đáp" }} <<
         \clef treble
         \new Voice = beSop {
@@ -727,7 +728,6 @@ loiMauHaiMuoiLam = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -743,6 +743,7 @@ loiMauHaiMuoiLam = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "Đáp" }} <<
         \clef treble
         \new Voice = beSop {
@@ -753,7 +754,6 @@ loiMauHaiMuoiLam = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -833,7 +833,9 @@ loiMauHaiMuoiLam = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+    } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauHaiMuoiLam
@@ -843,7 +845,6 @@ loiMauHaiMuoiLam = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
