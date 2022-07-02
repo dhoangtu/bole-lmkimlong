@@ -76,6 +76,7 @@ TongNhip = {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup {
         \column {
           \center-align {
@@ -94,7 +95,6 @@ TongNhip = {
   >>
   \layout {
     indent = 30
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -107,6 +107,7 @@ TongNhip = {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "Chung" }} <<
         \clef treble
         \new Voice = beSop {
@@ -117,7 +118,6 @@ TongNhip = {
   >>
   \layout {
     indent = 30
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

@@ -61,7 +61,8 @@ TongNhip = {
 
 \score {
   \new ChoirStaff <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver"} <<
       \new Voice = "beSop" {
         \clef treble \TongNhip \nhacPhienKhucSop
       }

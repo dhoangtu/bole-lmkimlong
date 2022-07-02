@@ -650,7 +650,8 @@ TongNhip = {
 
 \score {
   \new ChoirStaff <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = xuong {
           \TongNhip \nhacDiepKhucXuong
@@ -659,7 +660,6 @@ TongNhip = {
     >>
   >>
   \layout {
-    \override Staff.TimeSignature.transparent = ##t
     ragged-right = ##f
     indent = #10
   }
@@ -667,7 +667,8 @@ TongNhip = {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = chuTe {
           \TongNhip \nhacDiepKhucChuTe
@@ -675,28 +676,32 @@ TongNhip = {
         \new Lyrics \lyricsto chuTe \loiDiepKhucChuTe
     >>
     \new ChoirStaff <<
-      \new Staff <<
+      \new Staff \with {
+      \remove "Time_signature_engraver" } <<
           \clef treble
           \new Voice = beSop {
             \TongNhip \nhacDiepKhucSop
           }
           \new Lyrics \lyricsto beSop \loiDiepKhucSop
       >>
-      \new Staff <<
+      \new Staff \with {
+      \remove "Time_signature_engraver" } <<
           \clef treble
           \new Voice = beAlto {
             \TongNhip \nhacDiepKhucAlto
           }
           \new Lyrics \lyricsto beAlto \loiDiepKhucAlto
       >>
-      \new Staff <<
+      \new Staff \with {
+      \remove "Time_signature_engraver" } <<
           \clef "violin_8"
           \new Voice = beTenor {
             \TongNhip \nhacDiepKhucTenor
           }
           \new Lyrics \lyricsto beTenor \loiDiepKhucTenor
       >>
-      \new Staff <<
+      \new Staff \with {
+      \remove "Time_signature_engraver" } <<
           \clef bass
           \new Voice = beBas {
             \TongNhip \nhacDiepKhucBas
@@ -706,7 +711,6 @@ TongNhip = {
     >>
   >>
   \layout {
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.6
     \override LyricHyphen.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)

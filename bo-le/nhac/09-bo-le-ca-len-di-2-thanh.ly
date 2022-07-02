@@ -118,6 +118,7 @@ notBePhu =
 \score {
   \new ChoirStaff <<
     \new Staff \with {
+        \remove "Time_signature_engraver"
         printPartCombineTexts = ##f
       }
       <<
@@ -129,7 +130,6 @@ notBePhu =
       >>
   >>
   \layout {
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

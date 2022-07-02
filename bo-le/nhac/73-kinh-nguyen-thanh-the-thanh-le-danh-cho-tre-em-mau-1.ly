@@ -396,6 +396,7 @@ notBePhu =
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "Mở đầu" }} <<
         \clef treble
         \new Voice = beSop {
@@ -406,7 +407,6 @@ notBePhu =
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -418,7 +418,8 @@ notBePhu =
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauHai
@@ -440,7 +441,8 @@ notBePhu =
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauBa
@@ -450,7 +452,6 @@ notBePhu =
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -462,7 +463,8 @@ notBePhu =
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauBon
@@ -472,7 +474,6 @@ notBePhu =
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -484,7 +485,8 @@ notBePhu =
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauNam
@@ -494,7 +496,6 @@ notBePhu =
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override LyricHyphen.minimum-distance = #2
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
@@ -513,6 +514,7 @@ notBePhu =
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       \consists "Merge_rests_engraver"
       printPartCombineTexts = ##f
       instrumentName = \markup {
@@ -533,7 +535,6 @@ notBePhu =
   >>
   \layout {
     indent = 30
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -551,6 +552,7 @@ notBePhu =
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "1" }} <<
         \clef treble
         \new Voice = beSop {
@@ -561,7 +563,6 @@ notBePhu =
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -572,6 +573,7 @@ notBePhu =
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "2" }} <<
         \clef treble
         \new Voice = beSop {
@@ -582,7 +584,6 @@ notBePhu =
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -593,6 +594,7 @@ notBePhu =
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { \bold "3" }} <<
         \clef treble
         \new Voice = beSop {
@@ -603,7 +605,6 @@ notBePhu =
   >>
   \layout {
     indent = 15
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

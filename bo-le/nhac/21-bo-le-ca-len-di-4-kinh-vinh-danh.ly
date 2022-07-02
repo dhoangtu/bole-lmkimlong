@@ -332,7 +332,8 @@ TongNhip = {
 
 \score {
   \new ChoirStaff <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beSop {
           \TongNhip \nhacXuong
@@ -343,7 +344,6 @@ TongNhip = {
   \layout {
     indent = #10
     ragged-right = ##f
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -352,21 +352,24 @@ TongNhip = {
 
 \score {
   \new ChoirStaff <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beSop {
           \TongNhip \nhacDiepKhucSop
         }
         \new Lyrics \lyricsto beSop \loiDiepKhucSop
     >>
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beAlto {
           \TongNhip \nhacDiepKhucAlto
         }
         \new Lyrics \lyricsto beAlto \loiDiepKhucAlto
     >>
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef bass
         \new Voice = beBas {
           \TongNhip \nhacDiepKhucBas
@@ -376,7 +379,6 @@ TongNhip = {
   >>
   \layout {
     indent = #0
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

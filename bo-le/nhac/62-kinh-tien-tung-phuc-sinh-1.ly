@@ -32,7 +32,7 @@ nhacPhienKhucSop = \relative c'' {
 loiPhienKhucSop = \lyrics {
   Lạy Chúa, chúng con tuyên xưng Chúa mọi lúc
   nhất là trong đêm
-  \markup { \italic "(ngày, mùa)" }
+  \markup { \italic "(ngày/mùa)" }
   cực thánh này, thật là chính đáng phải đạo
   và đem lại ơn cứu độ cho chúng con,
   và chúng con càng hãnh diện tung hô Chúa khi Đức Ki -- tô,
@@ -81,7 +81,6 @@ TongNhip = {
     >>
   >>
   \layout {
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.8
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t

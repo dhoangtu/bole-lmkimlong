@@ -431,7 +431,8 @@ TongNhip = {
 
 \score {
   \new ChoirStaff <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = xuong {
           \TongNhip \nhacDiepKhucXuong
@@ -442,7 +443,6 @@ TongNhip = {
   \layout {
     ragged-right = ##f
     indent = #10
-    \override Staff.TimeSignature.transparent = ##t
   }
 }
 
