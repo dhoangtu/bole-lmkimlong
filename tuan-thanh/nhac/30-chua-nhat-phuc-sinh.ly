@@ -616,7 +616,7 @@ loiMauNam = \lyricmode {
   >>
   \layout {
     %indent = 15
-    \override Staff.TimeSignature.transparent = ##t
+    %\override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override LyricHyphen.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)

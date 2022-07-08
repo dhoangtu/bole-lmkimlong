@@ -688,6 +688,7 @@ loiMauMuoi = \lyricmode {
 \score {
   <<
     \new Staff \with {
+      \remove "Time_signature_engraver"
       instrumentName = \markup { "Cộng đoàn đáp:" }} <<
         \clef treble
         \new Voice = beSop {
@@ -698,7 +699,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 30
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #0.7
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -805,7 +805,8 @@ loiMauMuoi = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauNam
@@ -815,7 +816,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -830,7 +830,8 @@ loiMauMuoi = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauSau
@@ -840,7 +841,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
@@ -855,7 +855,8 @@ loiMauMuoi = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \remove "Time_signature_engraver" } <<
         \clef treble
         \new Voice = beSop {
           \nhacMauBay
@@ -865,7 +866,6 @@ loiMauMuoi = \lyricmode {
   >>
   \layout {
     indent = 10
-    \override Staff.TimeSignature.transparent = ##t
     \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
